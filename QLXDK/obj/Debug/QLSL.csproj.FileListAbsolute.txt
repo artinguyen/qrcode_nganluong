@@ -1,0 +1,1156 @@
+C:\Users\LAPTOP HP\Documents\Visual Studio 2015\Projects\QLSL\QLXDK\obj\Debug\QLSL.csprojResolveAssemblyReference.cache
+C:\Users\LAPTOP HP\Documents\Visual Studio 2015\Projects\QLSL\QLXDK\obj\Debug\QLXDK.dll
+C:\Users\LAPTOP HP\Documents\Visual Studio 2015\Projects\QLSL\QLXDK\obj\Debug\QLXDK.pdb
+C:\Users\LAPTOP HP\Documents\Visual Studio 2015\Projects\QLSL\QLXDK\bin\roslyn\csc.exe
+C:\Users\LAPTOP HP\Documents\Visual Studio 2015\Projects\QLSL\QLXDK\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+C:\Users\LAPTOP HP\Documents\Visual Studio 2015\Projects\QLSL\QLXDK\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+C:\Users\LAPTOP HP\Documents\Visual Studio 2015\Projects\QLSL\QLXDK\bin\roslyn\Microsoft.CodeAnalysis.dll
+C:\Users\LAPTOP HP\Documents\Visual Studio 2015\Projects\QLSL\QLXDK\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+C:\Users\LAPTOP HP\Documents\Visual Studio 2015\Projects\QLSL\QLXDK\bin\roslyn\Microsoft.CSharp.Core.targets
+C:\Users\LAPTOP HP\Documents\Visual Studio 2015\Projects\QLSL\QLXDK\bin\roslyn\Microsoft.VisualBasic.Core.targets
+C:\Users\LAPTOP HP\Documents\Visual Studio 2015\Projects\QLSL\QLXDK\bin\roslyn\System.Collections.Immutable.dll
+C:\Users\LAPTOP HP\Documents\Visual Studio 2015\Projects\QLSL\QLXDK\bin\roslyn\System.Reflection.Metadata.dll
+C:\Users\LAPTOP HP\Documents\Visual Studio 2015\Projects\QLSL\QLXDK\bin\roslyn\vbc.exe
+C:\Users\LAPTOP HP\Documents\Visual Studio 2015\Projects\QLSL\QLXDK\bin\roslyn\VBCSCompiler.exe
+C:\Users\LAPTOP HP\Documents\Visual Studio 2015\Projects\QLSL\QLXDK\bin\roslyn\VBCSCompiler.exe.config
+C:\Users\LAPTOP HP\Documents\Visual Studio 2015\Projects\QLSL\QLXDK\bin\QLXDK.dll.config
+C:\Users\LAPTOP HP\Documents\Visual Studio 2015\Projects\QLSL\QLXDK\bin\QLXDK.dll
+C:\Users\LAPTOP HP\Documents\Visual Studio 2015\Projects\QLSL\QLXDK\bin\QLXDK.pdb
+C:\Users\LAPTOP HP\Documents\Visual Studio 2015\Projects\QLSL\QLXDK\bin\Antlr3.Runtime.dll
+C:\Users\LAPTOP HP\Documents\Visual Studio 2015\Projects\QLSL\QLXDK\bin\BCrypt.Net-Next.dll
+C:\Users\LAPTOP HP\Documents\Visual Studio 2015\Projects\QLSL\QLXDK\bin\EntityFramework.dll
+C:\Users\LAPTOP HP\Documents\Visual Studio 2015\Projects\QLSL\QLXDK\bin\EntityFramework.SqlServer.dll
+C:\Users\LAPTOP HP\Documents\Visual Studio 2015\Projects\QLSL\QLXDK\bin\Microsoft.AI.Agent.Intercept.dll
+C:\Users\LAPTOP HP\Documents\Visual Studio 2015\Projects\QLSL\QLXDK\bin\Microsoft.AI.DependencyCollector.dll
+C:\Users\LAPTOP HP\Documents\Visual Studio 2015\Projects\QLSL\QLXDK\bin\Microsoft.AI.PerfCounterCollector.dll
+C:\Users\LAPTOP HP\Documents\Visual Studio 2015\Projects\QLSL\QLXDK\bin\Microsoft.AI.ServerTelemetryChannel.dll
+C:\Users\LAPTOP HP\Documents\Visual Studio 2015\Projects\QLSL\QLXDK\bin\Microsoft.AI.Web.dll
+C:\Users\LAPTOP HP\Documents\Visual Studio 2015\Projects\QLSL\QLXDK\bin\Microsoft.AI.WindowsServer.dll
+C:\Users\LAPTOP HP\Documents\Visual Studio 2015\Projects\QLSL\QLXDK\bin\Microsoft.ApplicationInsights.dll
+C:\Users\LAPTOP HP\Documents\Visual Studio 2015\Projects\QLSL\QLXDK\bin\Microsoft.AspNet.Identity.Core.dll
+C:\Users\LAPTOP HP\Documents\Visual Studio 2015\Projects\QLSL\QLXDK\bin\Microsoft.AspNet.Identity.EntityFramework.dll
+C:\Users\LAPTOP HP\Documents\Visual Studio 2015\Projects\QLSL\QLXDK\bin\Microsoft.AspNet.Identity.Owin.dll
+C:\Users\LAPTOP HP\Documents\Visual Studio 2015\Projects\QLSL\QLXDK\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+C:\Users\LAPTOP HP\Documents\Visual Studio 2015\Projects\QLSL\QLXDK\bin\Microsoft.Owin.dll
+C:\Users\LAPTOP HP\Documents\Visual Studio 2015\Projects\QLSL\QLXDK\bin\Microsoft.Owin.Host.SystemWeb.dll
+C:\Users\LAPTOP HP\Documents\Visual Studio 2015\Projects\QLSL\QLXDK\bin\Microsoft.Owin.Security.Cookies.dll
+C:\Users\LAPTOP HP\Documents\Visual Studio 2015\Projects\QLSL\QLXDK\bin\Microsoft.Owin.Security.dll
+C:\Users\LAPTOP HP\Documents\Visual Studio 2015\Projects\QLSL\QLXDK\bin\Microsoft.Owin.Security.Facebook.dll
+C:\Users\LAPTOP HP\Documents\Visual Studio 2015\Projects\QLSL\QLXDK\bin\Microsoft.Owin.Security.Google.dll
+C:\Users\LAPTOP HP\Documents\Visual Studio 2015\Projects\QLSL\QLXDK\bin\Microsoft.Owin.Security.MicrosoftAccount.dll
+C:\Users\LAPTOP HP\Documents\Visual Studio 2015\Projects\QLSL\QLXDK\bin\Microsoft.Owin.Security.OAuth.dll
+C:\Users\LAPTOP HP\Documents\Visual Studio 2015\Projects\QLSL\QLXDK\bin\Microsoft.Owin.Security.Twitter.dll
+C:\Users\LAPTOP HP\Documents\Visual Studio 2015\Projects\QLSL\QLXDK\bin\Microsoft.Web.Infrastructure.dll
+C:\Users\LAPTOP HP\Documents\Visual Studio 2015\Projects\QLSL\QLXDK\bin\Newtonsoft.Json.dll
+C:\Users\LAPTOP HP\Documents\Visual Studio 2015\Projects\QLSL\QLXDK\bin\Owin.dll
+C:\Users\LAPTOP HP\Documents\Visual Studio 2015\Projects\QLSL\QLXDK\bin\PagedList.dll
+C:\Users\LAPTOP HP\Documents\Visual Studio 2015\Projects\QLSL\QLXDK\bin\PagedList.Mvc.dll
+C:\Users\LAPTOP HP\Documents\Visual Studio 2015\Projects\QLSL\QLXDK\bin\System.Web.Helpers.dll
+C:\Users\LAPTOP HP\Documents\Visual Studio 2015\Projects\QLSL\QLXDK\bin\System.Web.Mvc.dll
+C:\Users\LAPTOP HP\Documents\Visual Studio 2015\Projects\QLSL\QLXDK\bin\System.Web.Optimization.dll
+C:\Users\LAPTOP HP\Documents\Visual Studio 2015\Projects\QLSL\QLXDK\bin\System.Web.Razor.dll
+C:\Users\LAPTOP HP\Documents\Visual Studio 2015\Projects\QLSL\QLXDK\bin\System.Web.WebPages.Deployment.dll
+C:\Users\LAPTOP HP\Documents\Visual Studio 2015\Projects\QLSL\QLXDK\bin\System.Web.WebPages.dll
+C:\Users\LAPTOP HP\Documents\Visual Studio 2015\Projects\QLSL\QLXDK\bin\System.Web.WebPages.Razor.dll
+C:\Users\LAPTOP HP\Documents\Visual Studio 2015\Projects\QLSL\QLXDK\bin\WebGrease.dll
+C:\Users\LAPTOP HP\Documents\Visual Studio 2015\Projects\QLSL\QLXDK\bin\BCrypt.Net-Next.xml
+C:\Users\LAPTOP HP\Documents\Visual Studio 2015\Projects\QLSL\QLXDK\bin\Microsoft.AI.DependencyCollector.xml
+C:\Users\LAPTOP HP\Documents\Visual Studio 2015\Projects\QLSL\QLXDK\bin\Microsoft.AI.ServerTelemetryChannel.xml
+C:\Users\LAPTOP HP\Documents\Visual Studio 2015\Projects\QLSL\QLXDK\bin\Microsoft.AI.Web.xml
+C:\Users\LAPTOP HP\Documents\Visual Studio 2015\Projects\QLSL\QLXDK\bin\Microsoft.AI.WindowsServer.xml
+C:\Users\LAPTOP HP\Documents\Visual Studio 2015\Projects\QLSL\QLXDK\bin\Microsoft.ApplicationInsights.xml
+C:\Users\LAPTOP HP\Documents\Visual Studio 2015\Projects\QLSL\QLXDK\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\Users\LAPTOP HP\Documents\Visual Studio 2015\Projects\QLSL\QLXDK\bin\PagedList.xml
+C:\Users\LAPTOP HP\Documents\Visual Studio 2015\Projects\QLSL\QLXDK\bin\PagedList.Mvc.xml
+C:\Users\LAPTOP HP\Documents\Visual Studio 2015\Projects\QLSL\QLXDK\bin\System.Web.Helpers.xml
+C:\Users\LAPTOP HP\Documents\Visual Studio 2015\Projects\QLSL\QLXDK\bin\System.Web.Mvc.xml
+C:\Users\LAPTOP HP\Documents\Visual Studio 2015\Projects\QLSL\QLXDK\bin\System.Web.Optimization.xml
+C:\Users\LAPTOP HP\Documents\Visual Studio 2015\Projects\QLSL\QLXDK\bin\System.Web.Razor.xml
+C:\Users\LAPTOP HP\Documents\Visual Studio 2015\Projects\QLSL\QLXDK\bin\System.Web.WebPages.xml
+C:\Users\LAPTOP HP\Documents\Visual Studio 2015\Projects\QLSL\QLXDK\bin\System.Web.WebPages.Deployment.xml
+C:\Users\LAPTOP HP\Documents\Visual Studio 2015\Projects\QLSL\QLXDK\bin\System.Web.WebPages.Razor.xml
+C:\Users\LAPTOP HP\Documents\Visual Studio 2015\Projects\QLSL\QLXDK\bin\Antlr3.Runtime.pdb
+C:\Users\LAPTOP HP\Documents\Visual Studio 2015\Projects\QLSL\QLXDK\bin\Newtonsoft.Json.xml
+C:\Users\LAPTOP HP\Documents\Visual Studio 2015\Projects\QLSL\QLXDK\bin\EntityFramework.xml
+C:\Users\LAPTOP HP\Documents\Visual Studio 2015\Projects\QLSL\QLXDK\bin\EntityFramework.SqlServer.xml
+C:\Users\LAPTOP HP\Documents\Visual Studio 2015\Projects\QLSL\QLXDK\bin\Microsoft.AspNet.Identity.Core.xml
+C:\Users\LAPTOP HP\Documents\Visual Studio 2015\Projects\QLSL\QLXDK\bin\Microsoft.AspNet.Identity.Owin.xml
+C:\Users\LAPTOP HP\Documents\Visual Studio 2015\Projects\QLSL\QLXDK\bin\Microsoft.AspNet.Identity.EntityFramework.xml
+C:\Users\LAPTOP HP\Documents\Visual Studio 2015\Projects\QLSL\QLXDK\bin\Microsoft.Owin.xml
+C:\Users\LAPTOP HP\Documents\Visual Studio 2015\Projects\QLSL\QLXDK\bin\Microsoft.Owin.Host.SystemWeb.xml
+C:\Users\LAPTOP HP\Documents\Visual Studio 2015\Projects\QLSL\QLXDK\bin\Microsoft.Owin.Security.xml
+C:\Users\LAPTOP HP\Documents\Visual Studio 2015\Projects\QLSL\QLXDK\bin\Microsoft.Owin.Security.Facebook.xml
+C:\Users\LAPTOP HP\Documents\Visual Studio 2015\Projects\QLSL\QLXDK\bin\Microsoft.Owin.Security.Cookies.xml
+C:\Users\LAPTOP HP\Documents\Visual Studio 2015\Projects\QLSL\QLXDK\bin\Microsoft.Owin.Security.OAuth.xml
+C:\Users\LAPTOP HP\Documents\Visual Studio 2015\Projects\QLSL\QLXDK\bin\Microsoft.Owin.Security.Google.xml
+C:\Users\LAPTOP HP\Documents\Visual Studio 2015\Projects\QLSL\QLXDK\bin\Microsoft.Owin.Security.Twitter.xml
+C:\Users\LAPTOP HP\Documents\Visual Studio 2015\Projects\QLSL\QLXDK\bin\Microsoft.Owin.Security.MicrosoftAccount.xml
+C:\Users\LAPTOP HP\Documents\Visual Studio 2015\Projects\QLSL\QLXDK\bin\ClosedXML.dll
+C:\Users\LAPTOP HP\Documents\Visual Studio 2015\Projects\QLSL\QLXDK\bin\DocumentFormat.OpenXml.dll
+C:\Users\LAPTOP HP\Documents\Visual Studio 2015\Projects\QLSL\QLXDK\bin\ExcelNumberFormat.dll
+C:\Users\LAPTOP HP\Documents\Visual Studio 2015\Projects\QLSL\QLXDK\bin\ClosedXML.pdb
+C:\Users\LAPTOP HP\Documents\Visual Studio 2015\Projects\QLSL\QLXDK\bin\ClosedXML.xml
+C:\Users\LAPTOP HP\Documents\Visual Studio 2015\Projects\QLSL\QLXDK\bin\DocumentFormat.OpenXml.xml
+C:\Users\LAPTOP HP\Documents\Visual Studio 2015\Projects\QLSL\QLXDK\bin\ExcelNumberFormat.xml
+G:\My Drive\D\CODING\CLGN\ePort CLGN\CLGN\QLXDK\bin\roslyn\csc.exe
+G:\My Drive\D\CODING\CLGN\ePort CLGN\CLGN\QLXDK\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+G:\My Drive\D\CODING\CLGN\ePort CLGN\CLGN\QLXDK\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+G:\My Drive\D\CODING\CLGN\ePort CLGN\CLGN\QLXDK\bin\roslyn\Microsoft.CodeAnalysis.dll
+G:\My Drive\D\CODING\CLGN\ePort CLGN\CLGN\QLXDK\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+G:\My Drive\D\CODING\CLGN\ePort CLGN\CLGN\QLXDK\bin\roslyn\Microsoft.CSharp.Core.targets
+G:\My Drive\D\CODING\CLGN\ePort CLGN\CLGN\QLXDK\bin\roslyn\Microsoft.VisualBasic.Core.targets
+G:\My Drive\D\CODING\CLGN\ePort CLGN\CLGN\QLXDK\bin\roslyn\System.Collections.Immutable.dll
+G:\My Drive\D\CODING\CLGN\ePort CLGN\CLGN\QLXDK\bin\roslyn\System.Reflection.Metadata.dll
+G:\My Drive\D\CODING\CLGN\ePort CLGN\CLGN\QLXDK\bin\roslyn\vbc.exe
+G:\My Drive\D\CODING\CLGN\ePort CLGN\CLGN\QLXDK\bin\roslyn\VBCSCompiler.exe
+G:\My Drive\D\CODING\CLGN\ePort CLGN\CLGN\QLXDK\bin\roslyn\VBCSCompiler.exe.config
+G:\My Drive\D\CODING\CLGN\ePort CLGN\CLGN\QLXDK\bin\QLXDK.dll.config
+G:\My Drive\D\CODING\CLGN\ePort CLGN\CLGN\QLXDK\bin\QLXDK.dll
+G:\My Drive\D\CODING\CLGN\ePort CLGN\CLGN\QLXDK\bin\QLXDK.pdb
+G:\My Drive\D\CODING\CLGN\ePort CLGN\CLGN\QLXDK\bin\Antlr3.Runtime.dll
+G:\My Drive\D\CODING\CLGN\ePort CLGN\CLGN\QLXDK\bin\BCrypt.Net-Next.dll
+G:\My Drive\D\CODING\CLGN\ePort CLGN\CLGN\QLXDK\bin\ClosedXML.dll
+G:\My Drive\D\CODING\CLGN\ePort CLGN\CLGN\QLXDK\bin\DocumentFormat.OpenXml.dll
+G:\My Drive\D\CODING\CLGN\ePort CLGN\CLGN\QLXDK\bin\EntityFramework.dll
+G:\My Drive\D\CODING\CLGN\ePort CLGN\CLGN\QLXDK\bin\EntityFramework.SqlServer.dll
+G:\My Drive\D\CODING\CLGN\ePort CLGN\CLGN\QLXDK\bin\ExcelNumberFormat.dll
+G:\My Drive\D\CODING\CLGN\ePort CLGN\CLGN\QLXDK\bin\Microsoft.AI.Agent.Intercept.dll
+G:\My Drive\D\CODING\CLGN\ePort CLGN\CLGN\QLXDK\bin\Microsoft.AI.DependencyCollector.dll
+G:\My Drive\D\CODING\CLGN\ePort CLGN\CLGN\QLXDK\bin\Microsoft.AI.PerfCounterCollector.dll
+G:\My Drive\D\CODING\CLGN\ePort CLGN\CLGN\QLXDK\bin\Microsoft.AI.ServerTelemetryChannel.dll
+G:\My Drive\D\CODING\CLGN\ePort CLGN\CLGN\QLXDK\bin\Microsoft.AI.Web.dll
+G:\My Drive\D\CODING\CLGN\ePort CLGN\CLGN\QLXDK\bin\Microsoft.AI.WindowsServer.dll
+G:\My Drive\D\CODING\CLGN\ePort CLGN\CLGN\QLXDK\bin\Microsoft.ApplicationInsights.dll
+G:\My Drive\D\CODING\CLGN\ePort CLGN\CLGN\QLXDK\bin\Microsoft.AspNet.Identity.Core.dll
+G:\My Drive\D\CODING\CLGN\ePort CLGN\CLGN\QLXDK\bin\Microsoft.AspNet.Identity.EntityFramework.dll
+G:\My Drive\D\CODING\CLGN\ePort CLGN\CLGN\QLXDK\bin\Microsoft.AspNet.Identity.Owin.dll
+G:\My Drive\D\CODING\CLGN\ePort CLGN\CLGN\QLXDK\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+G:\My Drive\D\CODING\CLGN\ePort CLGN\CLGN\QLXDK\bin\Microsoft.Owin.dll
+G:\My Drive\D\CODING\CLGN\ePort CLGN\CLGN\QLXDK\bin\Microsoft.Owin.Host.SystemWeb.dll
+G:\My Drive\D\CODING\CLGN\ePort CLGN\CLGN\QLXDK\bin\Microsoft.Owin.Security.Cookies.dll
+G:\My Drive\D\CODING\CLGN\ePort CLGN\CLGN\QLXDK\bin\Microsoft.Owin.Security.dll
+G:\My Drive\D\CODING\CLGN\ePort CLGN\CLGN\QLXDK\bin\Microsoft.Owin.Security.Facebook.dll
+G:\My Drive\D\CODING\CLGN\ePort CLGN\CLGN\QLXDK\bin\Microsoft.Owin.Security.Google.dll
+G:\My Drive\D\CODING\CLGN\ePort CLGN\CLGN\QLXDK\bin\Microsoft.Owin.Security.MicrosoftAccount.dll
+G:\My Drive\D\CODING\CLGN\ePort CLGN\CLGN\QLXDK\bin\Microsoft.Owin.Security.OAuth.dll
+G:\My Drive\D\CODING\CLGN\ePort CLGN\CLGN\QLXDK\bin\Microsoft.Owin.Security.Twitter.dll
+G:\My Drive\D\CODING\CLGN\ePort CLGN\CLGN\QLXDK\bin\Microsoft.Web.Infrastructure.dll
+G:\My Drive\D\CODING\CLGN\ePort CLGN\CLGN\QLXDK\bin\Newtonsoft.Json.dll
+G:\My Drive\D\CODING\CLGN\ePort CLGN\CLGN\QLXDK\bin\Owin.dll
+G:\My Drive\D\CODING\CLGN\ePort CLGN\CLGN\QLXDK\bin\PagedList.dll
+G:\My Drive\D\CODING\CLGN\ePort CLGN\CLGN\QLXDK\bin\PagedList.Mvc.dll
+G:\My Drive\D\CODING\CLGN\ePort CLGN\CLGN\QLXDK\bin\System.Web.Helpers.dll
+G:\My Drive\D\CODING\CLGN\ePort CLGN\CLGN\QLXDK\bin\System.Web.Mvc.dll
+G:\My Drive\D\CODING\CLGN\ePort CLGN\CLGN\QLXDK\bin\System.Web.Optimization.dll
+G:\My Drive\D\CODING\CLGN\ePort CLGN\CLGN\QLXDK\bin\System.Web.Razor.dll
+G:\My Drive\D\CODING\CLGN\ePort CLGN\CLGN\QLXDK\bin\System.Web.WebPages.Deployment.dll
+G:\My Drive\D\CODING\CLGN\ePort CLGN\CLGN\QLXDK\bin\System.Web.WebPages.dll
+G:\My Drive\D\CODING\CLGN\ePort CLGN\CLGN\QLXDK\bin\System.Web.WebPages.Razor.dll
+G:\My Drive\D\CODING\CLGN\ePort CLGN\CLGN\QLXDK\bin\WebGrease.dll
+G:\My Drive\D\CODING\CLGN\ePort CLGN\CLGN\QLXDK\bin\BCrypt.Net-Next.xml
+G:\My Drive\D\CODING\CLGN\ePort CLGN\CLGN\QLXDK\bin\ClosedXML.pdb
+G:\My Drive\D\CODING\CLGN\ePort CLGN\CLGN\QLXDK\bin\ClosedXML.xml
+G:\My Drive\D\CODING\CLGN\ePort CLGN\CLGN\QLXDK\bin\DocumentFormat.OpenXml.xml
+G:\My Drive\D\CODING\CLGN\ePort CLGN\CLGN\QLXDK\bin\ExcelNumberFormat.xml
+G:\My Drive\D\CODING\CLGN\ePort CLGN\CLGN\QLXDK\bin\Microsoft.AI.DependencyCollector.xml
+G:\My Drive\D\CODING\CLGN\ePort CLGN\CLGN\QLXDK\bin\Microsoft.AI.ServerTelemetryChannel.xml
+G:\My Drive\D\CODING\CLGN\ePort CLGN\CLGN\QLXDK\bin\Microsoft.AI.Web.xml
+G:\My Drive\D\CODING\CLGN\ePort CLGN\CLGN\QLXDK\bin\Microsoft.AI.WindowsServer.xml
+G:\My Drive\D\CODING\CLGN\ePort CLGN\CLGN\QLXDK\bin\Microsoft.ApplicationInsights.xml
+G:\My Drive\D\CODING\CLGN\ePort CLGN\CLGN\QLXDK\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+G:\My Drive\D\CODING\CLGN\ePort CLGN\CLGN\QLXDK\bin\Newtonsoft.Json.xml
+G:\My Drive\D\CODING\CLGN\ePort CLGN\CLGN\QLXDK\bin\PagedList.xml
+G:\My Drive\D\CODING\CLGN\ePort CLGN\CLGN\QLXDK\bin\PagedList.Mvc.xml
+G:\My Drive\D\CODING\CLGN\ePort CLGN\CLGN\QLXDK\bin\System.Web.Helpers.xml
+G:\My Drive\D\CODING\CLGN\ePort CLGN\CLGN\QLXDK\bin\System.Web.Mvc.xml
+G:\My Drive\D\CODING\CLGN\ePort CLGN\CLGN\QLXDK\bin\System.Web.Optimization.xml
+G:\My Drive\D\CODING\CLGN\ePort CLGN\CLGN\QLXDK\bin\System.Web.Razor.xml
+G:\My Drive\D\CODING\CLGN\ePort CLGN\CLGN\QLXDK\bin\System.Web.WebPages.xml
+G:\My Drive\D\CODING\CLGN\ePort CLGN\CLGN\QLXDK\bin\System.Web.WebPages.Deployment.xml
+G:\My Drive\D\CODING\CLGN\ePort CLGN\CLGN\QLXDK\bin\System.Web.WebPages.Razor.xml
+G:\My Drive\D\CODING\CLGN\ePort CLGN\CLGN\QLXDK\bin\Antlr3.Runtime.pdb
+G:\My Drive\D\CODING\CLGN\ePort CLGN\CLGN\QLXDK\bin\EntityFramework.xml
+G:\My Drive\D\CODING\CLGN\ePort CLGN\CLGN\QLXDK\bin\EntityFramework.SqlServer.xml
+G:\My Drive\D\CODING\CLGN\ePort CLGN\CLGN\QLXDK\bin\Microsoft.AspNet.Identity.Core.xml
+G:\My Drive\D\CODING\CLGN\ePort CLGN\CLGN\QLXDK\bin\Microsoft.AspNet.Identity.Owin.xml
+G:\My Drive\D\CODING\CLGN\ePort CLGN\CLGN\QLXDK\bin\Microsoft.AspNet.Identity.EntityFramework.xml
+G:\My Drive\D\CODING\CLGN\ePort CLGN\CLGN\QLXDK\bin\Microsoft.Owin.xml
+G:\My Drive\D\CODING\CLGN\ePort CLGN\CLGN\QLXDK\bin\Microsoft.Owin.Host.SystemWeb.xml
+G:\My Drive\D\CODING\CLGN\ePort CLGN\CLGN\QLXDK\bin\Microsoft.Owin.Security.xml
+G:\My Drive\D\CODING\CLGN\ePort CLGN\CLGN\QLXDK\bin\Microsoft.Owin.Security.Facebook.xml
+G:\My Drive\D\CODING\CLGN\ePort CLGN\CLGN\QLXDK\bin\Microsoft.Owin.Security.Cookies.xml
+G:\My Drive\D\CODING\CLGN\ePort CLGN\CLGN\QLXDK\bin\Microsoft.Owin.Security.OAuth.xml
+G:\My Drive\D\CODING\CLGN\ePort CLGN\CLGN\QLXDK\bin\Microsoft.Owin.Security.Google.xml
+G:\My Drive\D\CODING\CLGN\ePort CLGN\CLGN\QLXDK\bin\Microsoft.Owin.Security.Twitter.xml
+G:\My Drive\D\CODING\CLGN\ePort CLGN\CLGN\QLXDK\bin\Microsoft.Owin.Security.MicrosoftAccount.xml
+G:\My Drive\D\CODING\CLGN\ePort CLGN\CLGN\QLXDK\obj\Debug\QLSL.csproj.CoreCompileInputs.cache
+G:\My Drive\D\CODING\CLGN\ePort CLGN\CLGN\QLXDK\obj\Debug\QLSL.csproj.CopyComplete
+G:\My Drive\D\CODING\CLGN\ePort CLGN\CLGN\QLXDK\obj\Debug\QLXDK.dll
+G:\My Drive\D\CODING\CLGN\ePort CLGN\CLGN\QLXDK\obj\Debug\QLXDK.pdb
+D:\Tempory\ePort CLGN\CLGN\QLXDK\bin\roslyn\csc.exe
+D:\Tempory\ePort CLGN\CLGN\QLXDK\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+D:\Tempory\ePort CLGN\CLGN\QLXDK\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+D:\Tempory\ePort CLGN\CLGN\QLXDK\bin\roslyn\Microsoft.CodeAnalysis.dll
+D:\Tempory\ePort CLGN\CLGN\QLXDK\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+D:\Tempory\ePort CLGN\CLGN\QLXDK\bin\roslyn\Microsoft.CSharp.Core.targets
+D:\Tempory\ePort CLGN\CLGN\QLXDK\bin\roslyn\Microsoft.VisualBasic.Core.targets
+D:\Tempory\ePort CLGN\CLGN\QLXDK\bin\roslyn\System.Collections.Immutable.dll
+D:\Tempory\ePort CLGN\CLGN\QLXDK\bin\roslyn\System.Reflection.Metadata.dll
+D:\Tempory\ePort CLGN\CLGN\QLXDK\bin\roslyn\vbc.exe
+D:\Tempory\ePort CLGN\CLGN\QLXDK\bin\roslyn\VBCSCompiler.exe
+D:\Tempory\ePort CLGN\CLGN\QLXDK\bin\roslyn\VBCSCompiler.exe.config
+D:\Tempory\ePort CLGN\CLGN\QLXDK\bin\QLXDK.dll.config
+D:\Tempory\ePort CLGN\CLGN\QLXDK\bin\QLXDK.dll
+D:\Tempory\ePort CLGN\CLGN\QLXDK\bin\QLXDK.pdb
+D:\Tempory\ePort CLGN\CLGN\QLXDK\bin\Antlr3.Runtime.dll
+D:\Tempory\ePort CLGN\CLGN\QLXDK\bin\BCrypt.Net-Next.dll
+D:\Tempory\ePort CLGN\CLGN\QLXDK\bin\ClosedXML.dll
+D:\Tempory\ePort CLGN\CLGN\QLXDK\bin\DocumentFormat.OpenXml.dll
+D:\Tempory\ePort CLGN\CLGN\QLXDK\bin\EntityFramework.dll
+D:\Tempory\ePort CLGN\CLGN\QLXDK\bin\EntityFramework.SqlServer.dll
+D:\Tempory\ePort CLGN\CLGN\QLXDK\bin\ExcelNumberFormat.dll
+D:\Tempory\ePort CLGN\CLGN\QLXDK\bin\Microsoft.AI.Agent.Intercept.dll
+D:\Tempory\ePort CLGN\CLGN\QLXDK\bin\Microsoft.AI.DependencyCollector.dll
+D:\Tempory\ePort CLGN\CLGN\QLXDK\bin\Microsoft.AI.PerfCounterCollector.dll
+D:\Tempory\ePort CLGN\CLGN\QLXDK\bin\Microsoft.AI.ServerTelemetryChannel.dll
+D:\Tempory\ePort CLGN\CLGN\QLXDK\bin\Microsoft.AI.Web.dll
+D:\Tempory\ePort CLGN\CLGN\QLXDK\bin\Microsoft.AI.WindowsServer.dll
+D:\Tempory\ePort CLGN\CLGN\QLXDK\bin\Microsoft.ApplicationInsights.dll
+D:\Tempory\ePort CLGN\CLGN\QLXDK\bin\Microsoft.AspNet.Identity.Core.dll
+D:\Tempory\ePort CLGN\CLGN\QLXDK\bin\Microsoft.AspNet.Identity.EntityFramework.dll
+D:\Tempory\ePort CLGN\CLGN\QLXDK\bin\Microsoft.AspNet.Identity.Owin.dll
+D:\Tempory\ePort CLGN\CLGN\QLXDK\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+D:\Tempory\ePort CLGN\CLGN\QLXDK\bin\Microsoft.Owin.dll
+D:\Tempory\ePort CLGN\CLGN\QLXDK\bin\Microsoft.Owin.Host.SystemWeb.dll
+D:\Tempory\ePort CLGN\CLGN\QLXDK\bin\Microsoft.Owin.Security.Cookies.dll
+D:\Tempory\ePort CLGN\CLGN\QLXDK\bin\Microsoft.Owin.Security.dll
+D:\Tempory\ePort CLGN\CLGN\QLXDK\bin\Microsoft.Owin.Security.Facebook.dll
+D:\Tempory\ePort CLGN\CLGN\QLXDK\bin\Microsoft.Owin.Security.Google.dll
+D:\Tempory\ePort CLGN\CLGN\QLXDK\bin\Microsoft.Owin.Security.MicrosoftAccount.dll
+D:\Tempory\ePort CLGN\CLGN\QLXDK\bin\Microsoft.Owin.Security.OAuth.dll
+D:\Tempory\ePort CLGN\CLGN\QLXDK\bin\Microsoft.Owin.Security.Twitter.dll
+D:\Tempory\ePort CLGN\CLGN\QLXDK\bin\Microsoft.Web.Infrastructure.dll
+D:\Tempory\ePort CLGN\CLGN\QLXDK\bin\Newtonsoft.Json.dll
+D:\Tempory\ePort CLGN\CLGN\QLXDK\bin\Owin.dll
+D:\Tempory\ePort CLGN\CLGN\QLXDK\bin\PagedList.dll
+D:\Tempory\ePort CLGN\CLGN\QLXDK\bin\PagedList.Mvc.dll
+D:\Tempory\ePort CLGN\CLGN\QLXDK\bin\System.Web.Helpers.dll
+D:\Tempory\ePort CLGN\CLGN\QLXDK\bin\System.Web.Mvc.dll
+D:\Tempory\ePort CLGN\CLGN\QLXDK\bin\System.Web.Optimization.dll
+D:\Tempory\ePort CLGN\CLGN\QLXDK\bin\System.Web.Razor.dll
+D:\Tempory\ePort CLGN\CLGN\QLXDK\bin\System.Web.WebPages.Deployment.dll
+D:\Tempory\ePort CLGN\CLGN\QLXDK\bin\System.Web.WebPages.dll
+D:\Tempory\ePort CLGN\CLGN\QLXDK\bin\System.Web.WebPages.Razor.dll
+D:\Tempory\ePort CLGN\CLGN\QLXDK\bin\WebGrease.dll
+D:\Tempory\ePort CLGN\CLGN\QLXDK\bin\BCrypt.Net-Next.xml
+D:\Tempory\ePort CLGN\CLGN\QLXDK\bin\ClosedXML.pdb
+D:\Tempory\ePort CLGN\CLGN\QLXDK\bin\ClosedXML.xml
+D:\Tempory\ePort CLGN\CLGN\QLXDK\bin\DocumentFormat.OpenXml.xml
+D:\Tempory\ePort CLGN\CLGN\QLXDK\bin\ExcelNumberFormat.xml
+D:\Tempory\ePort CLGN\CLGN\QLXDK\bin\Microsoft.AI.DependencyCollector.xml
+D:\Tempory\ePort CLGN\CLGN\QLXDK\bin\Microsoft.AI.ServerTelemetryChannel.xml
+D:\Tempory\ePort CLGN\CLGN\QLXDK\bin\Microsoft.AI.Web.xml
+D:\Tempory\ePort CLGN\CLGN\QLXDK\bin\Microsoft.AI.WindowsServer.xml
+D:\Tempory\ePort CLGN\CLGN\QLXDK\bin\Microsoft.ApplicationInsights.xml
+D:\Tempory\ePort CLGN\CLGN\QLXDK\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+D:\Tempory\ePort CLGN\CLGN\QLXDK\bin\Newtonsoft.Json.xml
+D:\Tempory\ePort CLGN\CLGN\QLXDK\bin\PagedList.xml
+D:\Tempory\ePort CLGN\CLGN\QLXDK\bin\PagedList.Mvc.xml
+D:\Tempory\ePort CLGN\CLGN\QLXDK\bin\System.Web.Helpers.xml
+D:\Tempory\ePort CLGN\CLGN\QLXDK\bin\System.Web.Mvc.xml
+D:\Tempory\ePort CLGN\CLGN\QLXDK\bin\System.Web.Optimization.xml
+D:\Tempory\ePort CLGN\CLGN\QLXDK\bin\System.Web.Razor.xml
+D:\Tempory\ePort CLGN\CLGN\QLXDK\bin\System.Web.WebPages.xml
+D:\Tempory\ePort CLGN\CLGN\QLXDK\bin\System.Web.WebPages.Deployment.xml
+D:\Tempory\ePort CLGN\CLGN\QLXDK\bin\System.Web.WebPages.Razor.xml
+D:\Tempory\ePort CLGN\CLGN\QLXDK\bin\Antlr3.Runtime.pdb
+D:\Tempory\ePort CLGN\CLGN\QLXDK\bin\EntityFramework.xml
+D:\Tempory\ePort CLGN\CLGN\QLXDK\bin\EntityFramework.SqlServer.xml
+D:\Tempory\ePort CLGN\CLGN\QLXDK\bin\Microsoft.AspNet.Identity.Core.xml
+D:\Tempory\ePort CLGN\CLGN\QLXDK\bin\Microsoft.AspNet.Identity.Owin.xml
+D:\Tempory\ePort CLGN\CLGN\QLXDK\bin\Microsoft.AspNet.Identity.EntityFramework.xml
+D:\Tempory\ePort CLGN\CLGN\QLXDK\bin\Microsoft.Owin.xml
+D:\Tempory\ePort CLGN\CLGN\QLXDK\bin\Microsoft.Owin.Host.SystemWeb.xml
+D:\Tempory\ePort CLGN\CLGN\QLXDK\bin\Microsoft.Owin.Security.xml
+D:\Tempory\ePort CLGN\CLGN\QLXDK\bin\Microsoft.Owin.Security.Facebook.xml
+D:\Tempory\ePort CLGN\CLGN\QLXDK\bin\Microsoft.Owin.Security.Cookies.xml
+D:\Tempory\ePort CLGN\CLGN\QLXDK\bin\Microsoft.Owin.Security.OAuth.xml
+D:\Tempory\ePort CLGN\CLGN\QLXDK\bin\Microsoft.Owin.Security.Google.xml
+D:\Tempory\ePort CLGN\CLGN\QLXDK\bin\Microsoft.Owin.Security.Twitter.xml
+D:\Tempory\ePort CLGN\CLGN\QLXDK\bin\Microsoft.Owin.Security.MicrosoftAccount.xml
+D:\Tempory\ePort CLGN\CLGN\QLXDK\obj\Debug\QLSL.csprojAssemblyReference.cache
+D:\Tempory\ePort CLGN\CLGN\QLXDK\obj\Debug\QLSL.csproj.CoreCompileInputs.cache
+D:\Tempory\ePort CLGN\CLGN\QLXDK\obj\Debug\QLSL.csproj.CopyComplete
+D:\Tempory\ePort CLGN\CLGN\QLXDK\obj\Debug\QLXDK.dll
+D:\Tempory\ePort CLGN\CLGN\QLXDK\obj\Debug\QLXDK.pdb
+D:\Tempory\ePort CLGN\CLGN 9.0\QLXDK\bin\roslyn\csc.exe
+D:\Tempory\ePort CLGN\CLGN 9.0\QLXDK\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+D:\Tempory\ePort CLGN\CLGN 9.0\QLXDK\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+D:\Tempory\ePort CLGN\CLGN 9.0\QLXDK\bin\roslyn\Microsoft.CodeAnalysis.dll
+D:\Tempory\ePort CLGN\CLGN 9.0\QLXDK\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+D:\Tempory\ePort CLGN\CLGN 9.0\QLXDK\bin\roslyn\Microsoft.CSharp.Core.targets
+D:\Tempory\ePort CLGN\CLGN 9.0\QLXDK\bin\roslyn\Microsoft.VisualBasic.Core.targets
+D:\Tempory\ePort CLGN\CLGN 9.0\QLXDK\bin\roslyn\System.Collections.Immutable.dll
+D:\Tempory\ePort CLGN\CLGN 9.0\QLXDK\bin\roslyn\System.Reflection.Metadata.dll
+D:\Tempory\ePort CLGN\CLGN 9.0\QLXDK\bin\roslyn\vbc.exe
+D:\Tempory\ePort CLGN\CLGN 9.0\QLXDK\bin\roslyn\VBCSCompiler.exe
+D:\Tempory\ePort CLGN\CLGN 9.0\QLXDK\bin\roslyn\VBCSCompiler.exe.config
+D:\Tempory\ePort CLGN\CLGN 9.0\QLXDK\bin\QLXDK.dll.config
+D:\Tempory\ePort CLGN\CLGN 9.0\QLXDK\bin\QLXDK.dll
+D:\Tempory\ePort CLGN\CLGN 9.0\QLXDK\bin\QLXDK.pdb
+D:\Tempory\ePort CLGN\CLGN 9.0\QLXDK\bin\Antlr3.Runtime.dll
+D:\Tempory\ePort CLGN\CLGN 9.0\QLXDK\bin\BCrypt.Net-Next.dll
+D:\Tempory\ePort CLGN\CLGN 9.0\QLXDK\bin\ClosedXML.dll
+D:\Tempory\ePort CLGN\CLGN 9.0\QLXDK\bin\DocumentFormat.OpenXml.dll
+D:\Tempory\ePort CLGN\CLGN 9.0\QLXDK\bin\EntityFramework.dll
+D:\Tempory\ePort CLGN\CLGN 9.0\QLXDK\bin\EntityFramework.SqlServer.dll
+D:\Tempory\ePort CLGN\CLGN 9.0\QLXDK\bin\ExcelNumberFormat.dll
+D:\Tempory\ePort CLGN\CLGN 9.0\QLXDK\bin\Microsoft.AI.Agent.Intercept.dll
+D:\Tempory\ePort CLGN\CLGN 9.0\QLXDK\bin\Microsoft.AI.DependencyCollector.dll
+D:\Tempory\ePort CLGN\CLGN 9.0\QLXDK\bin\Microsoft.AI.PerfCounterCollector.dll
+D:\Tempory\ePort CLGN\CLGN 9.0\QLXDK\bin\Microsoft.AI.ServerTelemetryChannel.dll
+D:\Tempory\ePort CLGN\CLGN 9.0\QLXDK\bin\Microsoft.AI.Web.dll
+D:\Tempory\ePort CLGN\CLGN 9.0\QLXDK\bin\Microsoft.AI.WindowsServer.dll
+D:\Tempory\ePort CLGN\CLGN 9.0\QLXDK\bin\Microsoft.ApplicationInsights.dll
+D:\Tempory\ePort CLGN\CLGN 9.0\QLXDK\bin\Microsoft.AspNet.Identity.Core.dll
+D:\Tempory\ePort CLGN\CLGN 9.0\QLXDK\bin\Microsoft.AspNet.Identity.EntityFramework.dll
+D:\Tempory\ePort CLGN\CLGN 9.0\QLXDK\bin\Microsoft.AspNet.Identity.Owin.dll
+D:\Tempory\ePort CLGN\CLGN 9.0\QLXDK\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+D:\Tempory\ePort CLGN\CLGN 9.0\QLXDK\bin\Microsoft.Owin.dll
+D:\Tempory\ePort CLGN\CLGN 9.0\QLXDK\bin\Microsoft.Owin.Host.SystemWeb.dll
+D:\Tempory\ePort CLGN\CLGN 9.0\QLXDK\bin\Microsoft.Owin.Security.Cookies.dll
+D:\Tempory\ePort CLGN\CLGN 9.0\QLXDK\bin\Microsoft.Owin.Security.dll
+D:\Tempory\ePort CLGN\CLGN 9.0\QLXDK\bin\Microsoft.Owin.Security.Facebook.dll
+D:\Tempory\ePort CLGN\CLGN 9.0\QLXDK\bin\Microsoft.Owin.Security.Google.dll
+D:\Tempory\ePort CLGN\CLGN 9.0\QLXDK\bin\Microsoft.Owin.Security.MicrosoftAccount.dll
+D:\Tempory\ePort CLGN\CLGN 9.0\QLXDK\bin\Microsoft.Owin.Security.OAuth.dll
+D:\Tempory\ePort CLGN\CLGN 9.0\QLXDK\bin\Microsoft.Owin.Security.Twitter.dll
+D:\Tempory\ePort CLGN\CLGN 9.0\QLXDK\bin\Microsoft.Web.Infrastructure.dll
+D:\Tempory\ePort CLGN\CLGN 9.0\QLXDK\bin\Newtonsoft.Json.dll
+D:\Tempory\ePort CLGN\CLGN 9.0\QLXDK\bin\Owin.dll
+D:\Tempory\ePort CLGN\CLGN 9.0\QLXDK\bin\PagedList.dll
+D:\Tempory\ePort CLGN\CLGN 9.0\QLXDK\bin\PagedList.Mvc.dll
+D:\Tempory\ePort CLGN\CLGN 9.0\QLXDK\bin\System.Web.Helpers.dll
+D:\Tempory\ePort CLGN\CLGN 9.0\QLXDK\bin\System.Web.Mvc.dll
+D:\Tempory\ePort CLGN\CLGN 9.0\QLXDK\bin\System.Web.Optimization.dll
+D:\Tempory\ePort CLGN\CLGN 9.0\QLXDK\bin\System.Web.Razor.dll
+D:\Tempory\ePort CLGN\CLGN 9.0\QLXDK\bin\System.Web.WebPages.Deployment.dll
+D:\Tempory\ePort CLGN\CLGN 9.0\QLXDK\bin\System.Web.WebPages.dll
+D:\Tempory\ePort CLGN\CLGN 9.0\QLXDK\bin\System.Web.WebPages.Razor.dll
+D:\Tempory\ePort CLGN\CLGN 9.0\QLXDK\bin\WebGrease.dll
+D:\Tempory\ePort CLGN\CLGN 9.0\QLXDK\bin\BCrypt.Net-Next.xml
+D:\Tempory\ePort CLGN\CLGN 9.0\QLXDK\bin\ClosedXML.pdb
+D:\Tempory\ePort CLGN\CLGN 9.0\QLXDK\bin\ClosedXML.xml
+D:\Tempory\ePort CLGN\CLGN 9.0\QLXDK\bin\DocumentFormat.OpenXml.xml
+D:\Tempory\ePort CLGN\CLGN 9.0\QLXDK\bin\ExcelNumberFormat.xml
+D:\Tempory\ePort CLGN\CLGN 9.0\QLXDK\bin\Microsoft.AI.DependencyCollector.xml
+D:\Tempory\ePort CLGN\CLGN 9.0\QLXDK\bin\Microsoft.AI.ServerTelemetryChannel.xml
+D:\Tempory\ePort CLGN\CLGN 9.0\QLXDK\bin\Microsoft.AI.Web.xml
+D:\Tempory\ePort CLGN\CLGN 9.0\QLXDK\bin\Microsoft.AI.WindowsServer.xml
+D:\Tempory\ePort CLGN\CLGN 9.0\QLXDK\bin\Microsoft.ApplicationInsights.xml
+D:\Tempory\ePort CLGN\CLGN 9.0\QLXDK\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+D:\Tempory\ePort CLGN\CLGN 9.0\QLXDK\bin\Newtonsoft.Json.xml
+D:\Tempory\ePort CLGN\CLGN 9.0\QLXDK\bin\PagedList.xml
+D:\Tempory\ePort CLGN\CLGN 9.0\QLXDK\bin\PagedList.Mvc.xml
+D:\Tempory\ePort CLGN\CLGN 9.0\QLXDK\bin\System.Web.Helpers.xml
+D:\Tempory\ePort CLGN\CLGN 9.0\QLXDK\bin\System.Web.Mvc.xml
+D:\Tempory\ePort CLGN\CLGN 9.0\QLXDK\bin\System.Web.Optimization.xml
+D:\Tempory\ePort CLGN\CLGN 9.0\QLXDK\bin\System.Web.Razor.xml
+D:\Tempory\ePort CLGN\CLGN 9.0\QLXDK\bin\System.Web.WebPages.xml
+D:\Tempory\ePort CLGN\CLGN 9.0\QLXDK\bin\System.Web.WebPages.Deployment.xml
+D:\Tempory\ePort CLGN\CLGN 9.0\QLXDK\bin\System.Web.WebPages.Razor.xml
+D:\Tempory\ePort CLGN\CLGN 9.0\QLXDK\bin\Antlr3.Runtime.pdb
+D:\Tempory\ePort CLGN\CLGN 9.0\QLXDK\bin\EntityFramework.xml
+D:\Tempory\ePort CLGN\CLGN 9.0\QLXDK\bin\EntityFramework.SqlServer.xml
+D:\Tempory\ePort CLGN\CLGN 9.0\QLXDK\bin\Microsoft.AspNet.Identity.Core.xml
+D:\Tempory\ePort CLGN\CLGN 9.0\QLXDK\bin\Microsoft.AspNet.Identity.Owin.xml
+D:\Tempory\ePort CLGN\CLGN 9.0\QLXDK\bin\Microsoft.AspNet.Identity.EntityFramework.xml
+D:\Tempory\ePort CLGN\CLGN 9.0\QLXDK\bin\Microsoft.Owin.xml
+D:\Tempory\ePort CLGN\CLGN 9.0\QLXDK\bin\Microsoft.Owin.Host.SystemWeb.xml
+D:\Tempory\ePort CLGN\CLGN 9.0\QLXDK\bin\Microsoft.Owin.Security.xml
+D:\Tempory\ePort CLGN\CLGN 9.0\QLXDK\bin\Microsoft.Owin.Security.Facebook.xml
+D:\Tempory\ePort CLGN\CLGN 9.0\QLXDK\bin\Microsoft.Owin.Security.Cookies.xml
+D:\Tempory\ePort CLGN\CLGN 9.0\QLXDK\bin\Microsoft.Owin.Security.OAuth.xml
+D:\Tempory\ePort CLGN\CLGN 9.0\QLXDK\bin\Microsoft.Owin.Security.Google.xml
+D:\Tempory\ePort CLGN\CLGN 9.0\QLXDK\bin\Microsoft.Owin.Security.Twitter.xml
+D:\Tempory\ePort CLGN\CLGN 9.0\QLXDK\bin\Microsoft.Owin.Security.MicrosoftAccount.xml
+D:\Tempory\ePort CLGN\CLGN 9.0\QLXDK\obj\Debug\QLSL.csprojAssemblyReference.cache
+D:\Tempory\ePort CLGN\CLGN 9.0\QLXDK\obj\Debug\QLSL.csproj.CoreCompileInputs.cache
+D:\Tempory\ePort CLGN\CLGN 9.0\QLXDK\obj\Debug\QLSL.csproj.CopyComplete
+D:\Tempory\ePort CLGN\CLGN 9.0\QLXDK\obj\Debug\QLXDK.dll
+D:\Tempory\ePort CLGN\CLGN 9.0\QLXDK\obj\Debug\QLXDK.pdb
+D:\Tempory\ePort CLGN\CLGN 9.1\QLXDK\bin\roslyn\csc.exe
+D:\Tempory\ePort CLGN\CLGN 9.1\QLXDK\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+D:\Tempory\ePort CLGN\CLGN 9.1\QLXDK\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+D:\Tempory\ePort CLGN\CLGN 9.1\QLXDK\bin\roslyn\Microsoft.CodeAnalysis.dll
+D:\Tempory\ePort CLGN\CLGN 9.1\QLXDK\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+D:\Tempory\ePort CLGN\CLGN 9.1\QLXDK\bin\roslyn\Microsoft.CSharp.Core.targets
+D:\Tempory\ePort CLGN\CLGN 9.1\QLXDK\bin\roslyn\Microsoft.VisualBasic.Core.targets
+D:\Tempory\ePort CLGN\CLGN 9.1\QLXDK\bin\roslyn\System.Collections.Immutable.dll
+D:\Tempory\ePort CLGN\CLGN 9.1\QLXDK\bin\roslyn\System.Reflection.Metadata.dll
+D:\Tempory\ePort CLGN\CLGN 9.1\QLXDK\bin\roslyn\vbc.exe
+D:\Tempory\ePort CLGN\CLGN 9.1\QLXDK\bin\roslyn\VBCSCompiler.exe
+D:\Tempory\ePort CLGN\CLGN 9.1\QLXDK\bin\roslyn\VBCSCompiler.exe.config
+D:\Tempory\ePort CLGN\CLGN 9.1\QLXDK\bin\QLXDK.dll.config
+D:\Tempory\ePort CLGN\CLGN 9.1\QLXDK\bin\QLXDK.dll
+D:\Tempory\ePort CLGN\CLGN 9.1\QLXDK\bin\QLXDK.pdb
+D:\Tempory\ePort CLGN\CLGN 9.1\QLXDK\bin\Antlr3.Runtime.dll
+D:\Tempory\ePort CLGN\CLGN 9.1\QLXDK\bin\BCrypt.Net-Next.dll
+D:\Tempory\ePort CLGN\CLGN 9.1\QLXDK\bin\ClosedXML.dll
+D:\Tempory\ePort CLGN\CLGN 9.1\QLXDK\bin\DocumentFormat.OpenXml.dll
+D:\Tempory\ePort CLGN\CLGN 9.1\QLXDK\bin\EntityFramework.dll
+D:\Tempory\ePort CLGN\CLGN 9.1\QLXDK\bin\EntityFramework.SqlServer.dll
+D:\Tempory\ePort CLGN\CLGN 9.1\QLXDK\bin\ExcelNumberFormat.dll
+D:\Tempory\ePort CLGN\CLGN 9.1\QLXDK\bin\Microsoft.AI.Agent.Intercept.dll
+D:\Tempory\ePort CLGN\CLGN 9.1\QLXDK\bin\Microsoft.AI.DependencyCollector.dll
+D:\Tempory\ePort CLGN\CLGN 9.1\QLXDK\bin\Microsoft.AI.PerfCounterCollector.dll
+D:\Tempory\ePort CLGN\CLGN 9.1\QLXDK\bin\Microsoft.AI.ServerTelemetryChannel.dll
+D:\Tempory\ePort CLGN\CLGN 9.1\QLXDK\bin\Microsoft.AI.Web.dll
+D:\Tempory\ePort CLGN\CLGN 9.1\QLXDK\bin\Microsoft.AI.WindowsServer.dll
+D:\Tempory\ePort CLGN\CLGN 9.1\QLXDK\bin\Microsoft.ApplicationInsights.dll
+D:\Tempory\ePort CLGN\CLGN 9.1\QLXDK\bin\Microsoft.AspNet.Identity.Core.dll
+D:\Tempory\ePort CLGN\CLGN 9.1\QLXDK\bin\Microsoft.AspNet.Identity.EntityFramework.dll
+D:\Tempory\ePort CLGN\CLGN 9.1\QLXDK\bin\Microsoft.AspNet.Identity.Owin.dll
+D:\Tempory\ePort CLGN\CLGN 9.1\QLXDK\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+D:\Tempory\ePort CLGN\CLGN 9.1\QLXDK\bin\Microsoft.Owin.dll
+D:\Tempory\ePort CLGN\CLGN 9.1\QLXDK\bin\Microsoft.Owin.Host.SystemWeb.dll
+D:\Tempory\ePort CLGN\CLGN 9.1\QLXDK\bin\Microsoft.Owin.Security.Cookies.dll
+D:\Tempory\ePort CLGN\CLGN 9.1\QLXDK\bin\Microsoft.Owin.Security.dll
+D:\Tempory\ePort CLGN\CLGN 9.1\QLXDK\bin\Microsoft.Owin.Security.Facebook.dll
+D:\Tempory\ePort CLGN\CLGN 9.1\QLXDK\bin\Microsoft.Owin.Security.Google.dll
+D:\Tempory\ePort CLGN\CLGN 9.1\QLXDK\bin\Microsoft.Owin.Security.MicrosoftAccount.dll
+D:\Tempory\ePort CLGN\CLGN 9.1\QLXDK\bin\Microsoft.Owin.Security.OAuth.dll
+D:\Tempory\ePort CLGN\CLGN 9.1\QLXDK\bin\Microsoft.Owin.Security.Twitter.dll
+D:\Tempory\ePort CLGN\CLGN 9.1\QLXDK\bin\Microsoft.Web.Infrastructure.dll
+D:\Tempory\ePort CLGN\CLGN 9.1\QLXDK\bin\Newtonsoft.Json.dll
+D:\Tempory\ePort CLGN\CLGN 9.1\QLXDK\bin\Owin.dll
+D:\Tempory\ePort CLGN\CLGN 9.1\QLXDK\bin\PagedList.dll
+D:\Tempory\ePort CLGN\CLGN 9.1\QLXDK\bin\PagedList.Mvc.dll
+D:\Tempory\ePort CLGN\CLGN 9.1\QLXDK\bin\System.Web.Helpers.dll
+D:\Tempory\ePort CLGN\CLGN 9.1\QLXDK\bin\System.Web.Mvc.dll
+D:\Tempory\ePort CLGN\CLGN 9.1\QLXDK\bin\System.Web.Optimization.dll
+D:\Tempory\ePort CLGN\CLGN 9.1\QLXDK\bin\System.Web.Razor.dll
+D:\Tempory\ePort CLGN\CLGN 9.1\QLXDK\bin\System.Web.WebPages.Deployment.dll
+D:\Tempory\ePort CLGN\CLGN 9.1\QLXDK\bin\System.Web.WebPages.dll
+D:\Tempory\ePort CLGN\CLGN 9.1\QLXDK\bin\System.Web.WebPages.Razor.dll
+D:\Tempory\ePort CLGN\CLGN 9.1\QLXDK\bin\WebGrease.dll
+D:\Tempory\ePort CLGN\CLGN 9.1\QLXDK\bin\BCrypt.Net-Next.xml
+D:\Tempory\ePort CLGN\CLGN 9.1\QLXDK\bin\ClosedXML.pdb
+D:\Tempory\ePort CLGN\CLGN 9.1\QLXDK\bin\ClosedXML.xml
+D:\Tempory\ePort CLGN\CLGN 9.1\QLXDK\bin\DocumentFormat.OpenXml.xml
+D:\Tempory\ePort CLGN\CLGN 9.1\QLXDK\bin\ExcelNumberFormat.xml
+D:\Tempory\ePort CLGN\CLGN 9.1\QLXDK\bin\Microsoft.AI.DependencyCollector.xml
+D:\Tempory\ePort CLGN\CLGN 9.1\QLXDK\bin\Microsoft.AI.ServerTelemetryChannel.xml
+D:\Tempory\ePort CLGN\CLGN 9.1\QLXDK\bin\Microsoft.AI.Web.xml
+D:\Tempory\ePort CLGN\CLGN 9.1\QLXDK\bin\Microsoft.AI.WindowsServer.xml
+D:\Tempory\ePort CLGN\CLGN 9.1\QLXDK\bin\Microsoft.ApplicationInsights.xml
+D:\Tempory\ePort CLGN\CLGN 9.1\QLXDK\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+D:\Tempory\ePort CLGN\CLGN 9.1\QLXDK\bin\Newtonsoft.Json.xml
+D:\Tempory\ePort CLGN\CLGN 9.1\QLXDK\bin\PagedList.xml
+D:\Tempory\ePort CLGN\CLGN 9.1\QLXDK\bin\PagedList.Mvc.xml
+D:\Tempory\ePort CLGN\CLGN 9.1\QLXDK\bin\System.Web.Helpers.xml
+D:\Tempory\ePort CLGN\CLGN 9.1\QLXDK\bin\System.Web.Mvc.xml
+D:\Tempory\ePort CLGN\CLGN 9.1\QLXDK\bin\System.Web.Optimization.xml
+D:\Tempory\ePort CLGN\CLGN 9.1\QLXDK\bin\System.Web.Razor.xml
+D:\Tempory\ePort CLGN\CLGN 9.1\QLXDK\bin\System.Web.WebPages.xml
+D:\Tempory\ePort CLGN\CLGN 9.1\QLXDK\bin\System.Web.WebPages.Deployment.xml
+D:\Tempory\ePort CLGN\CLGN 9.1\QLXDK\bin\System.Web.WebPages.Razor.xml
+D:\Tempory\ePort CLGN\CLGN 9.1\QLXDK\bin\Antlr3.Runtime.pdb
+D:\Tempory\ePort CLGN\CLGN 9.1\QLXDK\bin\EntityFramework.xml
+D:\Tempory\ePort CLGN\CLGN 9.1\QLXDK\bin\EntityFramework.SqlServer.xml
+D:\Tempory\ePort CLGN\CLGN 9.1\QLXDK\bin\Microsoft.AspNet.Identity.Core.xml
+D:\Tempory\ePort CLGN\CLGN 9.1\QLXDK\bin\Microsoft.AspNet.Identity.Owin.xml
+D:\Tempory\ePort CLGN\CLGN 9.1\QLXDK\bin\Microsoft.AspNet.Identity.EntityFramework.xml
+D:\Tempory\ePort CLGN\CLGN 9.1\QLXDK\bin\Microsoft.Owin.xml
+D:\Tempory\ePort CLGN\CLGN 9.1\QLXDK\bin\Microsoft.Owin.Host.SystemWeb.xml
+D:\Tempory\ePort CLGN\CLGN 9.1\QLXDK\bin\Microsoft.Owin.Security.xml
+D:\Tempory\ePort CLGN\CLGN 9.1\QLXDK\bin\Microsoft.Owin.Security.Facebook.xml
+D:\Tempory\ePort CLGN\CLGN 9.1\QLXDK\bin\Microsoft.Owin.Security.Cookies.xml
+D:\Tempory\ePort CLGN\CLGN 9.1\QLXDK\bin\Microsoft.Owin.Security.OAuth.xml
+D:\Tempory\ePort CLGN\CLGN 9.1\QLXDK\bin\Microsoft.Owin.Security.Google.xml
+D:\Tempory\ePort CLGN\CLGN 9.1\QLXDK\bin\Microsoft.Owin.Security.Twitter.xml
+D:\Tempory\ePort CLGN\CLGN 9.1\QLXDK\bin\Microsoft.Owin.Security.MicrosoftAccount.xml
+D:\Tempory\ePort CLGN\CLGN 9.1\QLXDK\obj\Debug\QLSL.csproj.CoreCompileInputs.cache
+D:\Tempory\ePort CLGN\CLGN 9.1\QLXDK\obj\Debug\QLSL.csproj.CopyComplete
+D:\Tempory\ePort CLGN\CLGN 9.1\QLXDK\obj\Debug\QLXDK.dll
+D:\Tempory\ePort CLGN\CLGN 9.1\QLXDK\obj\Debug\QLXDK.pdb
+D:\Tempory\ePort CLGN\CLGN 9.1\QLXDK\obj\Debug\QLSL.csprojAssemblyReference.cache
+D:\Tempory\ePort CLGN\CLGN 9.2\QLXDK\bin\roslyn\csc.exe
+D:\Tempory\ePort CLGN\CLGN 9.2\QLXDK\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+D:\Tempory\ePort CLGN\CLGN 9.2\QLXDK\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+D:\Tempory\ePort CLGN\CLGN 9.2\QLXDK\bin\roslyn\Microsoft.CodeAnalysis.dll
+D:\Tempory\ePort CLGN\CLGN 9.2\QLXDK\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+D:\Tempory\ePort CLGN\CLGN 9.2\QLXDK\bin\roslyn\Microsoft.CSharp.Core.targets
+D:\Tempory\ePort CLGN\CLGN 9.2\QLXDK\bin\roslyn\Microsoft.VisualBasic.Core.targets
+D:\Tempory\ePort CLGN\CLGN 9.2\QLXDK\bin\roslyn\System.Collections.Immutable.dll
+D:\Tempory\ePort CLGN\CLGN 9.2\QLXDK\bin\roslyn\System.Reflection.Metadata.dll
+D:\Tempory\ePort CLGN\CLGN 9.2\QLXDK\bin\roslyn\vbc.exe
+D:\Tempory\ePort CLGN\CLGN 9.2\QLXDK\bin\roslyn\VBCSCompiler.exe
+D:\Tempory\ePort CLGN\CLGN 9.2\QLXDK\bin\roslyn\VBCSCompiler.exe.config
+D:\Tempory\ePort CLGN\CLGN 9.2\QLXDK\bin\QLXDK.dll.config
+D:\Tempory\ePort CLGN\CLGN 9.2\QLXDK\bin\QLXDK.dll
+D:\Tempory\ePort CLGN\CLGN 9.2\QLXDK\bin\QLXDK.pdb
+D:\Tempory\ePort CLGN\CLGN 9.2\QLXDK\bin\Antlr3.Runtime.dll
+D:\Tempory\ePort CLGN\CLGN 9.2\QLXDK\bin\BCrypt.Net-Next.dll
+D:\Tempory\ePort CLGN\CLGN 9.2\QLXDK\bin\ClosedXML.dll
+D:\Tempory\ePort CLGN\CLGN 9.2\QLXDK\bin\DocumentFormat.OpenXml.dll
+D:\Tempory\ePort CLGN\CLGN 9.2\QLXDK\bin\EntityFramework.dll
+D:\Tempory\ePort CLGN\CLGN 9.2\QLXDK\bin\EntityFramework.SqlServer.dll
+D:\Tempory\ePort CLGN\CLGN 9.2\QLXDK\bin\ExcelNumberFormat.dll
+D:\Tempory\ePort CLGN\CLGN 9.2\QLXDK\bin\Microsoft.AI.Agent.Intercept.dll
+D:\Tempory\ePort CLGN\CLGN 9.2\QLXDK\bin\Microsoft.AI.DependencyCollector.dll
+D:\Tempory\ePort CLGN\CLGN 9.2\QLXDK\bin\Microsoft.AI.PerfCounterCollector.dll
+D:\Tempory\ePort CLGN\CLGN 9.2\QLXDK\bin\Microsoft.AI.ServerTelemetryChannel.dll
+D:\Tempory\ePort CLGN\CLGN 9.2\QLXDK\bin\Microsoft.AI.Web.dll
+D:\Tempory\ePort CLGN\CLGN 9.2\QLXDK\bin\Microsoft.AI.WindowsServer.dll
+D:\Tempory\ePort CLGN\CLGN 9.2\QLXDK\bin\Microsoft.ApplicationInsights.dll
+D:\Tempory\ePort CLGN\CLGN 9.2\QLXDK\bin\Microsoft.AspNet.Identity.Core.dll
+D:\Tempory\ePort CLGN\CLGN 9.2\QLXDK\bin\Microsoft.AspNet.Identity.EntityFramework.dll
+D:\Tempory\ePort CLGN\CLGN 9.2\QLXDK\bin\Microsoft.AspNet.Identity.Owin.dll
+D:\Tempory\ePort CLGN\CLGN 9.2\QLXDK\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+D:\Tempory\ePort CLGN\CLGN 9.2\QLXDK\bin\Microsoft.Owin.dll
+D:\Tempory\ePort CLGN\CLGN 9.2\QLXDK\bin\Microsoft.Owin.Host.SystemWeb.dll
+D:\Tempory\ePort CLGN\CLGN 9.2\QLXDK\bin\Microsoft.Owin.Security.Cookies.dll
+D:\Tempory\ePort CLGN\CLGN 9.2\QLXDK\bin\Microsoft.Owin.Security.dll
+D:\Tempory\ePort CLGN\CLGN 9.2\QLXDK\bin\Microsoft.Owin.Security.Facebook.dll
+D:\Tempory\ePort CLGN\CLGN 9.2\QLXDK\bin\Microsoft.Owin.Security.Google.dll
+D:\Tempory\ePort CLGN\CLGN 9.2\QLXDK\bin\Microsoft.Owin.Security.MicrosoftAccount.dll
+D:\Tempory\ePort CLGN\CLGN 9.2\QLXDK\bin\Microsoft.Owin.Security.OAuth.dll
+D:\Tempory\ePort CLGN\CLGN 9.2\QLXDK\bin\Microsoft.Owin.Security.Twitter.dll
+D:\Tempory\ePort CLGN\CLGN 9.2\QLXDK\bin\Microsoft.Web.Infrastructure.dll
+D:\Tempory\ePort CLGN\CLGN 9.2\QLXDK\bin\Newtonsoft.Json.dll
+D:\Tempory\ePort CLGN\CLGN 9.2\QLXDK\bin\Owin.dll
+D:\Tempory\ePort CLGN\CLGN 9.2\QLXDK\bin\PagedList.dll
+D:\Tempory\ePort CLGN\CLGN 9.2\QLXDK\bin\PagedList.Mvc.dll
+D:\Tempory\ePort CLGN\CLGN 9.2\QLXDK\bin\System.Web.Helpers.dll
+D:\Tempory\ePort CLGN\CLGN 9.2\QLXDK\bin\System.Web.Mvc.dll
+D:\Tempory\ePort CLGN\CLGN 9.2\QLXDK\bin\System.Web.Optimization.dll
+D:\Tempory\ePort CLGN\CLGN 9.2\QLXDK\bin\System.Web.Razor.dll
+D:\Tempory\ePort CLGN\CLGN 9.2\QLXDK\bin\System.Web.WebPages.Deployment.dll
+D:\Tempory\ePort CLGN\CLGN 9.2\QLXDK\bin\System.Web.WebPages.dll
+D:\Tempory\ePort CLGN\CLGN 9.2\QLXDK\bin\System.Web.WebPages.Razor.dll
+D:\Tempory\ePort CLGN\CLGN 9.2\QLXDK\bin\WebGrease.dll
+D:\Tempory\ePort CLGN\CLGN 9.2\QLXDK\bin\BCrypt.Net-Next.xml
+D:\Tempory\ePort CLGN\CLGN 9.2\QLXDK\bin\ClosedXML.pdb
+D:\Tempory\ePort CLGN\CLGN 9.2\QLXDK\bin\ClosedXML.xml
+D:\Tempory\ePort CLGN\CLGN 9.2\QLXDK\bin\DocumentFormat.OpenXml.xml
+D:\Tempory\ePort CLGN\CLGN 9.2\QLXDK\bin\ExcelNumberFormat.xml
+D:\Tempory\ePort CLGN\CLGN 9.2\QLXDK\bin\Microsoft.AI.DependencyCollector.xml
+D:\Tempory\ePort CLGN\CLGN 9.2\QLXDK\bin\Microsoft.AI.ServerTelemetryChannel.xml
+D:\Tempory\ePort CLGN\CLGN 9.2\QLXDK\bin\Microsoft.AI.Web.xml
+D:\Tempory\ePort CLGN\CLGN 9.2\QLXDK\bin\Microsoft.AI.WindowsServer.xml
+D:\Tempory\ePort CLGN\CLGN 9.2\QLXDK\bin\Microsoft.ApplicationInsights.xml
+D:\Tempory\ePort CLGN\CLGN 9.2\QLXDK\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+D:\Tempory\ePort CLGN\CLGN 9.2\QLXDK\bin\Newtonsoft.Json.xml
+D:\Tempory\ePort CLGN\CLGN 9.2\QLXDK\bin\PagedList.xml
+D:\Tempory\ePort CLGN\CLGN 9.2\QLXDK\bin\PagedList.Mvc.xml
+D:\Tempory\ePort CLGN\CLGN 9.2\QLXDK\bin\System.Web.Helpers.xml
+D:\Tempory\ePort CLGN\CLGN 9.2\QLXDK\bin\System.Web.Mvc.xml
+D:\Tempory\ePort CLGN\CLGN 9.2\QLXDK\bin\System.Web.Optimization.xml
+D:\Tempory\ePort CLGN\CLGN 9.2\QLXDK\bin\System.Web.Razor.xml
+D:\Tempory\ePort CLGN\CLGN 9.2\QLXDK\bin\System.Web.WebPages.xml
+D:\Tempory\ePort CLGN\CLGN 9.2\QLXDK\bin\System.Web.WebPages.Deployment.xml
+D:\Tempory\ePort CLGN\CLGN 9.2\QLXDK\bin\System.Web.WebPages.Razor.xml
+D:\Tempory\ePort CLGN\CLGN 9.2\QLXDK\bin\Antlr3.Runtime.pdb
+D:\Tempory\ePort CLGN\CLGN 9.2\QLXDK\bin\EntityFramework.xml
+D:\Tempory\ePort CLGN\CLGN 9.2\QLXDK\bin\EntityFramework.SqlServer.xml
+D:\Tempory\ePort CLGN\CLGN 9.2\QLXDK\bin\Microsoft.AspNet.Identity.Core.xml
+D:\Tempory\ePort CLGN\CLGN 9.2\QLXDK\bin\Microsoft.AspNet.Identity.Owin.xml
+D:\Tempory\ePort CLGN\CLGN 9.2\QLXDK\bin\Microsoft.AspNet.Identity.EntityFramework.xml
+D:\Tempory\ePort CLGN\CLGN 9.2\QLXDK\bin\Microsoft.Owin.xml
+D:\Tempory\ePort CLGN\CLGN 9.2\QLXDK\bin\Microsoft.Owin.Host.SystemWeb.xml
+D:\Tempory\ePort CLGN\CLGN 9.2\QLXDK\bin\Microsoft.Owin.Security.xml
+D:\Tempory\ePort CLGN\CLGN 9.2\QLXDK\bin\Microsoft.Owin.Security.Facebook.xml
+D:\Tempory\ePort CLGN\CLGN 9.2\QLXDK\bin\Microsoft.Owin.Security.Cookies.xml
+D:\Tempory\ePort CLGN\CLGN 9.2\QLXDK\bin\Microsoft.Owin.Security.OAuth.xml
+D:\Tempory\ePort CLGN\CLGN 9.2\QLXDK\bin\Microsoft.Owin.Security.Google.xml
+D:\Tempory\ePort CLGN\CLGN 9.2\QLXDK\bin\Microsoft.Owin.Security.Twitter.xml
+D:\Tempory\ePort CLGN\CLGN 9.2\QLXDK\bin\Microsoft.Owin.Security.MicrosoftAccount.xml
+D:\Tempory\ePort CLGN\CLGN 9.2\QLXDK\obj\Debug\QLSL.csprojAssemblyReference.cache
+D:\Tempory\ePort CLGN\CLGN 9.2\QLXDK\obj\Debug\QLSL.csproj.CoreCompileInputs.cache
+D:\Tempory\ePort CLGN\CLGN 9.2\QLXDK\obj\Debug\QLSL.csproj.CopyComplete
+D:\Tempory\ePort CLGN\CLGN 9.2\QLXDK\obj\Debug\QLXDK.dll
+D:\Tempory\ePort CLGN\CLGN 9.2\QLXDK\obj\Debug\QLXDK.pdb
+D:\Tempory\ePort CLGN\CLGN 9.3\QLXDK\bin\roslyn\csc.exe
+D:\Tempory\ePort CLGN\CLGN 9.3\QLXDK\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+D:\Tempory\ePort CLGN\CLGN 9.3\QLXDK\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+D:\Tempory\ePort CLGN\CLGN 9.3\QLXDK\bin\roslyn\Microsoft.CodeAnalysis.dll
+D:\Tempory\ePort CLGN\CLGN 9.3\QLXDK\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+D:\Tempory\ePort CLGN\CLGN 9.3\QLXDK\bin\roslyn\Microsoft.CSharp.Core.targets
+D:\Tempory\ePort CLGN\CLGN 9.3\QLXDK\bin\roslyn\Microsoft.VisualBasic.Core.targets
+D:\Tempory\ePort CLGN\CLGN 9.3\QLXDK\bin\roslyn\System.Collections.Immutable.dll
+D:\Tempory\ePort CLGN\CLGN 9.3\QLXDK\bin\roslyn\System.Reflection.Metadata.dll
+D:\Tempory\ePort CLGN\CLGN 9.3\QLXDK\bin\roslyn\vbc.exe
+D:\Tempory\ePort CLGN\CLGN 9.3\QLXDK\bin\roslyn\VBCSCompiler.exe
+D:\Tempory\ePort CLGN\CLGN 9.3\QLXDK\bin\roslyn\VBCSCompiler.exe.config
+D:\Tempory\ePort CLGN\CLGN 9.3\QLXDK\bin\QLXDK.dll.config
+D:\Tempory\ePort CLGN\CLGN 9.3\QLXDK\bin\QLXDK.dll
+D:\Tempory\ePort CLGN\CLGN 9.3\QLXDK\bin\QLXDK.pdb
+D:\Tempory\ePort CLGN\CLGN 9.3\QLXDK\bin\Antlr3.Runtime.dll
+D:\Tempory\ePort CLGN\CLGN 9.3\QLXDK\bin\BCrypt.Net-Next.dll
+D:\Tempory\ePort CLGN\CLGN 9.3\QLXDK\bin\ClosedXML.dll
+D:\Tempory\ePort CLGN\CLGN 9.3\QLXDK\bin\DocumentFormat.OpenXml.dll
+D:\Tempory\ePort CLGN\CLGN 9.3\QLXDK\bin\EntityFramework.dll
+D:\Tempory\ePort CLGN\CLGN 9.3\QLXDK\bin\EntityFramework.SqlServer.dll
+D:\Tempory\ePort CLGN\CLGN 9.3\QLXDK\bin\ExcelNumberFormat.dll
+D:\Tempory\ePort CLGN\CLGN 9.3\QLXDK\bin\Microsoft.AI.Agent.Intercept.dll
+D:\Tempory\ePort CLGN\CLGN 9.3\QLXDK\bin\Microsoft.AI.DependencyCollector.dll
+D:\Tempory\ePort CLGN\CLGN 9.3\QLXDK\bin\Microsoft.AI.PerfCounterCollector.dll
+D:\Tempory\ePort CLGN\CLGN 9.3\QLXDK\bin\Microsoft.AI.ServerTelemetryChannel.dll
+D:\Tempory\ePort CLGN\CLGN 9.3\QLXDK\bin\Microsoft.AI.Web.dll
+D:\Tempory\ePort CLGN\CLGN 9.3\QLXDK\bin\Microsoft.AI.WindowsServer.dll
+D:\Tempory\ePort CLGN\CLGN 9.3\QLXDK\bin\Microsoft.ApplicationInsights.dll
+D:\Tempory\ePort CLGN\CLGN 9.3\QLXDK\bin\Microsoft.AspNet.Identity.Core.dll
+D:\Tempory\ePort CLGN\CLGN 9.3\QLXDK\bin\Microsoft.AspNet.Identity.EntityFramework.dll
+D:\Tempory\ePort CLGN\CLGN 9.3\QLXDK\bin\Microsoft.AspNet.Identity.Owin.dll
+D:\Tempory\ePort CLGN\CLGN 9.3\QLXDK\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+D:\Tempory\ePort CLGN\CLGN 9.3\QLXDK\bin\Microsoft.Owin.dll
+D:\Tempory\ePort CLGN\CLGN 9.3\QLXDK\bin\Microsoft.Owin.Host.SystemWeb.dll
+D:\Tempory\ePort CLGN\CLGN 9.3\QLXDK\bin\Microsoft.Owin.Security.Cookies.dll
+D:\Tempory\ePort CLGN\CLGN 9.3\QLXDK\bin\Microsoft.Owin.Security.dll
+D:\Tempory\ePort CLGN\CLGN 9.3\QLXDK\bin\Microsoft.Owin.Security.Facebook.dll
+D:\Tempory\ePort CLGN\CLGN 9.3\QLXDK\bin\Microsoft.Owin.Security.Google.dll
+D:\Tempory\ePort CLGN\CLGN 9.3\QLXDK\bin\Microsoft.Owin.Security.MicrosoftAccount.dll
+D:\Tempory\ePort CLGN\CLGN 9.3\QLXDK\bin\Microsoft.Owin.Security.OAuth.dll
+D:\Tempory\ePort CLGN\CLGN 9.3\QLXDK\bin\Microsoft.Owin.Security.Twitter.dll
+D:\Tempory\ePort CLGN\CLGN 9.3\QLXDK\bin\Microsoft.Web.Infrastructure.dll
+D:\Tempory\ePort CLGN\CLGN 9.3\QLXDK\bin\Newtonsoft.Json.dll
+D:\Tempory\ePort CLGN\CLGN 9.3\QLXDK\bin\Owin.dll
+D:\Tempory\ePort CLGN\CLGN 9.3\QLXDK\bin\PagedList.dll
+D:\Tempory\ePort CLGN\CLGN 9.3\QLXDK\bin\PagedList.Mvc.dll
+D:\Tempory\ePort CLGN\CLGN 9.3\QLXDK\bin\System.Web.Helpers.dll
+D:\Tempory\ePort CLGN\CLGN 9.3\QLXDK\bin\System.Web.Mvc.dll
+D:\Tempory\ePort CLGN\CLGN 9.3\QLXDK\bin\System.Web.Optimization.dll
+D:\Tempory\ePort CLGN\CLGN 9.3\QLXDK\bin\System.Web.Razor.dll
+D:\Tempory\ePort CLGN\CLGN 9.3\QLXDK\bin\System.Web.WebPages.Deployment.dll
+D:\Tempory\ePort CLGN\CLGN 9.3\QLXDK\bin\System.Web.WebPages.dll
+D:\Tempory\ePort CLGN\CLGN 9.3\QLXDK\bin\System.Web.WebPages.Razor.dll
+D:\Tempory\ePort CLGN\CLGN 9.3\QLXDK\bin\WebGrease.dll
+D:\Tempory\ePort CLGN\CLGN 9.3\QLXDK\bin\BCrypt.Net-Next.xml
+D:\Tempory\ePort CLGN\CLGN 9.3\QLXDK\bin\ClosedXML.pdb
+D:\Tempory\ePort CLGN\CLGN 9.3\QLXDK\bin\ClosedXML.xml
+D:\Tempory\ePort CLGN\CLGN 9.3\QLXDK\bin\DocumentFormat.OpenXml.xml
+D:\Tempory\ePort CLGN\CLGN 9.3\QLXDK\bin\ExcelNumberFormat.xml
+D:\Tempory\ePort CLGN\CLGN 9.3\QLXDK\bin\Microsoft.AI.DependencyCollector.xml
+D:\Tempory\ePort CLGN\CLGN 9.3\QLXDK\bin\Microsoft.AI.ServerTelemetryChannel.xml
+D:\Tempory\ePort CLGN\CLGN 9.3\QLXDK\bin\Microsoft.AI.Web.xml
+D:\Tempory\ePort CLGN\CLGN 9.3\QLXDK\bin\Microsoft.AI.WindowsServer.xml
+D:\Tempory\ePort CLGN\CLGN 9.3\QLXDK\bin\Microsoft.ApplicationInsights.xml
+D:\Tempory\ePort CLGN\CLGN 9.3\QLXDK\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+D:\Tempory\ePort CLGN\CLGN 9.3\QLXDK\bin\Newtonsoft.Json.xml
+D:\Tempory\ePort CLGN\CLGN 9.3\QLXDK\bin\PagedList.xml
+D:\Tempory\ePort CLGN\CLGN 9.3\QLXDK\bin\PagedList.Mvc.xml
+D:\Tempory\ePort CLGN\CLGN 9.3\QLXDK\bin\System.Web.Helpers.xml
+D:\Tempory\ePort CLGN\CLGN 9.3\QLXDK\bin\System.Web.Mvc.xml
+D:\Tempory\ePort CLGN\CLGN 9.3\QLXDK\bin\System.Web.Optimization.xml
+D:\Tempory\ePort CLGN\CLGN 9.3\QLXDK\bin\System.Web.Razor.xml
+D:\Tempory\ePort CLGN\CLGN 9.3\QLXDK\bin\System.Web.WebPages.xml
+D:\Tempory\ePort CLGN\CLGN 9.3\QLXDK\bin\System.Web.WebPages.Deployment.xml
+D:\Tempory\ePort CLGN\CLGN 9.3\QLXDK\bin\System.Web.WebPages.Razor.xml
+D:\Tempory\ePort CLGN\CLGN 9.3\QLXDK\bin\Antlr3.Runtime.pdb
+D:\Tempory\ePort CLGN\CLGN 9.3\QLXDK\bin\EntityFramework.xml
+D:\Tempory\ePort CLGN\CLGN 9.3\QLXDK\bin\EntityFramework.SqlServer.xml
+D:\Tempory\ePort CLGN\CLGN 9.3\QLXDK\bin\Microsoft.AspNet.Identity.Core.xml
+D:\Tempory\ePort CLGN\CLGN 9.3\QLXDK\bin\Microsoft.AspNet.Identity.Owin.xml
+D:\Tempory\ePort CLGN\CLGN 9.3\QLXDK\bin\Microsoft.AspNet.Identity.EntityFramework.xml
+D:\Tempory\ePort CLGN\CLGN 9.3\QLXDK\bin\Microsoft.Owin.xml
+D:\Tempory\ePort CLGN\CLGN 9.3\QLXDK\bin\Microsoft.Owin.Host.SystemWeb.xml
+D:\Tempory\ePort CLGN\CLGN 9.3\QLXDK\bin\Microsoft.Owin.Security.xml
+D:\Tempory\ePort CLGN\CLGN 9.3\QLXDK\bin\Microsoft.Owin.Security.Facebook.xml
+D:\Tempory\ePort CLGN\CLGN 9.3\QLXDK\bin\Microsoft.Owin.Security.Cookies.xml
+D:\Tempory\ePort CLGN\CLGN 9.3\QLXDK\bin\Microsoft.Owin.Security.OAuth.xml
+D:\Tempory\ePort CLGN\CLGN 9.3\QLXDK\bin\Microsoft.Owin.Security.Google.xml
+D:\Tempory\ePort CLGN\CLGN 9.3\QLXDK\bin\Microsoft.Owin.Security.Twitter.xml
+D:\Tempory\ePort CLGN\CLGN 9.3\QLXDK\bin\Microsoft.Owin.Security.MicrosoftAccount.xml
+D:\Tempory\ePort CLGN\CLGN 9.3\QLXDK\obj\Debug\QLSL.csproj.CoreCompileInputs.cache
+D:\Tempory\ePort CLGN\CLGN 9.3\QLXDK\obj\Debug\QLSL.csproj.CopyComplete
+D:\Tempory\ePort CLGN\CLGN 9.3\QLXDK\obj\Debug\QLXDK.dll
+D:\Tempory\ePort CLGN\CLGN 9.3\QLXDK\obj\Debug\QLXDK.pdb
+D:\Tempory\ePort CLGN\CLGN 9.3\QLXDK\obj\Debug\QLSL.csprojAssemblyReference.cache
+D:\Tempory\ePort CLGN\CLGN 9.5\QLXDK\bin\roslyn\csc.exe
+D:\Tempory\ePort CLGN\CLGN 9.5\QLXDK\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+D:\Tempory\ePort CLGN\CLGN 9.5\QLXDK\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+D:\Tempory\ePort CLGN\CLGN 9.5\QLXDK\bin\roslyn\Microsoft.CodeAnalysis.dll
+D:\Tempory\ePort CLGN\CLGN 9.5\QLXDK\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+D:\Tempory\ePort CLGN\CLGN 9.5\QLXDK\bin\roslyn\Microsoft.CSharp.Core.targets
+D:\Tempory\ePort CLGN\CLGN 9.5\QLXDK\bin\roslyn\Microsoft.VisualBasic.Core.targets
+D:\Tempory\ePort CLGN\CLGN 9.5\QLXDK\bin\roslyn\System.Collections.Immutable.dll
+D:\Tempory\ePort CLGN\CLGN 9.5\QLXDK\bin\roslyn\System.Reflection.Metadata.dll
+D:\Tempory\ePort CLGN\CLGN 9.5\QLXDK\bin\roslyn\vbc.exe
+D:\Tempory\ePort CLGN\CLGN 9.5\QLXDK\bin\roslyn\VBCSCompiler.exe
+D:\Tempory\ePort CLGN\CLGN 9.5\QLXDK\bin\roslyn\VBCSCompiler.exe.config
+D:\Tempory\ePort CLGN\CLGN 9.5\QLXDK\bin\QLXDK.dll.config
+D:\Tempory\ePort CLGN\CLGN 9.5\QLXDK\bin\QLXDK.dll
+D:\Tempory\ePort CLGN\CLGN 9.5\QLXDK\bin\QLXDK.pdb
+D:\Tempory\ePort CLGN\CLGN 9.5\QLXDK\bin\Antlr3.Runtime.dll
+D:\Tempory\ePort CLGN\CLGN 9.5\QLXDK\bin\BCrypt.Net-Next.dll
+D:\Tempory\ePort CLGN\CLGN 9.5\QLXDK\bin\ClosedXML.dll
+D:\Tempory\ePort CLGN\CLGN 9.5\QLXDK\bin\DocumentFormat.OpenXml.dll
+D:\Tempory\ePort CLGN\CLGN 9.5\QLXDK\bin\EntityFramework.dll
+D:\Tempory\ePort CLGN\CLGN 9.5\QLXDK\bin\EntityFramework.SqlServer.dll
+D:\Tempory\ePort CLGN\CLGN 9.5\QLXDK\bin\ExcelNumberFormat.dll
+D:\Tempory\ePort CLGN\CLGN 9.5\QLXDK\bin\Microsoft.AI.Agent.Intercept.dll
+D:\Tempory\ePort CLGN\CLGN 9.5\QLXDK\bin\Microsoft.AI.DependencyCollector.dll
+D:\Tempory\ePort CLGN\CLGN 9.5\QLXDK\bin\Microsoft.AI.PerfCounterCollector.dll
+D:\Tempory\ePort CLGN\CLGN 9.5\QLXDK\bin\Microsoft.AI.ServerTelemetryChannel.dll
+D:\Tempory\ePort CLGN\CLGN 9.5\QLXDK\bin\Microsoft.AI.Web.dll
+D:\Tempory\ePort CLGN\CLGN 9.5\QLXDK\bin\Microsoft.AI.WindowsServer.dll
+D:\Tempory\ePort CLGN\CLGN 9.5\QLXDK\bin\Microsoft.ApplicationInsights.dll
+D:\Tempory\ePort CLGN\CLGN 9.5\QLXDK\bin\Microsoft.AspNet.Identity.Core.dll
+D:\Tempory\ePort CLGN\CLGN 9.5\QLXDK\bin\Microsoft.AspNet.Identity.EntityFramework.dll
+D:\Tempory\ePort CLGN\CLGN 9.5\QLXDK\bin\Microsoft.AspNet.Identity.Owin.dll
+D:\Tempory\ePort CLGN\CLGN 9.5\QLXDK\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+D:\Tempory\ePort CLGN\CLGN 9.5\QLXDK\bin\Microsoft.Owin.dll
+D:\Tempory\ePort CLGN\CLGN 9.5\QLXDK\bin\Microsoft.Owin.Host.SystemWeb.dll
+D:\Tempory\ePort CLGN\CLGN 9.5\QLXDK\bin\Microsoft.Owin.Security.Cookies.dll
+D:\Tempory\ePort CLGN\CLGN 9.5\QLXDK\bin\Microsoft.Owin.Security.dll
+D:\Tempory\ePort CLGN\CLGN 9.5\QLXDK\bin\Microsoft.Owin.Security.Facebook.dll
+D:\Tempory\ePort CLGN\CLGN 9.5\QLXDK\bin\Microsoft.Owin.Security.Google.dll
+D:\Tempory\ePort CLGN\CLGN 9.5\QLXDK\bin\Microsoft.Owin.Security.MicrosoftAccount.dll
+D:\Tempory\ePort CLGN\CLGN 9.5\QLXDK\bin\Microsoft.Owin.Security.OAuth.dll
+D:\Tempory\ePort CLGN\CLGN 9.5\QLXDK\bin\Microsoft.Owin.Security.Twitter.dll
+D:\Tempory\ePort CLGN\CLGN 9.5\QLXDK\bin\Microsoft.Web.Infrastructure.dll
+D:\Tempory\ePort CLGN\CLGN 9.5\QLXDK\bin\Newtonsoft.Json.dll
+D:\Tempory\ePort CLGN\CLGN 9.5\QLXDK\bin\Owin.dll
+D:\Tempory\ePort CLGN\CLGN 9.5\QLXDK\bin\PagedList.dll
+D:\Tempory\ePort CLGN\CLGN 9.5\QLXDK\bin\PagedList.Mvc.dll
+D:\Tempory\ePort CLGN\CLGN 9.5\QLXDK\bin\System.Web.Helpers.dll
+D:\Tempory\ePort CLGN\CLGN 9.5\QLXDK\bin\System.Web.Mvc.dll
+D:\Tempory\ePort CLGN\CLGN 9.5\QLXDK\bin\System.Web.Optimization.dll
+D:\Tempory\ePort CLGN\CLGN 9.5\QLXDK\bin\System.Web.Razor.dll
+D:\Tempory\ePort CLGN\CLGN 9.5\QLXDK\bin\System.Web.WebPages.Deployment.dll
+D:\Tempory\ePort CLGN\CLGN 9.5\QLXDK\bin\System.Web.WebPages.dll
+D:\Tempory\ePort CLGN\CLGN 9.5\QLXDK\bin\System.Web.WebPages.Razor.dll
+D:\Tempory\ePort CLGN\CLGN 9.5\QLXDK\bin\WebGrease.dll
+D:\Tempory\ePort CLGN\CLGN 9.5\QLXDK\bin\BCrypt.Net-Next.xml
+D:\Tempory\ePort CLGN\CLGN 9.5\QLXDK\bin\ClosedXML.pdb
+D:\Tempory\ePort CLGN\CLGN 9.5\QLXDK\bin\ClosedXML.xml
+D:\Tempory\ePort CLGN\CLGN 9.5\QLXDK\bin\DocumentFormat.OpenXml.xml
+D:\Tempory\ePort CLGN\CLGN 9.5\QLXDK\bin\ExcelNumberFormat.xml
+D:\Tempory\ePort CLGN\CLGN 9.5\QLXDK\bin\Microsoft.AI.DependencyCollector.xml
+D:\Tempory\ePort CLGN\CLGN 9.5\QLXDK\bin\Microsoft.AI.ServerTelemetryChannel.xml
+D:\Tempory\ePort CLGN\CLGN 9.5\QLXDK\bin\Microsoft.AI.Web.xml
+D:\Tempory\ePort CLGN\CLGN 9.5\QLXDK\bin\Microsoft.AI.WindowsServer.xml
+D:\Tempory\ePort CLGN\CLGN 9.5\QLXDK\bin\Microsoft.ApplicationInsights.xml
+D:\Tempory\ePort CLGN\CLGN 9.5\QLXDK\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+D:\Tempory\ePort CLGN\CLGN 9.5\QLXDK\bin\Newtonsoft.Json.xml
+D:\Tempory\ePort CLGN\CLGN 9.5\QLXDK\bin\PagedList.xml
+D:\Tempory\ePort CLGN\CLGN 9.5\QLXDK\bin\PagedList.Mvc.xml
+D:\Tempory\ePort CLGN\CLGN 9.5\QLXDK\bin\System.Web.Helpers.xml
+D:\Tempory\ePort CLGN\CLGN 9.5\QLXDK\bin\System.Web.Mvc.xml
+D:\Tempory\ePort CLGN\CLGN 9.5\QLXDK\bin\System.Web.Optimization.xml
+D:\Tempory\ePort CLGN\CLGN 9.5\QLXDK\bin\System.Web.Razor.xml
+D:\Tempory\ePort CLGN\CLGN 9.5\QLXDK\bin\System.Web.WebPages.xml
+D:\Tempory\ePort CLGN\CLGN 9.5\QLXDK\bin\System.Web.WebPages.Deployment.xml
+D:\Tempory\ePort CLGN\CLGN 9.5\QLXDK\bin\System.Web.WebPages.Razor.xml
+D:\Tempory\ePort CLGN\CLGN 9.5\QLXDK\bin\Antlr3.Runtime.pdb
+D:\Tempory\ePort CLGN\CLGN 9.5\QLXDK\bin\EntityFramework.xml
+D:\Tempory\ePort CLGN\CLGN 9.5\QLXDK\bin\EntityFramework.SqlServer.xml
+D:\Tempory\ePort CLGN\CLGN 9.5\QLXDK\bin\Microsoft.AspNet.Identity.Core.xml
+D:\Tempory\ePort CLGN\CLGN 9.5\QLXDK\bin\Microsoft.AspNet.Identity.Owin.xml
+D:\Tempory\ePort CLGN\CLGN 9.5\QLXDK\bin\Microsoft.AspNet.Identity.EntityFramework.xml
+D:\Tempory\ePort CLGN\CLGN 9.5\QLXDK\bin\Microsoft.Owin.xml
+D:\Tempory\ePort CLGN\CLGN 9.5\QLXDK\bin\Microsoft.Owin.Host.SystemWeb.xml
+D:\Tempory\ePort CLGN\CLGN 9.5\QLXDK\bin\Microsoft.Owin.Security.xml
+D:\Tempory\ePort CLGN\CLGN 9.5\QLXDK\bin\Microsoft.Owin.Security.Facebook.xml
+D:\Tempory\ePort CLGN\CLGN 9.5\QLXDK\bin\Microsoft.Owin.Security.Cookies.xml
+D:\Tempory\ePort CLGN\CLGN 9.5\QLXDK\bin\Microsoft.Owin.Security.OAuth.xml
+D:\Tempory\ePort CLGN\CLGN 9.5\QLXDK\bin\Microsoft.Owin.Security.Google.xml
+D:\Tempory\ePort CLGN\CLGN 9.5\QLXDK\bin\Microsoft.Owin.Security.Twitter.xml
+D:\Tempory\ePort CLGN\CLGN 9.5\QLXDK\bin\Microsoft.Owin.Security.MicrosoftAccount.xml
+D:\Tempory\ePort CLGN\CLGN 9.5\QLXDK\obj\Debug\QLSL.csproj.CoreCompileInputs.cache
+D:\Tempory\ePort CLGN\CLGN 9.5\QLXDK\obj\Debug\QLSL.csproj.CopyComplete
+D:\Tempory\ePort CLGN\CLGN 9.5\QLXDK\obj\Debug\QLXDK.dll
+D:\Tempory\ePort CLGN\CLGN 9.5\QLXDK\obj\Debug\QLXDK.pdb
+D:\Tempory\ePort CLGN\CLGN 9.5\QLXDK\obj\Debug\QLSL.csprojAssemblyReference.cache
+D:\Tempory\ePort CLGN\CLGN 9.6\QLXDK\bin\roslyn\csc.exe
+D:\Tempory\ePort CLGN\CLGN 9.6\QLXDK\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+D:\Tempory\ePort CLGN\CLGN 9.6\QLXDK\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+D:\Tempory\ePort CLGN\CLGN 9.6\QLXDK\bin\roslyn\Microsoft.CodeAnalysis.dll
+D:\Tempory\ePort CLGN\CLGN 9.6\QLXDK\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+D:\Tempory\ePort CLGN\CLGN 9.6\QLXDK\bin\roslyn\Microsoft.CSharp.Core.targets
+D:\Tempory\ePort CLGN\CLGN 9.6\QLXDK\bin\roslyn\Microsoft.VisualBasic.Core.targets
+D:\Tempory\ePort CLGN\CLGN 9.6\QLXDK\bin\roslyn\System.Collections.Immutable.dll
+D:\Tempory\ePort CLGN\CLGN 9.6\QLXDK\bin\roslyn\System.Reflection.Metadata.dll
+D:\Tempory\ePort CLGN\CLGN 9.6\QLXDK\bin\roslyn\vbc.exe
+D:\Tempory\ePort CLGN\CLGN 9.6\QLXDK\bin\roslyn\VBCSCompiler.exe
+D:\Tempory\ePort CLGN\CLGN 9.6\QLXDK\bin\roslyn\VBCSCompiler.exe.config
+D:\Tempory\ePort CLGN\CLGN 9.6\QLXDK\bin\QLXDK.dll.config
+D:\Tempory\ePort CLGN\CLGN 9.6\QLXDK\bin\QLXDK.dll
+D:\Tempory\ePort CLGN\CLGN 9.6\QLXDK\bin\QLXDK.pdb
+D:\Tempory\ePort CLGN\CLGN 9.6\QLXDK\bin\Antlr3.Runtime.dll
+D:\Tempory\ePort CLGN\CLGN 9.6\QLXDK\bin\BCrypt.Net-Next.dll
+D:\Tempory\ePort CLGN\CLGN 9.6\QLXDK\bin\ClosedXML.dll
+D:\Tempory\ePort CLGN\CLGN 9.6\QLXDK\bin\DocumentFormat.OpenXml.dll
+D:\Tempory\ePort CLGN\CLGN 9.6\QLXDK\bin\EntityFramework.dll
+D:\Tempory\ePort CLGN\CLGN 9.6\QLXDK\bin\EntityFramework.SqlServer.dll
+D:\Tempory\ePort CLGN\CLGN 9.6\QLXDK\bin\ExcelNumberFormat.dll
+D:\Tempory\ePort CLGN\CLGN 9.6\QLXDK\bin\Microsoft.AI.Agent.Intercept.dll
+D:\Tempory\ePort CLGN\CLGN 9.6\QLXDK\bin\Microsoft.AI.DependencyCollector.dll
+D:\Tempory\ePort CLGN\CLGN 9.6\QLXDK\bin\Microsoft.AI.PerfCounterCollector.dll
+D:\Tempory\ePort CLGN\CLGN 9.6\QLXDK\bin\Microsoft.AI.ServerTelemetryChannel.dll
+D:\Tempory\ePort CLGN\CLGN 9.6\QLXDK\bin\Microsoft.AI.Web.dll
+D:\Tempory\ePort CLGN\CLGN 9.6\QLXDK\bin\Microsoft.AI.WindowsServer.dll
+D:\Tempory\ePort CLGN\CLGN 9.6\QLXDK\bin\Microsoft.ApplicationInsights.dll
+D:\Tempory\ePort CLGN\CLGN 9.6\QLXDK\bin\Microsoft.AspNet.Identity.Core.dll
+D:\Tempory\ePort CLGN\CLGN 9.6\QLXDK\bin\Microsoft.AspNet.Identity.EntityFramework.dll
+D:\Tempory\ePort CLGN\CLGN 9.6\QLXDK\bin\Microsoft.AspNet.Identity.Owin.dll
+D:\Tempory\ePort CLGN\CLGN 9.6\QLXDK\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+D:\Tempory\ePort CLGN\CLGN 9.6\QLXDK\bin\Microsoft.Owin.dll
+D:\Tempory\ePort CLGN\CLGN 9.6\QLXDK\bin\Microsoft.Owin.Host.SystemWeb.dll
+D:\Tempory\ePort CLGN\CLGN 9.6\QLXDK\bin\Microsoft.Owin.Security.Cookies.dll
+D:\Tempory\ePort CLGN\CLGN 9.6\QLXDK\bin\Microsoft.Owin.Security.dll
+D:\Tempory\ePort CLGN\CLGN 9.6\QLXDK\bin\Microsoft.Owin.Security.Facebook.dll
+D:\Tempory\ePort CLGN\CLGN 9.6\QLXDK\bin\Microsoft.Owin.Security.Google.dll
+D:\Tempory\ePort CLGN\CLGN 9.6\QLXDK\bin\Microsoft.Owin.Security.MicrosoftAccount.dll
+D:\Tempory\ePort CLGN\CLGN 9.6\QLXDK\bin\Microsoft.Owin.Security.OAuth.dll
+D:\Tempory\ePort CLGN\CLGN 9.6\QLXDK\bin\Microsoft.Owin.Security.Twitter.dll
+D:\Tempory\ePort CLGN\CLGN 9.6\QLXDK\bin\Microsoft.Web.Infrastructure.dll
+D:\Tempory\ePort CLGN\CLGN 9.6\QLXDK\bin\Newtonsoft.Json.dll
+D:\Tempory\ePort CLGN\CLGN 9.6\QLXDK\bin\Owin.dll
+D:\Tempory\ePort CLGN\CLGN 9.6\QLXDK\bin\PagedList.dll
+D:\Tempory\ePort CLGN\CLGN 9.6\QLXDK\bin\PagedList.Mvc.dll
+D:\Tempory\ePort CLGN\CLGN 9.6\QLXDK\bin\System.Web.Helpers.dll
+D:\Tempory\ePort CLGN\CLGN 9.6\QLXDK\bin\System.Web.Mvc.dll
+D:\Tempory\ePort CLGN\CLGN 9.6\QLXDK\bin\System.Web.Optimization.dll
+D:\Tempory\ePort CLGN\CLGN 9.6\QLXDK\bin\System.Web.Razor.dll
+D:\Tempory\ePort CLGN\CLGN 9.6\QLXDK\bin\System.Web.WebPages.Deployment.dll
+D:\Tempory\ePort CLGN\CLGN 9.6\QLXDK\bin\System.Web.WebPages.dll
+D:\Tempory\ePort CLGN\CLGN 9.6\QLXDK\bin\System.Web.WebPages.Razor.dll
+D:\Tempory\ePort CLGN\CLGN 9.6\QLXDK\bin\WebGrease.dll
+D:\Tempory\ePort CLGN\CLGN 9.6\QLXDK\bin\BCrypt.Net-Next.xml
+D:\Tempory\ePort CLGN\CLGN 9.6\QLXDK\bin\ClosedXML.pdb
+D:\Tempory\ePort CLGN\CLGN 9.6\QLXDK\bin\ClosedXML.xml
+D:\Tempory\ePort CLGN\CLGN 9.6\QLXDK\bin\DocumentFormat.OpenXml.xml
+D:\Tempory\ePort CLGN\CLGN 9.6\QLXDK\bin\ExcelNumberFormat.xml
+D:\Tempory\ePort CLGN\CLGN 9.6\QLXDK\bin\Microsoft.AI.DependencyCollector.xml
+D:\Tempory\ePort CLGN\CLGN 9.6\QLXDK\bin\Microsoft.AI.ServerTelemetryChannel.xml
+D:\Tempory\ePort CLGN\CLGN 9.6\QLXDK\bin\Microsoft.AI.Web.xml
+D:\Tempory\ePort CLGN\CLGN 9.6\QLXDK\bin\Microsoft.AI.WindowsServer.xml
+D:\Tempory\ePort CLGN\CLGN 9.6\QLXDK\bin\Microsoft.ApplicationInsights.xml
+D:\Tempory\ePort CLGN\CLGN 9.6\QLXDK\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+D:\Tempory\ePort CLGN\CLGN 9.6\QLXDK\bin\Newtonsoft.Json.xml
+D:\Tempory\ePort CLGN\CLGN 9.6\QLXDK\bin\PagedList.xml
+D:\Tempory\ePort CLGN\CLGN 9.6\QLXDK\bin\PagedList.Mvc.xml
+D:\Tempory\ePort CLGN\CLGN 9.6\QLXDK\bin\System.Web.Helpers.xml
+D:\Tempory\ePort CLGN\CLGN 9.6\QLXDK\bin\System.Web.Mvc.xml
+D:\Tempory\ePort CLGN\CLGN 9.6\QLXDK\bin\System.Web.Optimization.xml
+D:\Tempory\ePort CLGN\CLGN 9.6\QLXDK\bin\System.Web.Razor.xml
+D:\Tempory\ePort CLGN\CLGN 9.6\QLXDK\bin\System.Web.WebPages.xml
+D:\Tempory\ePort CLGN\CLGN 9.6\QLXDK\bin\System.Web.WebPages.Deployment.xml
+D:\Tempory\ePort CLGN\CLGN 9.6\QLXDK\bin\System.Web.WebPages.Razor.xml
+D:\Tempory\ePort CLGN\CLGN 9.6\QLXDK\bin\Antlr3.Runtime.pdb
+D:\Tempory\ePort CLGN\CLGN 9.6\QLXDK\bin\EntityFramework.xml
+D:\Tempory\ePort CLGN\CLGN 9.6\QLXDK\bin\EntityFramework.SqlServer.xml
+D:\Tempory\ePort CLGN\CLGN 9.6\QLXDK\bin\Microsoft.AspNet.Identity.Core.xml
+D:\Tempory\ePort CLGN\CLGN 9.6\QLXDK\bin\Microsoft.AspNet.Identity.Owin.xml
+D:\Tempory\ePort CLGN\CLGN 9.6\QLXDK\bin\Microsoft.AspNet.Identity.EntityFramework.xml
+D:\Tempory\ePort CLGN\CLGN 9.6\QLXDK\bin\Microsoft.Owin.xml
+D:\Tempory\ePort CLGN\CLGN 9.6\QLXDK\bin\Microsoft.Owin.Host.SystemWeb.xml
+D:\Tempory\ePort CLGN\CLGN 9.6\QLXDK\bin\Microsoft.Owin.Security.xml
+D:\Tempory\ePort CLGN\CLGN 9.6\QLXDK\bin\Microsoft.Owin.Security.Facebook.xml
+D:\Tempory\ePort CLGN\CLGN 9.6\QLXDK\bin\Microsoft.Owin.Security.Cookies.xml
+D:\Tempory\ePort CLGN\CLGN 9.6\QLXDK\bin\Microsoft.Owin.Security.OAuth.xml
+D:\Tempory\ePort CLGN\CLGN 9.6\QLXDK\bin\Microsoft.Owin.Security.Google.xml
+D:\Tempory\ePort CLGN\CLGN 9.6\QLXDK\bin\Microsoft.Owin.Security.Twitter.xml
+D:\Tempory\ePort CLGN\CLGN 9.6\QLXDK\bin\Microsoft.Owin.Security.MicrosoftAccount.xml
+D:\Tempory\ePort CLGN\CLGN 9.6\QLXDK\obj\Debug\QLSL.csproj.CoreCompileInputs.cache
+D:\Tempory\ePort CLGN\CLGN 9.6\QLXDK\obj\Debug\QLSL.csproj.CopyComplete
+D:\Tempory\ePort CLGN\CLGN 9.6\QLXDK\obj\Debug\QLXDK.dll
+D:\Tempory\ePort CLGN\CLGN 9.6\QLXDK\obj\Debug\QLXDK.pdb
+D:\Tempory\ePort CLGN\CLGN 9.7\QLXDK\bin\roslyn\csc.exe
+D:\Tempory\ePort CLGN\CLGN 9.7\QLXDK\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+D:\Tempory\ePort CLGN\CLGN 9.7\QLXDK\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+D:\Tempory\ePort CLGN\CLGN 9.7\QLXDK\bin\roslyn\Microsoft.CodeAnalysis.dll
+D:\Tempory\ePort CLGN\CLGN 9.7\QLXDK\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+D:\Tempory\ePort CLGN\CLGN 9.7\QLXDK\bin\roslyn\Microsoft.CSharp.Core.targets
+D:\Tempory\ePort CLGN\CLGN 9.7\QLXDK\bin\roslyn\Microsoft.VisualBasic.Core.targets
+D:\Tempory\ePort CLGN\CLGN 9.7\QLXDK\bin\roslyn\System.Collections.Immutable.dll
+D:\Tempory\ePort CLGN\CLGN 9.7\QLXDK\bin\roslyn\System.Reflection.Metadata.dll
+D:\Tempory\ePort CLGN\CLGN 9.7\QLXDK\bin\roslyn\vbc.exe
+D:\Tempory\ePort CLGN\CLGN 9.7\QLXDK\bin\roslyn\VBCSCompiler.exe
+D:\Tempory\ePort CLGN\CLGN 9.7\QLXDK\bin\roslyn\VBCSCompiler.exe.config
+D:\Tempory\ePort CLGN\CLGN 9.7\QLXDK\bin\QLXDK.dll.config
+D:\Tempory\ePort CLGN\CLGN 9.7\QLXDK\bin\QLXDK.dll
+D:\Tempory\ePort CLGN\CLGN 9.7\QLXDK\bin\QLXDK.pdb
+D:\Tempory\ePort CLGN\CLGN 9.7\QLXDK\bin\Antlr3.Runtime.dll
+D:\Tempory\ePort CLGN\CLGN 9.7\QLXDK\bin\BCrypt.Net-Next.dll
+D:\Tempory\ePort CLGN\CLGN 9.7\QLXDK\bin\ClosedXML.dll
+D:\Tempory\ePort CLGN\CLGN 9.7\QLXDK\bin\DocumentFormat.OpenXml.dll
+D:\Tempory\ePort CLGN\CLGN 9.7\QLXDK\bin\EntityFramework.dll
+D:\Tempory\ePort CLGN\CLGN 9.7\QLXDK\bin\EntityFramework.SqlServer.dll
+D:\Tempory\ePort CLGN\CLGN 9.7\QLXDK\bin\ExcelNumberFormat.dll
+D:\Tempory\ePort CLGN\CLGN 9.7\QLXDK\bin\Microsoft.AI.Agent.Intercept.dll
+D:\Tempory\ePort CLGN\CLGN 9.7\QLXDK\bin\Microsoft.AI.DependencyCollector.dll
+D:\Tempory\ePort CLGN\CLGN 9.7\QLXDK\bin\Microsoft.AI.PerfCounterCollector.dll
+D:\Tempory\ePort CLGN\CLGN 9.7\QLXDK\bin\Microsoft.AI.ServerTelemetryChannel.dll
+D:\Tempory\ePort CLGN\CLGN 9.7\QLXDK\bin\Microsoft.AI.Web.dll
+D:\Tempory\ePort CLGN\CLGN 9.7\QLXDK\bin\Microsoft.AI.WindowsServer.dll
+D:\Tempory\ePort CLGN\CLGN 9.7\QLXDK\bin\Microsoft.ApplicationInsights.dll
+D:\Tempory\ePort CLGN\CLGN 9.7\QLXDK\bin\Microsoft.AspNet.Identity.Core.dll
+D:\Tempory\ePort CLGN\CLGN 9.7\QLXDK\bin\Microsoft.AspNet.Identity.EntityFramework.dll
+D:\Tempory\ePort CLGN\CLGN 9.7\QLXDK\bin\Microsoft.AspNet.Identity.Owin.dll
+D:\Tempory\ePort CLGN\CLGN 9.7\QLXDK\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+D:\Tempory\ePort CLGN\CLGN 9.7\QLXDK\bin\Microsoft.Owin.dll
+D:\Tempory\ePort CLGN\CLGN 9.7\QLXDK\bin\Microsoft.Owin.Host.SystemWeb.dll
+D:\Tempory\ePort CLGN\CLGN 9.7\QLXDK\bin\Microsoft.Owin.Security.Cookies.dll
+D:\Tempory\ePort CLGN\CLGN 9.7\QLXDK\bin\Microsoft.Owin.Security.dll
+D:\Tempory\ePort CLGN\CLGN 9.7\QLXDK\bin\Microsoft.Owin.Security.Facebook.dll
+D:\Tempory\ePort CLGN\CLGN 9.7\QLXDK\bin\Microsoft.Owin.Security.Google.dll
+D:\Tempory\ePort CLGN\CLGN 9.7\QLXDK\bin\Microsoft.Owin.Security.MicrosoftAccount.dll
+D:\Tempory\ePort CLGN\CLGN 9.7\QLXDK\bin\Microsoft.Owin.Security.OAuth.dll
+D:\Tempory\ePort CLGN\CLGN 9.7\QLXDK\bin\Microsoft.Owin.Security.Twitter.dll
+D:\Tempory\ePort CLGN\CLGN 9.7\QLXDK\bin\Microsoft.Web.Infrastructure.dll
+D:\Tempory\ePort CLGN\CLGN 9.7\QLXDK\bin\Newtonsoft.Json.dll
+D:\Tempory\ePort CLGN\CLGN 9.7\QLXDK\bin\Owin.dll
+D:\Tempory\ePort CLGN\CLGN 9.7\QLXDK\bin\PagedList.dll
+D:\Tempory\ePort CLGN\CLGN 9.7\QLXDK\bin\PagedList.Mvc.dll
+D:\Tempory\ePort CLGN\CLGN 9.7\QLXDK\bin\System.Web.Helpers.dll
+D:\Tempory\ePort CLGN\CLGN 9.7\QLXDK\bin\System.Web.Mvc.dll
+D:\Tempory\ePort CLGN\CLGN 9.7\QLXDK\bin\System.Web.Optimization.dll
+D:\Tempory\ePort CLGN\CLGN 9.7\QLXDK\bin\System.Web.Razor.dll
+D:\Tempory\ePort CLGN\CLGN 9.7\QLXDK\bin\System.Web.WebPages.Deployment.dll
+D:\Tempory\ePort CLGN\CLGN 9.7\QLXDK\bin\System.Web.WebPages.dll
+D:\Tempory\ePort CLGN\CLGN 9.7\QLXDK\bin\System.Web.WebPages.Razor.dll
+D:\Tempory\ePort CLGN\CLGN 9.7\QLXDK\bin\WebGrease.dll
+D:\Tempory\ePort CLGN\CLGN 9.7\QLXDK\bin\BCrypt.Net-Next.xml
+D:\Tempory\ePort CLGN\CLGN 9.7\QLXDK\bin\ClosedXML.pdb
+D:\Tempory\ePort CLGN\CLGN 9.7\QLXDK\bin\ClosedXML.xml
+D:\Tempory\ePort CLGN\CLGN 9.7\QLXDK\bin\DocumentFormat.OpenXml.xml
+D:\Tempory\ePort CLGN\CLGN 9.7\QLXDK\bin\ExcelNumberFormat.xml
+D:\Tempory\ePort CLGN\CLGN 9.7\QLXDK\bin\Microsoft.AI.DependencyCollector.xml
+D:\Tempory\ePort CLGN\CLGN 9.7\QLXDK\bin\Microsoft.AI.ServerTelemetryChannel.xml
+D:\Tempory\ePort CLGN\CLGN 9.7\QLXDK\bin\Microsoft.AI.Web.xml
+D:\Tempory\ePort CLGN\CLGN 9.7\QLXDK\bin\Microsoft.AI.WindowsServer.xml
+D:\Tempory\ePort CLGN\CLGN 9.7\QLXDK\bin\Microsoft.ApplicationInsights.xml
+D:\Tempory\ePort CLGN\CLGN 9.7\QLXDK\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+D:\Tempory\ePort CLGN\CLGN 9.7\QLXDK\bin\Newtonsoft.Json.xml
+D:\Tempory\ePort CLGN\CLGN 9.7\QLXDK\bin\PagedList.xml
+D:\Tempory\ePort CLGN\CLGN 9.7\QLXDK\bin\PagedList.Mvc.xml
+D:\Tempory\ePort CLGN\CLGN 9.7\QLXDK\bin\System.Web.Helpers.xml
+D:\Tempory\ePort CLGN\CLGN 9.7\QLXDK\bin\System.Web.Mvc.xml
+D:\Tempory\ePort CLGN\CLGN 9.7\QLXDK\bin\System.Web.Optimization.xml
+D:\Tempory\ePort CLGN\CLGN 9.7\QLXDK\bin\System.Web.Razor.xml
+D:\Tempory\ePort CLGN\CLGN 9.7\QLXDK\bin\System.Web.WebPages.xml
+D:\Tempory\ePort CLGN\CLGN 9.7\QLXDK\bin\System.Web.WebPages.Deployment.xml
+D:\Tempory\ePort CLGN\CLGN 9.7\QLXDK\bin\System.Web.WebPages.Razor.xml
+D:\Tempory\ePort CLGN\CLGN 9.7\QLXDK\bin\Antlr3.Runtime.pdb
+D:\Tempory\ePort CLGN\CLGN 9.7\QLXDK\bin\EntityFramework.xml
+D:\Tempory\ePort CLGN\CLGN 9.7\QLXDK\bin\EntityFramework.SqlServer.xml
+D:\Tempory\ePort CLGN\CLGN 9.7\QLXDK\bin\Microsoft.AspNet.Identity.Core.xml
+D:\Tempory\ePort CLGN\CLGN 9.7\QLXDK\bin\Microsoft.AspNet.Identity.Owin.xml
+D:\Tempory\ePort CLGN\CLGN 9.7\QLXDK\bin\Microsoft.AspNet.Identity.EntityFramework.xml
+D:\Tempory\ePort CLGN\CLGN 9.7\QLXDK\bin\Microsoft.Owin.xml
+D:\Tempory\ePort CLGN\CLGN 9.7\QLXDK\bin\Microsoft.Owin.Host.SystemWeb.xml
+D:\Tempory\ePort CLGN\CLGN 9.7\QLXDK\bin\Microsoft.Owin.Security.xml
+D:\Tempory\ePort CLGN\CLGN 9.7\QLXDK\bin\Microsoft.Owin.Security.Facebook.xml
+D:\Tempory\ePort CLGN\CLGN 9.7\QLXDK\bin\Microsoft.Owin.Security.Cookies.xml
+D:\Tempory\ePort CLGN\CLGN 9.7\QLXDK\bin\Microsoft.Owin.Security.OAuth.xml
+D:\Tempory\ePort CLGN\CLGN 9.7\QLXDK\bin\Microsoft.Owin.Security.Google.xml
+D:\Tempory\ePort CLGN\CLGN 9.7\QLXDK\bin\Microsoft.Owin.Security.Twitter.xml
+D:\Tempory\ePort CLGN\CLGN 9.7\QLXDK\bin\Microsoft.Owin.Security.MicrosoftAccount.xml
+D:\Tempory\ePort CLGN\CLGN 9.7\QLXDK\obj\Debug\QLSL.csprojAssemblyReference.cache
+D:\Tempory\ePort CLGN\CLGN 9.7\QLXDK\obj\Debug\QLSL.csproj.CoreCompileInputs.cache
+D:\Tempory\ePort CLGN\CLGN 9.7\QLXDK\obj\Debug\QLSL.csproj.CopyComplete
+D:\Tempory\ePort CLGN\CLGN 9.7\QLXDK\obj\Debug\QLXDK.dll
+D:\Tempory\ePort CLGN\CLGN 9.7\QLXDK\obj\Debug\QLXDK.pdb
+D:\Projects\CLGN 9.9\CLGN 9.9\QLXDK\bin\roslyn\csc.exe
+D:\Projects\CLGN 9.9\CLGN 9.9\QLXDK\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+D:\Projects\CLGN 9.9\CLGN 9.9\QLXDK\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+D:\Projects\CLGN 9.9\CLGN 9.9\QLXDK\bin\roslyn\Microsoft.CodeAnalysis.dll
+D:\Projects\CLGN 9.9\CLGN 9.9\QLXDK\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+D:\Projects\CLGN 9.9\CLGN 9.9\QLXDK\bin\roslyn\Microsoft.CSharp.Core.targets
+D:\Projects\CLGN 9.9\CLGN 9.9\QLXDK\bin\roslyn\Microsoft.VisualBasic.Core.targets
+D:\Projects\CLGN 9.9\CLGN 9.9\QLXDK\bin\roslyn\System.Collections.Immutable.dll
+D:\Projects\CLGN 9.9\CLGN 9.9\QLXDK\bin\roslyn\System.Reflection.Metadata.dll
+D:\Projects\CLGN 9.9\CLGN 9.9\QLXDK\bin\roslyn\vbc.exe
+D:\Projects\CLGN 9.9\CLGN 9.9\QLXDK\bin\roslyn\VBCSCompiler.exe
+D:\Projects\CLGN 9.9\CLGN 9.9\QLXDK\bin\roslyn\VBCSCompiler.exe.config
+D:\Projects\CLGN 9.9\CLGN 9.9\QLXDK\bin\QLXDK.dll.config
+D:\Projects\CLGN 9.9\CLGN 9.9\QLXDK\bin\QLXDK.dll
+D:\Projects\CLGN 9.9\CLGN 9.9\QLXDK\bin\QLXDK.pdb
+D:\Projects\CLGN 9.9\CLGN 9.9\QLXDK\bin\Antlr3.Runtime.dll
+D:\Projects\CLGN 9.9\CLGN 9.9\QLXDK\bin\BCrypt.Net-Next.dll
+D:\Projects\CLGN 9.9\CLGN 9.9\QLXDK\bin\ClosedXML.dll
+D:\Projects\CLGN 9.9\CLGN 9.9\QLXDK\bin\DocumentFormat.OpenXml.dll
+D:\Projects\CLGN 9.9\CLGN 9.9\QLXDK\bin\EntityFramework.dll
+D:\Projects\CLGN 9.9\CLGN 9.9\QLXDK\bin\EntityFramework.SqlServer.dll
+D:\Projects\CLGN 9.9\CLGN 9.9\QLXDK\bin\ExcelNumberFormat.dll
+D:\Projects\CLGN 9.9\CLGN 9.9\QLXDK\bin\Microsoft.AI.Agent.Intercept.dll
+D:\Projects\CLGN 9.9\CLGN 9.9\QLXDK\bin\Microsoft.AI.DependencyCollector.dll
+D:\Projects\CLGN 9.9\CLGN 9.9\QLXDK\bin\Microsoft.AI.PerfCounterCollector.dll
+D:\Projects\CLGN 9.9\CLGN 9.9\QLXDK\bin\Microsoft.AI.ServerTelemetryChannel.dll
+D:\Projects\CLGN 9.9\CLGN 9.9\QLXDK\bin\Microsoft.AI.Web.dll
+D:\Projects\CLGN 9.9\CLGN 9.9\QLXDK\bin\Microsoft.AI.WindowsServer.dll
+D:\Projects\CLGN 9.9\CLGN 9.9\QLXDK\bin\Microsoft.ApplicationInsights.dll
+D:\Projects\CLGN 9.9\CLGN 9.9\QLXDK\bin\Microsoft.AspNet.Identity.Core.dll
+D:\Projects\CLGN 9.9\CLGN 9.9\QLXDK\bin\Microsoft.AspNet.Identity.EntityFramework.dll
+D:\Projects\CLGN 9.9\CLGN 9.9\QLXDK\bin\Microsoft.AspNet.Identity.Owin.dll
+D:\Projects\CLGN 9.9\CLGN 9.9\QLXDK\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+D:\Projects\CLGN 9.9\CLGN 9.9\QLXDK\bin\Microsoft.Owin.dll
+D:\Projects\CLGN 9.9\CLGN 9.9\QLXDK\bin\Microsoft.Owin.Host.SystemWeb.dll
+D:\Projects\CLGN 9.9\CLGN 9.9\QLXDK\bin\Microsoft.Owin.Security.Cookies.dll
+D:\Projects\CLGN 9.9\CLGN 9.9\QLXDK\bin\Microsoft.Owin.Security.dll
+D:\Projects\CLGN 9.9\CLGN 9.9\QLXDK\bin\Microsoft.Owin.Security.Facebook.dll
+D:\Projects\CLGN 9.9\CLGN 9.9\QLXDK\bin\Microsoft.Owin.Security.Google.dll
+D:\Projects\CLGN 9.9\CLGN 9.9\QLXDK\bin\Microsoft.Owin.Security.MicrosoftAccount.dll
+D:\Projects\CLGN 9.9\CLGN 9.9\QLXDK\bin\Microsoft.Owin.Security.OAuth.dll
+D:\Projects\CLGN 9.9\CLGN 9.9\QLXDK\bin\Microsoft.Owin.Security.Twitter.dll
+D:\Projects\CLGN 9.9\CLGN 9.9\QLXDK\bin\Microsoft.Web.Infrastructure.dll
+D:\Projects\CLGN 9.9\CLGN 9.9\QLXDK\bin\Newtonsoft.Json.dll
+D:\Projects\CLGN 9.9\CLGN 9.9\QLXDK\bin\Owin.dll
+D:\Projects\CLGN 9.9\CLGN 9.9\QLXDK\bin\PagedList.dll
+D:\Projects\CLGN 9.9\CLGN 9.9\QLXDK\bin\PagedList.Mvc.dll
+D:\Projects\CLGN 9.9\CLGN 9.9\QLXDK\bin\System.Web.Helpers.dll
+D:\Projects\CLGN 9.9\CLGN 9.9\QLXDK\bin\System.Web.Mvc.dll
+D:\Projects\CLGN 9.9\CLGN 9.9\QLXDK\bin\System.Web.Optimization.dll
+D:\Projects\CLGN 9.9\CLGN 9.9\QLXDK\bin\System.Web.Razor.dll
+D:\Projects\CLGN 9.9\CLGN 9.9\QLXDK\bin\System.Web.WebPages.Deployment.dll
+D:\Projects\CLGN 9.9\CLGN 9.9\QLXDK\bin\System.Web.WebPages.dll
+D:\Projects\CLGN 9.9\CLGN 9.9\QLXDK\bin\System.Web.WebPages.Razor.dll
+D:\Projects\CLGN 9.9\CLGN 9.9\QLXDK\bin\WebGrease.dll
+D:\Projects\CLGN 9.9\CLGN 9.9\QLXDK\bin\BCrypt.Net-Next.xml
+D:\Projects\CLGN 9.9\CLGN 9.9\QLXDK\bin\ClosedXML.pdb
+D:\Projects\CLGN 9.9\CLGN 9.9\QLXDK\bin\ClosedXML.xml
+D:\Projects\CLGN 9.9\CLGN 9.9\QLXDK\bin\DocumentFormat.OpenXml.xml
+D:\Projects\CLGN 9.9\CLGN 9.9\QLXDK\bin\ExcelNumberFormat.xml
+D:\Projects\CLGN 9.9\CLGN 9.9\QLXDK\bin\Microsoft.AI.DependencyCollector.xml
+D:\Projects\CLGN 9.9\CLGN 9.9\QLXDK\bin\Microsoft.AI.ServerTelemetryChannel.xml
+D:\Projects\CLGN 9.9\CLGN 9.9\QLXDK\bin\Microsoft.AI.Web.xml
+D:\Projects\CLGN 9.9\CLGN 9.9\QLXDK\bin\Microsoft.AI.WindowsServer.xml
+D:\Projects\CLGN 9.9\CLGN 9.9\QLXDK\bin\Microsoft.ApplicationInsights.xml
+D:\Projects\CLGN 9.9\CLGN 9.9\QLXDK\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+D:\Projects\CLGN 9.9\CLGN 9.9\QLXDK\bin\Newtonsoft.Json.xml
+D:\Projects\CLGN 9.9\CLGN 9.9\QLXDK\bin\PagedList.xml
+D:\Projects\CLGN 9.9\CLGN 9.9\QLXDK\bin\PagedList.Mvc.xml
+D:\Projects\CLGN 9.9\CLGN 9.9\QLXDK\bin\System.Web.Helpers.xml
+D:\Projects\CLGN 9.9\CLGN 9.9\QLXDK\bin\System.Web.Mvc.xml
+D:\Projects\CLGN 9.9\CLGN 9.9\QLXDK\bin\System.Web.Optimization.xml
+D:\Projects\CLGN 9.9\CLGN 9.9\QLXDK\bin\System.Web.Razor.xml
+D:\Projects\CLGN 9.9\CLGN 9.9\QLXDK\bin\System.Web.WebPages.xml
+D:\Projects\CLGN 9.9\CLGN 9.9\QLXDK\bin\System.Web.WebPages.Deployment.xml
+D:\Projects\CLGN 9.9\CLGN 9.9\QLXDK\bin\System.Web.WebPages.Razor.xml
+D:\Projects\CLGN 9.9\CLGN 9.9\QLXDK\bin\Antlr3.Runtime.pdb
+D:\Projects\CLGN 9.9\CLGN 9.9\QLXDK\bin\EntityFramework.xml
+D:\Projects\CLGN 9.9\CLGN 9.9\QLXDK\bin\EntityFramework.SqlServer.xml
+D:\Projects\CLGN 9.9\CLGN 9.9\QLXDK\bin\Microsoft.AspNet.Identity.Core.xml
+D:\Projects\CLGN 9.9\CLGN 9.9\QLXDK\bin\Microsoft.AspNet.Identity.Owin.xml
+D:\Projects\CLGN 9.9\CLGN 9.9\QLXDK\bin\Microsoft.AspNet.Identity.EntityFramework.xml
+D:\Projects\CLGN 9.9\CLGN 9.9\QLXDK\bin\Microsoft.Owin.xml
+D:\Projects\CLGN 9.9\CLGN 9.9\QLXDK\bin\Microsoft.Owin.Host.SystemWeb.xml
+D:\Projects\CLGN 9.9\CLGN 9.9\QLXDK\bin\Microsoft.Owin.Security.xml
+D:\Projects\CLGN 9.9\CLGN 9.9\QLXDK\bin\Microsoft.Owin.Security.Facebook.xml
+D:\Projects\CLGN 9.9\CLGN 9.9\QLXDK\bin\Microsoft.Owin.Security.Cookies.xml
+D:\Projects\CLGN 9.9\CLGN 9.9\QLXDK\bin\Microsoft.Owin.Security.OAuth.xml
+D:\Projects\CLGN 9.9\CLGN 9.9\QLXDK\bin\Microsoft.Owin.Security.Google.xml
+D:\Projects\CLGN 9.9\CLGN 9.9\QLXDK\bin\Microsoft.Owin.Security.Twitter.xml
+D:\Projects\CLGN 9.9\CLGN 9.9\QLXDK\bin\Microsoft.Owin.Security.MicrosoftAccount.xml
+D:\Projects\CLGN 9.9\CLGN 9.9\QLXDK\obj\Debug\QLSL.csprojResolveAssemblyReference.cache
+D:\Projects\CLGN 9.9\CLGN 9.9\QLXDK\obj\Debug\QLXDK.dll
+D:\Projects\CLGN 9.9\CLGN 9.9\QLXDK\obj\Debug\QLXDK.pdb
+D:\Projects\CLGN 9.9\CLGN 9.9\QLXDK\bin\Microsoft.AspNet.SignalR.Core.dll
+D:\Projects\CLGN 9.9\CLGN 9.9\QLXDK\bin\Microsoft.AspNet.SignalR.SystemWeb.dll
+D:\Projects\CLGN 9.9\CLGN 9.9\QLXDK\bin\Microsoft.AspNet.SignalR.Core.pdb
+D:\Projects\CLGN 9.9\CLGN 9.9\QLXDK\bin\Microsoft.AspNet.SignalR.Core.xml
+D:\Projects\CLGN 9.9\CLGN 9.9\QLXDK\bin\Microsoft.AspNet.SignalR.SystemWeb.pdb
+D:\Projects\CLGN 9.9\CLGN 9.9\QLXDK\bin\Microsoft.AspNet.SignalR.SystemWeb.xml
+D:\Projects\CLGN 9.9\QrCode\QLXDK\bin\roslyn\csc.exe
+D:\Projects\CLGN 9.9\QrCode\QLXDK\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+D:\Projects\CLGN 9.9\QrCode\QLXDK\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+D:\Projects\CLGN 9.9\QrCode\QLXDK\bin\roslyn\Microsoft.CodeAnalysis.dll
+D:\Projects\CLGN 9.9\QrCode\QLXDK\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+D:\Projects\CLGN 9.9\QrCode\QLXDK\bin\roslyn\Microsoft.CSharp.Core.targets
+D:\Projects\CLGN 9.9\QrCode\QLXDK\bin\roslyn\Microsoft.VisualBasic.Core.targets
+D:\Projects\CLGN 9.9\QrCode\QLXDK\bin\roslyn\System.Collections.Immutable.dll
+D:\Projects\CLGN 9.9\QrCode\QLXDK\bin\roslyn\System.Reflection.Metadata.dll
+D:\Projects\CLGN 9.9\QrCode\QLXDK\bin\roslyn\vbc.exe
+D:\Projects\CLGN 9.9\QrCode\QLXDK\bin\roslyn\VBCSCompiler.exe
+D:\Projects\CLGN 9.9\QrCode\QLXDK\bin\roslyn\VBCSCompiler.exe.config
+D:\Projects\CLGN 9.9\QrCode\QLXDK\bin\QLXDK.dll.config
+D:\Projects\CLGN 9.9\QrCode\QLXDK\bin\QLXDK.dll
+D:\Projects\CLGN 9.9\QrCode\QLXDK\bin\QLXDK.pdb
+D:\Projects\CLGN 9.9\QrCode\QLXDK\bin\Antlr3.Runtime.dll
+D:\Projects\CLGN 9.9\QrCode\QLXDK\bin\BCrypt.Net-Next.dll
+D:\Projects\CLGN 9.9\QrCode\QLXDK\bin\ClosedXML.dll
+D:\Projects\CLGN 9.9\QrCode\QLXDK\bin\DocumentFormat.OpenXml.dll
+D:\Projects\CLGN 9.9\QrCode\QLXDK\bin\EntityFramework.dll
+D:\Projects\CLGN 9.9\QrCode\QLXDK\bin\EntityFramework.SqlServer.dll
+D:\Projects\CLGN 9.9\QrCode\QLXDK\bin\ExcelNumberFormat.dll
+D:\Projects\CLGN 9.9\QrCode\QLXDK\bin\Microsoft.AI.Agent.Intercept.dll
+D:\Projects\CLGN 9.9\QrCode\QLXDK\bin\Microsoft.AI.DependencyCollector.dll
+D:\Projects\CLGN 9.9\QrCode\QLXDK\bin\Microsoft.AI.PerfCounterCollector.dll
+D:\Projects\CLGN 9.9\QrCode\QLXDK\bin\Microsoft.AI.ServerTelemetryChannel.dll
+D:\Projects\CLGN 9.9\QrCode\QLXDK\bin\Microsoft.AI.Web.dll
+D:\Projects\CLGN 9.9\QrCode\QLXDK\bin\Microsoft.AI.WindowsServer.dll
+D:\Projects\CLGN 9.9\QrCode\QLXDK\bin\Microsoft.ApplicationInsights.dll
+D:\Projects\CLGN 9.9\QrCode\QLXDK\bin\Microsoft.AspNet.Identity.Core.dll
+D:\Projects\CLGN 9.9\QrCode\QLXDK\bin\Microsoft.AspNet.Identity.EntityFramework.dll
+D:\Projects\CLGN 9.9\QrCode\QLXDK\bin\Microsoft.AspNet.Identity.Owin.dll
+D:\Projects\CLGN 9.9\QrCode\QLXDK\bin\Microsoft.AspNet.SignalR.Core.dll
+D:\Projects\CLGN 9.9\QrCode\QLXDK\bin\Microsoft.AspNet.SignalR.SystemWeb.dll
+D:\Projects\CLGN 9.9\QrCode\QLXDK\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+D:\Projects\CLGN 9.9\QrCode\QLXDK\bin\Microsoft.Owin.dll
+D:\Projects\CLGN 9.9\QrCode\QLXDK\bin\Microsoft.Owin.Host.SystemWeb.dll
+D:\Projects\CLGN 9.9\QrCode\QLXDK\bin\Microsoft.Owin.Security.Cookies.dll
+D:\Projects\CLGN 9.9\QrCode\QLXDK\bin\Microsoft.Owin.Security.dll
+D:\Projects\CLGN 9.9\QrCode\QLXDK\bin\Microsoft.Owin.Security.Facebook.dll
+D:\Projects\CLGN 9.9\QrCode\QLXDK\bin\Microsoft.Owin.Security.Google.dll
+D:\Projects\CLGN 9.9\QrCode\QLXDK\bin\Microsoft.Owin.Security.MicrosoftAccount.dll
+D:\Projects\CLGN 9.9\QrCode\QLXDK\bin\Microsoft.Owin.Security.OAuth.dll
+D:\Projects\CLGN 9.9\QrCode\QLXDK\bin\Microsoft.Owin.Security.Twitter.dll
+D:\Projects\CLGN 9.9\QrCode\QLXDK\bin\Microsoft.Web.Infrastructure.dll
+D:\Projects\CLGN 9.9\QrCode\QLXDK\bin\Newtonsoft.Json.dll
+D:\Projects\CLGN 9.9\QrCode\QLXDK\bin\Owin.dll
+D:\Projects\CLGN 9.9\QrCode\QLXDK\bin\PagedList.dll
+D:\Projects\CLGN 9.9\QrCode\QLXDK\bin\PagedList.Mvc.dll
+D:\Projects\CLGN 9.9\QrCode\QLXDK\bin\System.Web.Helpers.dll
+D:\Projects\CLGN 9.9\QrCode\QLXDK\bin\System.Web.Mvc.dll
+D:\Projects\CLGN 9.9\QrCode\QLXDK\bin\System.Web.Optimization.dll
+D:\Projects\CLGN 9.9\QrCode\QLXDK\bin\System.Web.Razor.dll
+D:\Projects\CLGN 9.9\QrCode\QLXDK\bin\System.Web.WebPages.Deployment.dll
+D:\Projects\CLGN 9.9\QrCode\QLXDK\bin\System.Web.WebPages.dll
+D:\Projects\CLGN 9.9\QrCode\QLXDK\bin\System.Web.WebPages.Razor.dll
+D:\Projects\CLGN 9.9\QrCode\QLXDK\bin\WebGrease.dll
+D:\Projects\CLGN 9.9\QrCode\QLXDK\bin\BCrypt.Net-Next.xml
+D:\Projects\CLGN 9.9\QrCode\QLXDK\bin\ClosedXML.pdb
+D:\Projects\CLGN 9.9\QrCode\QLXDK\bin\ClosedXML.xml
+D:\Projects\CLGN 9.9\QrCode\QLXDK\bin\DocumentFormat.OpenXml.xml
+D:\Projects\CLGN 9.9\QrCode\QLXDK\bin\ExcelNumberFormat.xml
+D:\Projects\CLGN 9.9\QrCode\QLXDK\bin\Microsoft.AI.DependencyCollector.xml
+D:\Projects\CLGN 9.9\QrCode\QLXDK\bin\Microsoft.AI.ServerTelemetryChannel.xml
+D:\Projects\CLGN 9.9\QrCode\QLXDK\bin\Microsoft.AI.Web.xml
+D:\Projects\CLGN 9.9\QrCode\QLXDK\bin\Microsoft.AI.WindowsServer.xml
+D:\Projects\CLGN 9.9\QrCode\QLXDK\bin\Microsoft.ApplicationInsights.xml
+D:\Projects\CLGN 9.9\QrCode\QLXDK\bin\Microsoft.AspNet.SignalR.Core.pdb
+D:\Projects\CLGN 9.9\QrCode\QLXDK\bin\Microsoft.AspNet.SignalR.Core.xml
+D:\Projects\CLGN 9.9\QrCode\QLXDK\bin\Microsoft.AspNet.SignalR.SystemWeb.pdb
+D:\Projects\CLGN 9.9\QrCode\QLXDK\bin\Microsoft.AspNet.SignalR.SystemWeb.xml
+D:\Projects\CLGN 9.9\QrCode\QLXDK\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+D:\Projects\CLGN 9.9\QrCode\QLXDK\bin\Newtonsoft.Json.xml
+D:\Projects\CLGN 9.9\QrCode\QLXDK\bin\PagedList.xml
+D:\Projects\CLGN 9.9\QrCode\QLXDK\bin\PagedList.Mvc.xml
+D:\Projects\CLGN 9.9\QrCode\QLXDK\bin\System.Web.Helpers.xml
+D:\Projects\CLGN 9.9\QrCode\QLXDK\bin\System.Web.Mvc.xml
+D:\Projects\CLGN 9.9\QrCode\QLXDK\bin\System.Web.Optimization.xml
+D:\Projects\CLGN 9.9\QrCode\QLXDK\bin\System.Web.Razor.xml
+D:\Projects\CLGN 9.9\QrCode\QLXDK\bin\System.Web.WebPages.xml
+D:\Projects\CLGN 9.9\QrCode\QLXDK\bin\System.Web.WebPages.Deployment.xml
+D:\Projects\CLGN 9.9\QrCode\QLXDK\bin\System.Web.WebPages.Razor.xml
+D:\Projects\CLGN 9.9\QrCode\QLXDK\bin\Antlr3.Runtime.pdb
+D:\Projects\CLGN 9.9\QrCode\QLXDK\bin\EntityFramework.xml
+D:\Projects\CLGN 9.9\QrCode\QLXDK\bin\EntityFramework.SqlServer.xml
+D:\Projects\CLGN 9.9\QrCode\QLXDK\bin\Microsoft.AspNet.Identity.Core.xml
+D:\Projects\CLGN 9.9\QrCode\QLXDK\bin\Microsoft.AspNet.Identity.Owin.xml
+D:\Projects\CLGN 9.9\QrCode\QLXDK\bin\Microsoft.AspNet.Identity.EntityFramework.xml
+D:\Projects\CLGN 9.9\QrCode\QLXDK\bin\Microsoft.Owin.xml
+D:\Projects\CLGN 9.9\QrCode\QLXDK\bin\Microsoft.Owin.Host.SystemWeb.xml
+D:\Projects\CLGN 9.9\QrCode\QLXDK\bin\Microsoft.Owin.Security.xml
+D:\Projects\CLGN 9.9\QrCode\QLXDK\bin\Microsoft.Owin.Security.Facebook.xml
+D:\Projects\CLGN 9.9\QrCode\QLXDK\bin\Microsoft.Owin.Security.Cookies.xml
+D:\Projects\CLGN 9.9\QrCode\QLXDK\bin\Microsoft.Owin.Security.OAuth.xml
+D:\Projects\CLGN 9.9\QrCode\QLXDK\bin\Microsoft.Owin.Security.Google.xml
+D:\Projects\CLGN 9.9\QrCode\QLXDK\bin\Microsoft.Owin.Security.Twitter.xml
+D:\Projects\CLGN 9.9\QrCode\QLXDK\bin\Microsoft.Owin.Security.MicrosoftAccount.xml
+D:\Projects\CLGN 9.9\QrCode\QLXDK\obj\Debug\QLSL.csprojResolveAssemblyReference.cache
+D:\Projects\CLGN 9.9\QrCode\QLXDK\obj\Debug\QLXDK.dll
+D:\Projects\CLGN 9.9\QrCode\QLXDK\obj\Debug\QLXDK.pdb

@@ -1,0 +1,135 @@
+﻿@using PagedList.Mvc;
+@model PagedList.IPagedList<QLXDK.Models.Entities.User>
+@{
+    ViewBag.Title = "Người dùng";
+}
+@{
+    // Lấy số trang hiện tại từ ViewBag
+    int currentPage = ViewBag.CurrentPage ?? 1;
+}
+<div class="col-md-6">
+    @if (TempData["Message"] != null)
+            {
+        <div class="alert alert-success alert-dismissible fade show" role="alert">
+            @TempData["Message"]
+            <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+        </div>
+    }
+
+</div>
+
+<div class="col-md-6">
+    <section class="float-end">
+        <button type="button" class="btn btn-info d-inline-flex" onclick="window.location.href='@Url.Action("Create", "User")'"><i class="ti ti-circle-plus"></i>Thêm</button>
+    </section>
+
+
+</div>
+<div class="col-md-12">
+    
+
+    <table class="table table-striped">
+        <thead>
+            <tr>
+                <th>#</th>
+                <th>Họ và tên</th>
+                <th>Tên người dùng</th>
+                <th>Trạng thái</th>
+                <th>Ngày tạo</th>
+                <th class="text-center">Thao tác</th>
+            </tr>
+        </thead>
+        <tbody>
+            @{
+                // Tính số thứ tự bắt đầu của trang hiện tại
+                // Model.PageNumber: Trang hiện tại (1, 2, 3...)
+                // Model.PageSize: Số bản ghi trên 1 trang (ví dụ: 10)
+                int stt = ((Model.PageNumber - 1) * Model.PageSize) + 1;
+            }
+            @foreach (var item in Model)
+            {
+                <tr>
+                    <td>@(stt++)</td>
+                    <td>@item.FullName</td>
+                    <td>@item.UserName</td>
+                    <td>@(item.Active == 1 ? "Đang hoạt động" : "Khoá")</td>
+                    <td>@item.CreatedAt.Value.ToString("dd/MM/yyyy")</td>
+                    <td class="text-center">
+                        <a href="@Url.Action("Edit", "User", new { id = item.ID })"
+                           class="btn btn-success" title="Sửa">
+                            <i class="fa fa-edit"></i>
+                        </a>
+
+                        <a href="@Url.Action("EditPassword", "User", new { id = item.ID })"
+                           class="btn btn-success" title="Sửa">
+                            <i class="fa fa-key"></i>
+                        </a>
+
+                        <a href="#"
+                           class="btn btn-danger"
+                           data-bs-toggle="modal" data-bs-target="#deleteModalLive"
+                           title="Xóa"
+                           onclick="deleteConfirm('@Url.Action("Delete", "User", new { id = item.ID })'); return false;"
+ >
+                            <i class="fa fa-trash"></i>
+                        </a>
+                    </td>
+                </tr>
+            }
+
+        </tbody>
+    </table>
+
+
+
+    @Html.PagedListPager(Model, page => Url.Action("Index", new { page }),
+    new PagedListRenderOptions
+    {
+        UlElementClasses = new string[] { "pagination" },
+        LiElementClasses = new string[] { "page-item" },
+
+        // Cách "ép" class page-link vào thẻ a mà không lỗi
+        FunctionToTransformEachPageLink = (liTag, aTag) =>
+        {
+            // 1. Thêm class cho thẻ <a>
+            aTag.Attributes.Add("class", "page-link");
+
+            // 2. Kiểm tra nếu là trang hiện tại thì thêm class active cho <li>
+            if (liTag.Attributes.ContainsKey("class") && liTag.Attributes["class"].Contains("PagedList-skipToPage"))
+            {
+                liTag.Attributes["class"] = "page-item active";
+            }
+
+            // QUAN TRỌNG: Phải gán lại aTag vào trong liTag và trả về liTag
+            liTag.InnerHtml = aTag.ToString();
+            return liTag;
+        },
+        LinkToPreviousPageFormat = "«",
+        LinkToNextPageFormat = "»",
+        DisplayLinkToPreviousPage = PagedListDisplayMode.Always,
+        DisplayLinkToNextPage = PagedListDisplayMode.Always,
+        MaximumPageNumbersToDisplay = 5
+    })
+
+
+
+
+</div>
+
+<div id="deleteModalLive" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="deleteModalLiveLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="deleteModalLiveLabel">Thông báo</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <p>Bạn có muốn xoá thông tin này không?</p>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Không</button>
+                <button type="button" class="btn btn-primary" onclick="deleteOK()">Có</button>
+            </div>
+        </div>
+    </div>
+</div>
