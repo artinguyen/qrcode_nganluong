@@ -49,7 +49,7 @@ $("#generate-btn").click(function (e) {
     // Disable button
     $btn.prop('disabled', true);
     $.ajax({
-        url: '/Payment/CreateQrCode',
+        url: '/Payment/GenQrCode',
         type: 'POST',
         dataType: 'json',
         data: {

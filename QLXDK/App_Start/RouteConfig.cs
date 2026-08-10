@@ -14,6 +14,12 @@ namespace QLXDK
             routes.IgnoreRoute("{resource}.axd/{*pathInfo}");
 
             routes.MapRoute(
+                name: "RootBlock",
+                url: "",
+                defaults: new { controller = "Error", action = "Blocked" }
+            );
+
+            routes.MapRoute(
                 name: "Default",
                 url: "{controller}/{action}/{id}",
                 defaults: new { controller = "Home", action = "Index", id = UrlParameter.Optional }

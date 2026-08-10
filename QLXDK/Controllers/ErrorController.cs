@@ -90,5 +90,17 @@ namespace QLXDK.Controllers
                 return View();
             }
         }
+
+        [AllowAnonymous]
+        public ActionResult Blocked()
+        {
+            return Json(new
+            {
+                status = "error",
+                code = 403,
+                message = "Forbidden"
+            }, JsonRequestBehavior.AllowGet);
+            //return new HttpStatusCodeResult(System.Net.HttpStatusCode.Forbidden, "Access Denied");
+        }
     }
 }
