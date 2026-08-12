@@ -598,7 +598,6 @@
     <Content Include="Views\User\Create.cshtml" />
     <Content Include="Views\User\Edit.cshtml" />
     <Content Include="Views\User\EditPassword.cshtml" />
-    <Content Include="Views\Shared\_Search.cshtml" />
     <Content Include="Views\User\login.cshtml" />
     <Content Include="Views\Error\NotFound.cshtml" />
   </ItemGroup>

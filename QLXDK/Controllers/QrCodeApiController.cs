@@ -6,10 +6,7 @@ using System.Text;
 using System.Web.Http;
 using QLXDK.Models;
 using System.Linq;
-using System.Web;
-using QLXDK.Models.Views;
 using System.Security.Cryptography;
-using System.Net.Http;
 using System.Collections.Generic;
 using System.Threading.Tasks;
 
@@ -20,6 +17,7 @@ namespace QLXDK.Controllers
     public class QrCodeApiController : ApiController
     {
         private qlslContext _db = new qlslContext();
+        private static readonly HttpClient _httpClient = new HttpClient();
         [HttpGet]
         [Route("Inquiry")]
         public HttpResponseMessage InquiryGetFallback()
@@ -44,6 +42,22 @@ namespace QLXDK.Controllers
             };
 
             return Request.CreateResponse(System.Net.HttpStatusCode.MethodNotAllowed, errorResponse);
+        }
+
+        [HttpGet]
+        [Route("Health")]
+        public IHttpActionResult GetStatus()
+        {
+            try
+            {
+                using (var context = new qlslContext())
+                {
+                    context.Database.ExecuteSqlCommand("SELECT 1");
+                }
+            }
+            catch { }
+
+            return Ok("Ok");
         }
 
         [HttpPost]
@@ -79,25 +93,25 @@ namespace QLXDK.Controllers
                 // Check signature
                 if (!VerifyMessageSHA256(secretKey, msgReq, reqSignature))
                 {
-                    errorCode = 3;
+                    errorCode = 18;
                     errorMessage = "Invalid signature";
-                    return CreateFailureResponse(Request, channelId, channelRefNumber, errorCode, errorMessage, requestDateTime, responseMsgId, secretKey, msgRes);
+                    return CreateFailureResponseInquiry(Request, channelId, channelRefNumber, errorCode, errorMessage, requestDateTime, responseMsgId, secretKey, msgRes, customerCode);
                 }
 
                 var order = _db.Orders.FirstOrDefault(o => o.CustomerCode == customerCode);
 
                 if (order == null)
                 {
-                    errorCode = 400;
-                    errorMessage = "No data found";
-                    return CreateFailureResponse(Request, channelId, channelRefNumber, errorCode, errorMessage, requestDateTime, responseMsgId, secretKey, msgRes);
+                    errorCode = 17;
+                    errorMessage = "Invalid user";
+                    return CreateFailureResponseInquiry(Request, channelId, channelRefNumber, errorCode, errorMessage, requestDateTime, responseMsgId, secretKey, msgRes, customerCode);
                 }
 
                 if (order.Status == "3")
                 {
                     errorCode = 1;
-                    errorMessage = "Customer paid";
-                    return CreateFailureResponse(Request, channelId, channelRefNumber, errorCode, errorMessage, requestDateTime, responseMsgId, secretKey, msgRes);
+                    errorMessage = "Paid";
+                    return CreateFailureResponseInquiry(Request, channelId, channelRefNumber, errorCode, errorMessage, requestDateTime, responseMsgId, secretKey, msgRes, customerCode);
                 }
 
                 var apiResponse = new
@@ -199,49 +213,53 @@ namespace QLXDK.Controllers
 
                 if (!VerifyMessageSHA256(secretKey, msgReq, reqSignature))
                 {
-                    errorCode = 3;
+                    errorCode = 18;
                     errorMessage = "Invalid signature";
-                    return CreateFailureResponse(Request, channelId, channelRefNumber, errorCode, errorMessage, requestDateTime, responseMsgId, secretKey, msgRes);
-                    //return Request.CreateResponse(HttpStatusCode.BadRequest, new { error = 3, error_description = "Invalid signature" });
+                    return CreateFailureResponsePayment(Request, channelId, channelRefNumber, errorCode, errorMessage, requestDateTime, responseMsgId, secretKey, msgRes, providerId, serviceId);
                 }
 
                 var order = _db.Orders.FirstOrDefault(o => o.CustomerCode == customerCode);
 
                 if (order == null)
                 {
-                    errorCode = 400;
-                    errorMessage = "No data found";
-                    return CreateFailureResponse(Request, channelId, channelRefNumber, errorCode, errorMessage, requestDateTime, responseMsgId, secretKey, msgRes);
+                    errorCode = 17;
+                    errorMessage = "Invalid user";
+                    return CreateFailureResponsePayment(Request, channelId, channelRefNumber, errorCode, errorMessage, requestDateTime, responseMsgId, secretKey, msgRes, providerId, serviceId);
+                }
+
+                if (order.Status == "3")
+                {
+                    errorCode = 1;
+                    errorMessage = "Paid";
+                    return CreateFailureResponsePayment(Request, channelId, channelRefNumber, errorCode, errorMessage, requestDateTime, responseMsgId, secretKey, msgRes, providerId, serviceId);
                 }
 
                 if (order.Amount != long.Parse(amount))
                 {
-                    errorCode = 2;
+                    errorCode = 3;
                     errorMessage = "Invalid amount";
-                    return CreateFailureResponse(Request, channelId, channelRefNumber, errorCode, errorMessage, requestDateTime, responseMsgId, secretKey, msgRes);
+                    return CreateFailureResponsePayment(Request, channelId, channelRefNumber, errorCode, errorMessage, requestDateTime, responseMsgId, secretKey, msgRes, providerId, serviceId);
                 }
 
                 // Save transactionRefNo  
                 order.TransactionRefNo = transactionRefNo;
                 _db.SaveChanges();
 
-                Task.Run(async () =>
+                System.Web.Hosting.HostingEnvironment.QueueBackgroundWorkItem(async cancellationToken =>
                 {
                     try
                     {
-                        using (var client = new HttpClient())
-                        {
-                            string webUrl = ConfigurationManager.AppSettings["webUrl"];
-                            var content = new FormUrlEncodedContent(new[] {
+                        string webUrl = ConfigurationManager.AppSettings["webUrl"];
+                        var content = new FormUrlEncodedContent(new[] {
                             new KeyValuePair<string, string>("order_code", customerCode),
                             new KeyValuePair<string, string>("status", "3")
                         });
-                            await client.PostAsync(webUrl, content);
-                        }
+
+                        await _httpClient.PostAsync(webUrl, content, cancellationToken);
                     }
-                    catch
+                    catch (Exception ex)
                     {
-                        // Luôn giữ try-catch trống hoặc ghi log để bảo vệ luồng nền
+                        //System.Diagnostics.Debug.WriteLine($"Lỗi gửi thông báo: {ex.Message}");
                     }
                 });
 
@@ -279,7 +297,7 @@ namespace QLXDK.Controllers
             }
             catch (Exception ex)
             {
-                return Request.CreateResponse(HttpStatusCode.InternalServerError, new { error = "500", error_description = ex.Message });
+                return Request.CreateResponse(HttpStatusCode.InternalServerError, new { error = "500", error_description = "Internal Server Error" });
             }
         }
 
@@ -323,7 +341,7 @@ namespace QLXDK.Controllers
             }
         }
 
-        private HttpResponseMessage CreateFailureResponse(
+        private HttpResponseMessage CreateFailureResponseInquiry(
             HttpRequestMessage request,
             string channelId,
             string channelRefNumber,
@@ -332,7 +350,9 @@ namespace QLXDK.Controllers
             string requestDateTime,
             string responseMsgId,
             string secretKey,
-            string msgRes)
+            string msgRes,
+            string customerCode
+            )
         {
             // 1. Tạo object payload theo đúng cấu trúc của bạn
             var payload = new
@@ -349,6 +369,7 @@ namespace QLXDK.Controllers
                 },
                 payload = new
                 {
+                    customerCode = customerCode,
                     bills = new object[] { }
                 },
                 signature = CreateMessageSHA256(secretKey, msgRes)
@@ -384,5 +405,44 @@ namespace QLXDK.Controllers
             }
             return null;
         }
+
+        private HttpResponseMessage CreateFailureResponsePayment(
+            HttpRequestMessage request,
+            string channelId,
+            string channelRefNumber,
+            int errorCode,
+            string errorMessage,
+            string requestDateTime,
+            string responseMsgId,
+            string secretKey,
+            string msgRes,
+            string providerId,
+            string serviceId
+            )
+            {
+                // 1. Tạo object payload theo đúng cấu trúc của bạn
+                var payload = new
+                {
+                    context = new
+                    {
+                        channelId = channelId,
+                        channelRefNumber = channelRefNumber,
+                        errorCode = errorCode,
+                        errorMessage = errorMessage,
+                        requestDateTime = requestDateTime,
+                        responseMsgId = responseMsgId,
+                        status = "FAILURE"
+                    },
+                    payload = new
+                    {
+                        providerId = providerId,
+                        serviceId = serviceId,
+                        bills = new object[] { }
+                    },
+                    signature = CreateMessageSHA256(secretKey, msgRes)
+                };
+
+                return request.CreateResponse(HttpStatusCode.OK, payload);
+            }
     }
 }

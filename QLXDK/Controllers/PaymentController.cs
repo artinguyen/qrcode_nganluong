@@ -14,7 +14,6 @@ using System.Linq;
 using System.Web;
 using QLXDK.Models.Views;
 using Microsoft.AspNet.SignalR;
-using System.Security.Cryptography;
 using System.Net.Http.Headers; // Thêm thư viện này để cấu hình Header
 
 namespace QLXDK.Controllers

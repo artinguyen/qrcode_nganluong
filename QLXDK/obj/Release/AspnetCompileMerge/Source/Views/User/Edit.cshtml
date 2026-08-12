@@ -1,0 +1,94 @@
+﻿@model QLXDK.Models.Views.UserVM
+@{
+    ViewBag.Title = "Người dùng";
+    ViewBag.Action = "Cập nhật thông tin";
+}
+@using (Html.BeginForm())
+{
+    @Html.AntiForgeryToken()
+    @Html.HiddenFor(m => m.ID)
+    <div class="row">
+        <div class="col-md-12">
+            <div class="card">
+                <div class="card-body">
+                    <div class="row">
+                        <div class="col-md-6">
+                            @if (TempData["Message"] != null)
+                            {
+                                <div class="alert alert-success alert-dismissible fade show" role="alert">
+                                    @TempData["Message"]
+                                    <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+                                </div>
+                            }
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-6">
+
+                            <div class="form-group">
+                                <label class="form-label" for="exampleInputEmail1">Họ và tên</label>
+                                @Html.EditorFor(m => m.FullName, new { htmlAttributes = new { @class = "form-control" } })
+                                @*<small id="emailHelp" class="form-text text-muted">
+                                        We'll never share your email with anyone
+                                        else.
+                                    </small>*@
+                                @Html.ValidationMessageFor(m => m.FullName, "", new { @class = "text-danger" })
+                            </div>
+                            @*<div class="form-group">
+                                <label class="form-label" for="exampleInputPassword1">Mật khẩu</label>
+                                @Html.PasswordFor(m => m.Password, new { @class = "form-control" })
+                                @Html.ValidationMessageFor(m => m.Password, "", new { @class = "text-danger" })
+                            </div>
+
+                            <div class="form-group">
+                                <label class="form-label" for="exampleInputPassword1">Xác nhận mật khẩu</label>
+                                @Html.PasswordFor(m => m.ConfirmPassword, new { @class = "form-control" })
+                                @Html.ValidationMessageFor(m => m.ConfirmPassword, "", new { @class = "text-danger" })
+                            </div>*@
+
+
+                            <div class="form-group">
+                                <label class="form-label" for="Active">Trạng thái</label>
+                                <select class="form-select" id="Active" name="Active">
+                                    @*<option value="1">Kích hoạt</option>
+                                    <option value="0">Khoá</option>*@
+                                    <option value="1" @(Model.Active == 1 ? "selected" : "")>Kích hoạt</option>
+                                    <option value="0" @(Model.Active == 0 ? "selected" : "")>Khoá</option>
+                                </select>
+                            </div>
+
+
+
+                        </div>
+                        <div class="col-md-6">
+
+                            <div class="form-group">
+                                <label class="form-label">Tên đăng nhập</label>
+                                @Html.EditorFor(m => m.UserName, new { htmlAttributes = new { @class = "form-control", @readonly = "readonly" } })
+                                @Html.ValidationMessageFor(m => m.UserName, "", new { @class = "text-danger" })
+                            </div>
+                            <div class="form-group">
+                                <label class="form-label" for="type">Loại</label>
+                                @*<select class="form-select" id="exampleFormControlSelect1">
+                                    <option value="1">Nhân viên</option>
+                                    <option value="2">Tài xế</option>
+                                </select>*@
+                                <select class="form-select" id="type" name="Type">
+                                    <option value="1" @(Model.Type == 1 ? "selected" : "")>Nhân viên</option>
+                                    @*<option value="2" @(Model.Type == 2 ? "selected" : "")>Tài xế</option>*@
+                                </select>
+                            </div>
+
+
+                        </div>
+                        <div class="col-12 text-center m-t-20">
+                            <button class="btn btn-primary" type="submit">Cập nhật</button>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+}
