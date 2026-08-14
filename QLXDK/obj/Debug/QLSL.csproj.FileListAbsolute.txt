@@ -1154,3 +1154,9 @@ D:\Projects\CLGN 9.9\QrCode\QLXDK\bin\Microsoft.Owin.Security.MicrosoftAccount.x
 D:\Projects\CLGN 9.9\QrCode\QLXDK\obj\Debug\QLSL.csprojResolveAssemblyReference.cache
 D:\Projects\CLGN 9.9\QrCode\QLXDK\obj\Debug\QLXDK.dll
 D:\Projects\CLGN 9.9\QrCode\QLXDK\obj\Debug\QLXDK.pdb
+D:\Projects\CLGN 9.9\QrCode\QLXDK\bin\System.Net.Http.Formatting.dll
+D:\Projects\CLGN 9.9\QrCode\QLXDK\bin\System.Web.Http.dll
+D:\Projects\CLGN 9.9\QrCode\QLXDK\bin\System.Web.Http.WebHost.dll
+D:\Projects\CLGN 9.9\QrCode\QLXDK\bin\System.Net.Http.Formatting.xml
+D:\Projects\CLGN 9.9\QrCode\QLXDK\bin\System.Web.Http.xml
+D:\Projects\CLGN 9.9\QrCode\QLXDK\bin\System.Web.Http.WebHost.xml

@@ -39,8 +39,20 @@ $("#generate-btn").click(function (e) {
         modal.style.display = 'block';
         return;
     }
+    // Create Code
+    const prefix = "VCBSGL";
+    const allowedChars = "ABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789";
+    let result = prefix;
+
+    for (let i = 0; i < 13; i++) {
+        const randomIndex = Math.floor(Math.random() * allowedChars.length);
+        result += allowedChars[randomIndex];
+    }
+
+    currentOrderCode = result;
+
     // Create random order
-    currentOrderCode = "QR" + Date.now();
+    //currentOrderCode = "QR" + Date.now();
     // Assign into group
     if ($.connection.hub.state === $.signalR.connectionState.connected) {
         paymentHub.server.joinOrderGroup(currentOrderCode);
@@ -49,7 +61,7 @@ $("#generate-btn").click(function (e) {
     // Disable button
     $btn.prop('disabled', true);
     $.ajax({
-        url: '/Payment/CreateQrCode',
+        url: '/Payment/GenQrCode',
         type: 'POST',
         dataType: 'json',
         data: {
@@ -58,13 +70,37 @@ $("#generate-btn").click(function (e) {
         },
         success: function (res) {
             if (res.success && res.qrdata) {
-                $("#qrImage").attr("src", res.qrdata).show();
+                var qrcode = new QRCode(document.getElementById("qrBuffer"), {
+                    text: res.qrdata,
+                    width: 160,
+                    height: 160,
+                    correctLevel: QRCode.CorrectLevel.H
+                });
+                setTimeout(function () {
+                    var base64Img = document.querySelector("#qrBuffer img").src;
+                    //console.log(base64Img)
+                    $("#qrImage").attr("src", base64Img).show();
+                    //var imgElement = document.getElementById("qrImage");
+
+                    //imgElement.src = base64Img;
+
+                    // Đảm bảo ảnh tự co giãn đầy thẻ img mà không bị méo tỉ lệ
+                    //imgElement.style.objectFit = "contain";
+                }, 100);
+
+                //var base64Img = $("#qrBuffer img").src;
+                //imgElement.src = base64Img;
+                //imgElement.style.objectFit = "contain";
+
+                
                 // Show message
                 $('#success-msg').text('QR code tạo thành công!');
                 setTimeout(function () {
                     $('#success-msg').text('');
                 }, 2000);
                 $('.qr-code-box').addClass('qr-active');
+                //
+                $('#qrcode').addClass('qrcode-style');
                 renderOrders(res.data, 1);
                 localStorage.setItem('qr-code', true);
             }
@@ -94,6 +130,7 @@ function init() {
     //currentOrderCode = "QR" + Date.now();
     paymentHub.client.onPaymentSuccess = function (res) {
         if (res.IsSuccess) {
+            console.log(res.OrderCode, currentOrderCode);
             // QrCode is existing
             if (res.OrderCode == currentOrderCode) {
                 $('.qr-code-box').removeClass('qr-active');
@@ -139,6 +176,7 @@ function cancel() {
 
 function resetQrImage() {
     $("#qrImage").attr("src", "");
+    $('#qrcode').removeClass('qrcode-style');
     //$('.qr-code-box').removeClass('qr-active');
 }
 

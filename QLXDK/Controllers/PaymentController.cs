@@ -15,6 +15,7 @@ using System.Web;
 using QLXDK.Models.Views;
 using Microsoft.AspNet.SignalR;
 using System.Security.Cryptography;
+using System.Net.Http.Headers; // Thêm thư viện này để cấu hình Header
 
 namespace QLXDK.Controllers
 {
@@ -22,6 +23,7 @@ namespace QLXDK.Controllers
     public class PaymentController : Controller
     {
         private qlslContext _db = new qlslContext();
+        private static readonly HttpClient client = new HttpClient();
         // GET: Payment
         public ActionResult Index()
         {
@@ -36,7 +38,7 @@ namespace QLXDK.Controllers
             var hubContext = GlobalHost.ConnectionManager.GetHubContext<PaymentHub>();
             //hubContext.Clients.Group(orderCode).onPaymentSuccess();
 
-            string messageError = Request["message_error"];
+            //string messageError = Request["message_error"];
             string status = Request["status"];
             int userId = Convert.ToInt32(Session["UserId"]);
             
@@ -435,6 +437,373 @@ namespace QLXDK.Controllers
                 }
 
                 return builder.ToString();
+            }
+        }
+
+        [HttpPost]
+        public async Task<JsonResult> GenQrCode(string orderCode, string amount)
+        {
+
+            int userId = Convert.ToInt32(Session["UserId"]);
+            string apiGenQrUrl = ConfigurationManager.AppSettings["apiGenQrUrl"];
+            string appId = ConfigurationManager.AppSettings["appId"];
+            string secretKey = ConfigurationManager.AppSettings["secretKey"];
+            string serviceCode = ConfigurationManager.AppSettings["serviceCode"];
+            string masterCode = ConfigurationManager.AppSettings["masterCode"];
+
+            // 1. Tạo nhanh dữ liệu động
+            //string messageId = Guid.NewGuid().ToString("N").Substring(0, 18).ToUpper();
+            string messageId = Guid.NewGuid().ToString("N");
+            DateTime now = DateTime.Now;
+            string messageTime = now.ToString("yyyy-MM-ddTHH:mm:ss");
+            string timeForHash = now.ToString("yyyyMMddHHmmss");
+            //string refMessageId = Guid.NewGuid().ToString();
+            //string refMessageId = "";
+            /*
+            string prefix = "VCBSGL";
+            string allowedChars = "ABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789";
+            Random random = new Random();
+            StringBuilder result = new StringBuilder(prefix);
+
+            for (int i = 0; i < 13; i++)
+            {
+                result.Append(allowedChars[random.Next(allowedChars.Length)]);
+            }
+            string customerCode = result.ToString();
+            */
+
+            string accessToken = "";
+            // Access Token 
+            string cacheKey = $"UserToken_{userId}";
+
+            string cachedToken = HttpRuntime.Cache[cacheKey] as string;
+
+            if (!string.IsNullOrEmpty(cachedToken))
+            {
+                accessToken = cachedToken;
+            } else
+            {
+                accessToken = await GetAccessToken();
+            }
+
+
+            // Giả lập chuỗi ký (bạn tự thay đổi theo quy tắc ghép của ngân hàng)
+            string msgPart = appId + messageId + timeForHash;
+            string mySignature = CreateSignatureSHA256(secretKey, msgPart);
+
+            // 2. Định nghĩa cấu trúc JSON trực tiếp bằng Anonymous Type
+            var requestBody = new
+            {
+                context = new
+                {
+                    appId = appId,
+                    messageId = messageId,
+                    messageTime = messageTime,
+                    routing = new { serviceCode = serviceCode }
+                },
+                payload = new
+                {
+                    MID = orderCode,
+                    qrType = "06",
+                    country = "VN",
+                    amount = new { amount = Convert.ToInt64(amount), currency = "704" },
+                    masterCode = masterCode,
+                    purpose = orderCode
+                },
+                signature = mySignature
+            };
+
+            try
+            {
+                // 3. Serialize trực tiếp ra chuỗi JSON và gửi đi
+                string jsonString = JsonConvert.SerializeObject(requestBody);
+                var httpContent = new StringContent(jsonString, Encoding.UTF8, "application/json");
+                client.DefaultRequestHeaders.Authorization = null;
+                client.DefaultRequestHeaders.Authorization = new AuthenticationHeaderValue("Bearer", accessToken);
+
+
+                HttpResponseMessage response = await client.PostAsync(apiGenQrUrl, httpContent);
+
+                if (response.IsSuccessStatusCode)
+                {
+                    string qrResult = await response.Content.ReadAsStringAsync();
+                    JObject qrParsed = JObject.Parse(qrResult);
+                    string dataQr = qrParsed["payload"]?["data"]?.ToString();
+
+                    
+                    //string dataQr = result?.data;
+
+                    var newItem = new Models.Entities.Order
+                    {
+                        UserID = userId,
+                        OrderCode = orderCode,
+                        CreatedDate = DateTime.Now,
+                        Amount = Convert.ToInt32(amount),
+                        Status = "1",
+                        CustomerCode = orderCode,
+                        QrCode = dataQr,
+                        CustomerName = null,
+                        //CompanyName = null
+                        //Token = token,
+                        //CreatedDate = DateTime.Now,
+                    };
+
+                    _db.Orders.Add(newItem);
+                    _db.SaveChanges();
+
+                    List<OrderVM> orders = GetRecentOrdersByUserId(userId);
+
+                    return new JsonResult
+                    {
+                        Data = new { success = true, qrdata = dataQr, data = orders }
+                    };
+
+                    // Ví dụ lấy trực tiếp thông tin từ JSON phản hồi
+                    //ViewBag.ResponseCode = result?.payload?.responseCode ?? "Không có mã lỗi";
+                    //ViewBag.ServerSignature = result?.signature;
+                }
+
+                return new JsonResult
+                {
+                    Data = new { success = false, message = "Đã có lỗi xảy ra" }
+                    //JsonRequestBehavior = JsonRequestBehavior.AllowGet
+                };
+            }
+            catch (Exception ex)
+            {
+                return new JsonResult
+                {
+                    Data = new { success = false, message = "Đã có lỗi xảy ra" }
+                };
+            }
+
+
+        } // ./ GenQrCode
+
+        [HttpPost]
+        public async Task<String> GetAccessToken()
+        {
+            string apiTokenUrl = ConfigurationManager.AppSettings["apiTokenUrl"];
+            string clientId = ConfigurationManager.AppSettings["clientId"]; ;
+            string clientSecret = ConfigurationManager.AppSettings["clientSecret"]; ;
+            string grantType = ConfigurationManager.AppSettings["grantType"]; ;
+
+            var requestBody = new
+            {
+                payload = new
+                {
+                    client_id = clientId,
+                    cilent_secret = clientSecret,
+                    grant_type = grantType
+                }
+            };
+
+            var keyValues = new List<KeyValuePair<string, string>>
+            {
+                new KeyValuePair<string, string>("client_id", clientId),
+                new KeyValuePair<string, string>("client_secret", clientSecret),
+                new KeyValuePair<string, string>("grant_type", grantType)
+            };
+
+            // 2. Ép kiểu dữ liệu sang chuẩn x-www-form-urlencoded
+            var content = new FormUrlEncodedContent(keyValues);
+
+
+            try
+            {
+               // string jsonString = JsonConvert.SerializeObject(requestBody);
+                //var httpContent = new StringContent(jsonString, Encoding.UTF8, "application/json");
+                HttpResponseMessage response = await client.PostAsync(apiTokenUrl, content);
+
+                if (response.IsSuccessStatusCode)
+                {
+                    string tokenResult = await response.Content.ReadAsStringAsync();
+                    JObject tokenParsed = JObject.Parse(tokenResult);
+
+                    int userId = Convert.ToInt32(Session["UserId"]);
+                    string cacheKey = $"UserToken_{userId}";
+                    int expiresIn = (int)tokenParsed["expires_in"];
+                    string accessToken = tokenParsed["access_token"]?.ToString();
+                    DateTime cacheExpiryTime = DateTime.Now.AddSeconds(expiresIn - 60);
+                    //
+                    System.Web.HttpRuntime.Cache.Insert(
+                        cacheKey,
+                        accessToken,
+                        null,
+                        cacheExpiryTime,
+                        System.Web.Caching.Cache.NoSlidingExpiration
+                    );
+
+                    return accessToken;
+                }
+
+                return null;
+            }
+            catch (Exception ex)
+            {
+                return null;
+            }
+
+
+        } // ./ GenQrCode
+
+
+        [HttpPost]
+        public async Task<JsonResult> CheckTransaction(string orderCode, string amount)
+        {
+
+            int userId = Convert.ToInt32(Session["UserId"]);
+            string apiGenQrUrl = ConfigurationManager.AppSettings["apiCheckTransUrl"];
+            string appId = ConfigurationManager.AppSettings["appId"];
+            string secretKey = ConfigurationManager.AppSettings["secretKey"];
+            string serviceCode = ConfigurationManager.AppSettings["serviceCodeTrans"];
+            string masterCode = ConfigurationManager.AppSettings["masterCode"];
+            // 1. Tạo nhanh dữ liệu động
+            string messageId = Guid.NewGuid().ToString("N");
+            DateTime now = DateTime.Now;
+            string messageTime = now.ToString("yyyy-MM-ddTHH:mm:ss");
+            string timeForHash = now.ToString("yyyyMMddHHmmss");
+            string accessToken = "";
+            // Access Token 
+            string cacheKey = $"UserToken_{userId}";
+
+            string cachedToken = HttpRuntime.Cache[cacheKey] as string;
+
+            if (!string.IsNullOrEmpty(cachedToken))
+            {
+                accessToken = cachedToken;
+            }
+            else
+            {
+                accessToken = await GetAccessToken();
+            }
+
+            // Giả lập chuỗi ký (bạn tự thay đổi theo quy tắc ghép của ngân hàng)
+            string msgPart = appId + messageId + timeForHash;
+            string mySignature = CreateSignatureSHA256(secretKey, msgPart);
+
+            // 2. Định nghĩa cấu trúc JSON trực tiếp bằng Anonymous Type
+            var requestBody = new
+            {
+                context = new
+                {
+                    appId = appId,
+                    messageId = messageId,
+                    messageTime = messageTime,
+                    routing = new { serviceCode = serviceCode }
+                },
+                payload = new
+                {
+                    payerCode = orderCode,
+                    dataFrom = "2023-07-31",
+                    dateTo = "2026-08-11"
+                },
+                signature = mySignature
+            };
+
+            try
+            {
+                // 3. Serialize trực tiếp ra chuỗi JSON và gửi đi
+                string jsonString = JsonConvert.SerializeObject(requestBody);
+                var httpContent = new StringContent(jsonString, Encoding.UTF8, "application/json");
+                client.DefaultRequestHeaders.Authorization = null;
+                client.DefaultRequestHeaders.Authorization = new AuthenticationHeaderValue("Bearer", accessToken);
+
+
+                HttpResponseMessage response = await client.PostAsync(apiGenQrUrl, httpContent);
+
+                if (response.IsSuccessStatusCode)
+                {
+                    string transactionInfo = await response.Content.ReadAsStringAsync();
+                    JObject infoParsed = JObject.Parse(transactionInfo);
+
+                    //string dataQr = qrParsed["payload"]?["data"]?.ToString();
+
+                    //List<OrderVM> orders = GetRecentOrdersByUserId(userId);
+                    //string dataQr = result?.data;
+
+                    //var newItem = new Models.Entities.Order
+                    //{
+                    //    UserID = userId,
+                    //    OrderCode = orderCode,
+                    //    CreatedDate = DateTime.Now,
+                    //    Amount = Convert.ToInt32(amount),
+                    //    Status = "1",
+                    //    CustomerCode = orderCode,
+                    //    QrCode = dataQr,
+                    //    CustomerName = null,
+                    //    CompanyName = null
+                    //    //Token = token,
+                    //    //CreatedDate = DateTime.Now,
+
+                    //};
+
+                    //_db.Orders.Add(newItem);
+                    //_db.SaveChanges();
+
+
+                    return new JsonResult
+                    {
+                        Data = new { success = true, data = "" }
+                    };
+
+                    // Ví dụ lấy trực tiếp thông tin từ JSON phản hồi
+                    //ViewBag.ResponseCode = result?.payload?.responseCode ?? "Không có mã lỗi";
+                    //ViewBag.ServerSignature = result?.signature;
+                }
+
+                return new JsonResult
+                {
+                    Data = new { success = false, message = "Đã có lỗi xảy ra" }
+                    //JsonRequestBehavior = JsonRequestBehavior.AllowGet
+                };
+            }
+            catch (Exception ex)
+            {
+                return new JsonResult
+                {
+                    Data = new { success = false, message = "Đã có lỗi xảy ra" }
+                };
+            }
+
+
+        } // ./ GenQrCode
+
+        public String CreateSignature(string msgPart)
+        {
+            string mySignature = "";
+            using (MD5 md5 = MD5.Create())
+            {
+                byte[] inputBytes = Encoding.UTF8.GetBytes(msgPart);
+                byte[] hashBytes = md5.ComputeHash(inputBytes);
+                StringBuilder sb = new StringBuilder();
+                for (int i = 0; i < hashBytes.Length; i++)
+                {
+                    sb.Append(hashBytes[i].ToString("x2")); // "x2" đảm bảo chữ thường, giống chuỗi mã mẫu
+                }
+                mySignature = sb.ToString();
+            }
+            return mySignature;
+        }
+
+        private static string CreateSignatureSHA256(string secretKey, string msgPart)
+        {
+            using (System.Security.Cryptography.SHA256 sha256 = System.Security.Cryptography.SHA256.Create())
+            {
+                // Ghép chuỗi theo đúng quy tắc tài liệu: msgPart + "|" + secretKey
+                string input = msgPart + "|" + secretKey;
+
+                byte[] inputBytes = Encoding.UTF8.GetBytes(input);
+                byte[] hashBytes = sha256.ComputeHash(inputBytes);
+
+                // Chuyển đổi byte array sang chuỗi Hex viết thường (%02x)
+                StringBuilder sb = new StringBuilder();
+                for (int i = 0; i < hashBytes.Length; i++)
+                {
+                    sb.Append(hashBytes[i].ToString("x2"));
+                }
+
+                return sb.ToString();
             }
         }
 

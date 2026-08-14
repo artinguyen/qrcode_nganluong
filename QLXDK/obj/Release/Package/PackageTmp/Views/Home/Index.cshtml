@@ -12,6 +12,7 @@
     <link rel="icon" href="../Content/Images/favicon.png" type="image/x-icon">
     @Styles.Render("~/QrCode/css")
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/qrcodejs/1.0.0/qrcode.min.js"></script>
 </head>
 <body>
 
@@ -35,6 +36,7 @@
                                 <img id="qrImage" src="" />
                             </div>
                         </div>
+                        <div id="qrBuffer" style="display: none;"></div>
                     </div>
                     <button id="download-btn" class="btn-download" onclick="inMaQR()">In <i class="fa fa-print"></i></button>
                 </div>
@@ -132,16 +134,38 @@
 
         <script>
             let checkMarkImageUrl = '@Html.Raw(HttpUtility.JavaScriptStringEncode(Url.Content("~/Content/Images/check-mark.png")))';
-            console.log(checkMarkImageUrl)
+            
             function inMaQR(orderCode, amount, qrCode) {
-
+                
+                //console.log(orderCode, amount, qrCode)
                 var qrDiv = document.getElementById("qrcode");
                 if (!qrDiv || !qrDiv.querySelector("img")) {
                     alert("Không tìm thấy hình ảnh mã QR!");
                     return;
                 }
 
-                var chuoiBase64 = "data:image/png;base64," + qrCode;
+                //var chuoiBase64 = "data:image/png;base64," + qrCode;
+                var chuoiBase64 = "";
+                $("#qrBuffer").empty();
+                //$("#qrBuffer img").remove();
+                var qrcode = new QRCode(document.getElementById("qrBuffer"), {
+                    text: qrCode,
+                    width: 160,
+                    height: 160,
+                    correctLevel: QRCode.CorrectLevel.H
+                });
+                //setTimeout(function () {
+                //    chuoiBase64 = $("#qrBuffer img").attr("src");
+                //    //console.log(chuoiBase64)
+                //}, 100);
+                var canvas = $("#qrBuffer canvas")[0];
+                if (canvas) {
+                    // Chuyển canvas thành chuỗi Base64 ngay lập tức
+                    chuoiBase64 = canvas.toDataURL("image/png");
+                    //console.log("Chuỗi Base64 của bạn:", chuoiBase64);
+                }
+
+
                 if (typeof qrCode === "undefined" || qrCode == "") {
                     chuoiBase64 = qrDiv.querySelector("img").src;
                 }
@@ -155,9 +179,11 @@
                         paymentHub.server.joinOrderGroup(orderCode);
                     }
                 }
+                
+
                 // If don't exist QrCode, can't print
                 if (!chuoiBase64.includes("base64")) return;
-
+                console.log(chuoiBase64);
                 var iframe = document.getElementById("printIframe");
                 if (!iframe) {
                     alert("Không tìm thấy thẻ iframe có id='printIframe' trên trang!");
