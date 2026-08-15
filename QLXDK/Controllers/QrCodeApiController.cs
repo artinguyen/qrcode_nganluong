@@ -8,14 +8,14 @@ using QLXDK.Models;
 using System.Linq;
 using System.Security.Cryptography;
 using System.Collections.Generic;
-using System.Threading.Tasks;
-
+using System.IO;
 
 namespace QLXDK.Controllers
 {
     [RoutePrefix("api/VCBPayment")]
     public class QrCodeApiController : ApiController
     {
+        private static readonly object _lock = new object();
         private qlslContext _db = new qlslContext();
         private static readonly HttpClient _httpClient = new HttpClient();
         [HttpGet]
@@ -62,7 +62,6 @@ namespace QLXDK.Controllers
 
         [HttpPost]
         [Route("Inquiry")]
-        //HttpResponseMessage, async Task<HttpResponseMessage>
         public HttpResponseMessage Inquiry([FromBody] dynamic request)
         {
             try
@@ -80,7 +79,7 @@ namespace QLXDK.Controllers
                 string providerId = request.payload?.providerId;
                 string serviceId = request.payload?.serviceId;
                 string reqSignature = request.signature;
-
+                // Get info from configuration
                 string secretKey = ConfigurationManager.AppSettings["secretKey"];
                 string custName = ConfigurationManager.AppSettings["custName"];
 
@@ -123,7 +122,7 @@ namespace QLXDK.Controllers
                         errorCode = 0,
                         errorMessage = "",
                         requestDateTime = DateTime.Now.ToString("dd-MM-yyyy HH:mm:ss"),
-                        responseMsgId = new Random().Next(1000000, 9999999).ToString(),
+                        responseMsgId = responseMsgId,
                         status = "SUCCESS"
                     },
                     payload = new
@@ -154,25 +153,9 @@ namespace QLXDK.Controllers
             }
             catch (Exception ex)
             {
+                Log("Internal Error", "INFO", ex);
                 return Request.CreateResponse(HttpStatusCode.InternalServerError, new { error = "500", error_description = ex.Message });
             }
-        }
-
-        public String CreateSignatureMD5(string msgPart)
-        {
-            string mySignature = "";
-            using (MD5 md5 = MD5.Create())
-            {
-                byte[] inputBytes = Encoding.UTF8.GetBytes(msgPart);
-                byte[] hashBytes = md5.ComputeHash(inputBytes);
-                StringBuilder sb = new StringBuilder();
-                for (int i = 0; i < hashBytes.Length; i++)
-                {
-                    sb.Append(hashBytes[i].ToString("x2"));
-                }
-                mySignature = sb.ToString();
-            }
-            return mySignature;
         }
 
         [HttpPost]
@@ -181,7 +164,6 @@ namespace QLXDK.Controllers
         {
             try
             {
-                // 
                 var authResult = checkAuthen(Request);
 
                 if (authResult != null)
@@ -192,17 +174,16 @@ namespace QLXDK.Controllers
                 string channelId = request.context?.channelId;
                 string channelRefNumber = request.context?.channelRefNumber;
                 string requestDateTime = request.context?.requestDateTime;
-
                 string customerCode = request.payload?.customerCode;
                 string providerId = request.payload?.providerId;
                 string serviceId = request.payload?.serviceId;
                 string billId = request.payload?.bills[0]?.billId;
                 string amount = request.payload?.bills[0]?.amount;
                 string transactionRefNo = request.payload?.internalTransactionRefNo;
-
+                // Get info from configuration
                 string secretKey = ConfigurationManager.AppSettings["secretKey"];
                 string custName = ConfigurationManager.AppSettings["custName"];
-
+                // 
                 string responseMsgId = Guid.NewGuid().ToString("N").Substring(0, 18);
                 string reqSignature = request.signature;
 
@@ -259,6 +240,7 @@ namespace QLXDK.Controllers
                     }
                     catch (Exception ex)
                     {
+                        Log("Can't call to client", "INFO", ex);
                         //System.Diagnostics.Debug.WriteLine($"Lỗi gửi thông báo: {ex.Message}");
                     }
                 });
@@ -297,6 +279,7 @@ namespace QLXDK.Controllers
             }
             catch (Exception ex)
             {
+                Log("Internal Error", "INFO", ex);
                 return Request.CreateResponse(HttpStatusCode.InternalServerError, new { error = "500", error_description = "Internal Server Error" });
             }
         }
@@ -327,7 +310,6 @@ namespace QLXDK.Controllers
             using (System.Security.Cryptography.SHA256 sha256 = System.Security.Cryptography.SHA256.Create())
             {
                 string input = msgPart + "|" + secretKey;
-
                 byte[] inputBytes = Encoding.UTF8.GetBytes(input);
                 byte[] hashBytes = sha256.ComputeHash(inputBytes);
 
@@ -354,7 +336,6 @@ namespace QLXDK.Controllers
             string customerCode
             )
         {
-            // 1. Tạo object payload theo đúng cấu trúc của bạn
             var payload = new
             {
                 context = new
@@ -420,7 +401,6 @@ namespace QLXDK.Controllers
             string serviceId
             )
             {
-                // 1. Tạo object payload theo đúng cấu trúc của bạn
                 var payload = new
                 {
                     context = new
@@ -444,5 +424,40 @@ namespace QLXDK.Controllers
 
                 return request.CreateResponse(HttpStatusCode.OK, payload);
             }
+
+        public static void Log(string message, string level = "INFO", Exception ex = null)
+        {
+            try
+            {
+                string logDirectory = System.Web.HttpContext.Current.Server.MapPath("~/App_Data/Logs");
+
+                if (!Directory.Exists(logDirectory))
+                {
+                    Directory.CreateDirectory(logDirectory);
+                }
+
+                string fileName = $"Log_{DateTime.Now:yyyyMMdd}.txt";
+                string filePath = Path.Combine(logDirectory, fileName);
+
+                string logLine = $"[{DateTime.Now:yyyy-MM-dd HH:mm:ss}] [{level}] {message}";
+                if (ex != null)
+                {
+                    logLine += $"{Environment.NewLine}[Exception] {ex.Message}{Environment.NewLine}[StackTrace] {ex.StackTrace}";
+                }
+
+                // Khóa thread để tránh xung đột khi nhiều request ghi file cùng lúc
+                lock (_lock)
+                {
+                    using (StreamWriter writer = new StreamWriter(filePath, true))
+                    {
+                        writer.WriteLine(logLine);
+                    }
+                }
+            }
+            catch
+            {
+                // Ignore
+            }
+        }
     }
 }
