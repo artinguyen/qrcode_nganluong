@@ -43,8 +43,13 @@ namespace QLXDK
                       "~/Content/Site.css"
                       ));
             bundles.Add(new StyleBundle("~/QrCode/css").Include(
-                      "~/Content/Site.css"
+                      "~/Content/Site.css",
+                      "~/Content/fontawesome.css"
                       ));
+            bundles.Add(new ScriptBundle("~/bundles/qrcode").Include(
+                        "~/Scripts/home.js",
+                        "~/Scripts/qrcode.min.js"
+                        ));
         }
     }
 }

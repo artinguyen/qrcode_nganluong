@@ -11,8 +11,6 @@
     <title>@ViewBag.Title</title>
     <link rel="icon" href="../Content/Images/favicon.png" type="image/x-icon">
     @Styles.Render("~/QrCode/css")
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/qrcodejs/1.0.0/qrcode.min.js"></script>
 </head>
 <body>
 
@@ -25,16 +23,14 @@
 
                     <div class="btn-group">
                         <button id="generate-btn" class="btn-generate">Tạo mã QR Code</button>
-                        <button id="clear-btn" class="btn-clear" onclick="cancel()">Huỷ</button>
+                        <button id="clear-btn" class="btn-clear" onclick="reset()">Huỷ</button>
                     </div>
 
                     <!-- Thông báo và Vùng hiển thị mã QR -->
                     <p id="success-msg" class="success-message"></p>
                     <div class="print-container">
                         <div class="qr-code-box">
-                            <div id="qrcode">
-                                <img id="qrImage" src="" />
-                            </div>
+                            <img id="qrImage" src=""/>
                         </div>
                         <div id="qrBuffer" style="display: none;"></div>
                     </div>
@@ -51,9 +47,16 @@
                     <span>Đăng xuất</span>
                 </a>
                 @using (Html.BeginForm("Logout", "User", FormMethod.Post, new { id = "logoutForm", style = "display:none;" }))
-            {
+                {
                     @Html.AntiForgeryToken()
                 }
+            </div>
+
+            <div id="inquiry">
+                <form action="#">
+                    <input type="text" id="inquiry-code" placeholder="Nhập đơn hàng">
+                    <input type="submit" id="inquiry-btn" value="Truy vấn">
+                </form>
             </div>
 
             <div class="table-container">
@@ -103,7 +106,7 @@
                                     <td>
                                         @if (item.QrCode != null)
                                         {
-                                            <a class="printQrItem" onclick="inMaQR('@item.OrderCode', @item.Amount, '@item.QrCode');return false;"><i class="fa fa-print"></i></a><a class="cancelPayment" onclick="cancelPayment('@item.OrderCode', this);return false;"><i class="fa fa-trash"></i></a>
+                                            <a class="printQrItem" onclick="inMaQR('@item.OrderCode', @item.Amount, '@item.QrCode');return false;"><i class="fa fa-print"></i></a>
                                         }
 
                                     </td>
@@ -128,7 +131,16 @@
         <!-- Modal content -->
         <div class="modal-content">
             <span class="close">&times;</span>
-            <p>Bạn muốn tạo QR Code mới khi mã hiện tại chưa thanh toán, vui lòng nhấn <b>Huỷ</b> và tạo lại mã!</p>
+            <p></p>
+        </div>
+    </div>
+
+    <!-- The Modal -->
+    <div id="loadingModal" class="modal">
+        <!-- Modal content -->
+        <div class="modal-content">
+            @*<span class="close">&times;</span>*@
+            <p class="loading">Đang xử lý</p>
         </div>
     </div>
 
@@ -136,54 +148,32 @@
             let checkMarkImageUrl = '@Html.Raw(HttpUtility.JavaScriptStringEncode(Url.Content("~/Content/Images/check-mark.png")))';
             
             function inMaQR(orderCode, amount, qrCode) {
-                
-                //console.log(orderCode, amount, qrCode)
-                var qrDiv = document.getElementById("qrcode");
-                if (!qrDiv || !qrDiv.querySelector("img")) {
-                    alert("Không tìm thấy hình ảnh mã QR!");
-                    return;
-                }
-
-                //var chuoiBase64 = "data:image/png;base64," + qrCode;
                 var chuoiBase64 = "";
                 $("#qrBuffer").empty();
-                //$("#qrBuffer img").remove();
                 var qrcode = new QRCode(document.getElementById("qrBuffer"), {
                     text: qrCode,
                     width: 160,
                     height: 160,
                     correctLevel: QRCode.CorrectLevel.H
                 });
-                //setTimeout(function () {
-                //    chuoiBase64 = $("#qrBuffer img").attr("src");
-                //    //console.log(chuoiBase64)
-                //}, 100);
+
                 var canvas = $("#qrBuffer canvas")[0];
                 if (canvas) {
-                    // Chuyển canvas thành chuỗi Base64 ngay lập tức
+                    // Convert canvas to base64
                     chuoiBase64 = canvas.toDataURL("image/png");
-                    //console.log("Chuỗi Base64 của bạn:", chuoiBase64);
                 }
 
-
-                if (typeof qrCode === "undefined" || qrCode == "") {
-                    chuoiBase64 = qrDiv.querySelector("img").src;
-                }
-                if (typeof amount === "undefined" || amount == 0) {
+                /** Get information from current order **/
+                if (!qrCode && !amount && !orderCode) {
+                    chuoiBase64 = $(".qr-code-box img").attr("src");
                     amount = currentAmount;
-                }
-                if (typeof orderCode === "undefined" || orderCode == "") {
                     orderCode = currentOrderCode;
-                } else {
-                    if ($.connection.hub.state === $.signalR.connectionState.connected) {
-                        paymentHub.server.joinOrderGroup(orderCode);
-                    }
                 }
                 
-
-                // If don't exist QrCode, can't print
-                if (!chuoiBase64.includes("base64")) return;
-                console.log(chuoiBase64);
+                // If don't exist QrCode or invalid, can't print
+                let qrcodeImg = $(".qr-code-box img");
+                
+                //if (!chuoiBase64.includes("base64") || qrcodeImg[0].naturalWidth === 0) return;
                 var iframe = document.getElementById("printIframe");
                 if (!iframe) {
                     alert("Không tìm thấy thẻ iframe có id='printIframe' trên trang!");
@@ -223,9 +213,8 @@
                     display: inline-block !important;
                     margin: 0 auto !important;
                     border: 1px solid #999999;
-                    //padding: 1px;
                     border-radius: 3px;
-                    //width: 100%;
+                    padding: 10px;
                 }
                 .qr-code-box::after {
                     content: ".";
@@ -277,7 +266,7 @@
     @Scripts.Render("~/bundles/jquery")
     <script src="~/Scripts/jquery.signalR-2.4.3.min.js"></script>
     <script src="~/signalr/hubs"></script>
-    <script src="~/Scripts/home.js"></script>
+    @Scripts.Render("~/bundles/qrcode")
 
 </body>
 </html>

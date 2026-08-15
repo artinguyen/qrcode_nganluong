@@ -114,13 +114,10 @@ input, button, h2 {
 
 /* CỘT PHẢI (NỘI DUNG TRẮNG) */
 .right-column {
-   //width: 55%;
-    //margin-left: 45%; /* Tránh đè lên cột trái cố định */
-    //padding: 80px 60px;
     background-color: #ffffff;
     float: right;
-    width: 60%;
-    margin-left: 40%;
+    width: 65%;
+    margin-left: 35%;
     padding: 10px;
 }
 
@@ -298,7 +295,7 @@ input, button, h2 {
 /* NỀN CỘT TRÁI (Thay thế màu xanh cũ bằng màu xanh rêu đậm) */
 .left-column {
     background-color: #1a3322; /* Màu xanh lục rêu đậm */
-    width: 40%;
+    width: 35%;
     position: fixed;
     height: 100vh;
     display: flex;
@@ -392,30 +389,22 @@ input, button, h2 {
 
 /* KHUNG CHỨA MÃ QR */
 .qr-code-box {
-    
-    /*padding: 12px;
-    border-radius: 8px;*/
     display: inline-block;
-    
-    /*margin-bottom: 20px;*/
+    line-height: 0;
+    margin-bottom: 10px;
 }
 .qr-active {
     background: #ffffff;
-    border: 1px solid #ddd;
-}
-
-.qrcode-style {
     padding: 10px;
     border-radius: 5px;
     border: 1px solid black;
 }
-/* Đảm bảo ảnh QR tạo ra vừa vặn */
+
 #qrcode img {
     display: block;
     margin: 0 auto;
 }
 
-/* NÚT DOWNLOAD PHÍA DƯỚI */
 .btn-download {
     width: 50%;
     background-color: #4f69af;
@@ -426,6 +415,29 @@ input, button, h2 {
     border: none;
     border-radius: 4px;
     cursor: pointer;
+}
+
+#inquiry-btn {
+    background-color: #4f69af;
+    color: #ffffff;
+    padding: 8px;
+    font-size: 0.95rem;
+    font-weight: 600;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+#inquiry-code {
+    padding: 8px;
+    font-size: 1rem;
+    border: 1px solid #959595;
+    border-radius: 3px;
+    background-color: #ededed;
+    color: #000;
+}
+#inquiry-code::placeholder {
+    font-style: italic;
+    color: #999;
 }
 @media print {
     @page {
@@ -528,4 +540,22 @@ input, button, h2 {
   top: 0;
   z-index: 1;    
   background-color: #f1f1f1;           
+}
+
+/**
+
+*/
+.loading:after {
+    content: ' .';
+    animation: dots 1s steps(4, end) infinite;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+@keyframes dots {
+  0%   { content: ''; }
+  25%  { content: '.'; }
+  50%  { content: '..'; }
+  75%  { content: '...'; }
+  100% { content: ''; }
 }

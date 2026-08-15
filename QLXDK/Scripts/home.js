@@ -5,6 +5,21 @@ const dd = String(today.getDate()).padStart(2, '0');
 const mm = String(today.getMonth() + 1).padStart(2, '0');
 const yyyy = today.getFullYear();
 var currentDate = `${dd}/${mm}/${yyyy}`;
+// Handle waiting time
+let ajaxLoadingTimer;
+const DEBOUNCE_DELAY = 3000;
+
+$(document).ajaxStart(function () {
+    ajaxLoadingTimer = setTimeout(() => {
+        showLoadingModal(true);
+    }, DEBOUNCE_DELAY);
+});
+
+$(document).ajaxStop(function () {
+    clearTimeout(ajaxLoadingTimer);
+    showLoadingModal(false);
+});
+
 // Remove localStorage when reload page
 localStorage.removeItem('qr-code');
 // Init socket
@@ -36,7 +51,8 @@ $("#generate-btn").click(function (e) {
     // If existing QrCode, alert
     let localQr = localStorage.getItem('qr-code');
     if (localQr && localQr != null) {
-        modal.style.display = 'block';
+        let message = 'Bạn muốn tạo QR Code mới khi mã hiện tại chưa thanh toán, vui lòng nhấn <b>Huỷ</b> và tạo lại mã!';
+        showModal(message);
         return;
     }
     // Create Code Random
@@ -87,8 +103,6 @@ $("#generate-btn").click(function (e) {
                     $('#success-msg').text('');
                 }, 2000);
                 $('.qr-code-box').addClass('qr-active');
-                //
-                $('#qrcode').addClass('qrcode-style');
                 renderOrders(res.data, 1);
                 localStorage.setItem('qr-code', true);
             }
@@ -115,20 +129,17 @@ $("#generate-btn").click(function (e) {
 init();
 
 function init() {
-    //currentOrderCode = "QR" + Date.now();
     paymentHub.client.onPaymentSuccess = function (res) {
         if (res.IsSuccess) {
-            console.log(res.OrderCode, currentOrderCode);
             // QrCode is existing
             if (res.OrderCode == currentOrderCode) {
                 $('.qr-code-box').removeClass('qr-active');
-                $('#success-msg').text('Giao dịch thành công!');
                 $("#qrImage").attr("src", checkMarkImageUrl);
+                $('#success-msg').text('Giao dịch thành công!');
                 setTimeout(function () {
                     // Reset
-                    cancel();
+                    reset();
                 }, 2000);
-                
                 
             }
             // Payment later
@@ -149,8 +160,8 @@ function init() {
     
 }
 
-/** Cancel **/
-function cancel() {
+/** Reset **/
+function reset() {
     $("#qrImage").attr("src", "");
     $("#qr-amount").val('');
     $('.qr-code-box').removeClass('qr-active');
@@ -160,14 +171,11 @@ function cancel() {
     currentAmount = 0;
     // Remove localStorage
     localStorage.removeItem('qr-code');
-    // Remove style border
-    $('#qrcode').removeClass('qrcode-style');
 }
 
 function resetQrImage() {
     $("#qrImage").attr("src", "");
-    $('#qrcode').removeClass('qrcode-style');
-    //$('.qr-code-box').removeClass('qr-active');
+    $('.qr-code-box').removeClass('qr-active');
 }
 
 
@@ -219,7 +227,7 @@ function renderOrders(orderList, type) {
         }
         const actionButtonsCell = `
                 ${order.QrCode ? `
-                    <a class="printQrItem" onclick="inMaQR('${order.OrderCode}', ${order.Amount}, '${order.QrCode}'); return false;"><i class="fa fa-print"></i></a><a class ="cancelPayment" onclick="cancelPayment('${order.OrderCode}', this); return false;"><i class ="fa fa-trash"></i></a>
+                    <a class="printQrItem" onclick="inMaQR('${order.OrderCode}', ${order.Amount}, '${order.QrCode}'); return false;"><i class="fa fa-print"></i></a>
                 ` : ''} 
         `;
         // Tạo dòng mới
@@ -341,6 +349,24 @@ span.onclick = function () {
     modal.style.display = "none";
 }
 
+function showModal(message) {
+    modal.style.display = 'block';
+    if (message) {
+        $('#myModal p').text(message);
+    }
+    
+}
+
+function showLoadingModal(display) {
+    let modal = document.getElementById("loadingModal");
+    if (!display) {
+        modal.style.display = 'none';
+        return;
+    }
+    modal.style.display = 'block';
+    
+}
+
 /** Cancel payment **/
 function cancelPayment(orderCode, e) {
     var $btn = $(e);
@@ -358,7 +384,7 @@ function cancelPayment(orderCode, e) {
                 renderOrders(res.data, 1);
                 // Reset if cancel payment of current order
                 if (res.orderCode == currentOrderCode) {
-                    cancel();
+                    reset();
                 }
             }
         },
@@ -380,3 +406,46 @@ function cancelPayment(orderCode, e) {
 /** Set max height of table **/
 let bodyHeight = document.body.scrollHeight;
 $('.table-container').css('max-height', bodyHeight - 100 + 'px');
+
+/** Check transaction **/
+$("#inquiry-btn").click(function (e) {
+    e.preventDefault();
+    var $btn = $(this);
+    //var $btn = $(e);
+    let inquiryCode = $('#inquiry-code').val();
+    if (inquiryCode.trim() == '') return;
+    // Disable button
+    $btn.prop('disabled', true);
+    $.ajax({
+        url: '/Payment/CheckTransaction',
+        type: 'POST',
+        dataType: 'json',
+        data: {
+            inquiryCode: inquiryCode
+        },
+        success: function (res) {
+            if (res.success) {
+                //console.log(res.message)
+                showModal(res.message);
+                renderOrders(res.data, 1);
+                return;
+                // Reset if cancel payment of current order
+                //if (res.orderCode == currentOrderCode) {
+                //    reset();
+                //}
+            }
+            showModal(res.message);
+        },
+
+        error: function (xhr, status, error) {
+            console.log(error)
+            if (xhr.status === 401) {
+                window.location.href = "/User/Login";
+                return;
+            }
+        },
+    }).always(function () {
+        $btn.prop('disabled', false);
+
+    });
+})
