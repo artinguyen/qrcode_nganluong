@@ -14,8 +14,8 @@ using System.Linq;
 using System.Web;
 using QLXDK.Models.Views;
 using Microsoft.AspNet.SignalR;
-using System.Security.Cryptography;
 using System.Net.Http.Headers;
+using System.IO;
 
 namespace QLXDK.Controllers
 {
@@ -23,6 +23,7 @@ namespace QLXDK.Controllers
     public class PaymentController : Controller
     {
         private qlslContext _db = new qlslContext();
+        private static readonly object _lock = new object();
         private static readonly HttpClient client = new HttpClient();
 
         private string errorMsg = "Đã có lỗi xảy ra.";
@@ -84,16 +85,6 @@ namespace QLXDK.Controllers
             //return Json(response, JsonRequestBehavior.AllowGet);
             return Json(response);
         }
-
-        public ActionResult Return()
-        {
-            return View();
-        }
-
-        //public ActionResult Cancel()
-        //{
-        //    return View();
-        //}
 
         public List<QLXDK.Models.Views.OrderVM> GetRecentOrdersByUserId(int userId)
         {
@@ -536,8 +527,17 @@ namespace QLXDK.Controllers
                     Data = new { success = false, message = errorMsg }
                 };
             }
+            catch (HttpRequestException ex)
+            {
+                Log("Internal Error", "INFO", ex);
+                return new JsonResult
+                {
+                    Data = new { success = false, message = "Không thể kết nối tới máy chủ. Vui lòng thử lại." }
+                };
+            }
             catch (Exception ex)
             {
+                Log("Internal Error", "INFO", ex);
                 return new JsonResult
                 {
                     Data = new { success = false, message = errorMsg }
@@ -712,6 +712,7 @@ namespace QLXDK.Controllers
             }
             catch (HttpRequestException ex)
             {
+                Log("Internal Error", "INFO", ex);
                 return new JsonResult
                 {
                     Data = new { success = false, message = "Không thể kết nối tới máy chủ. Vui lòng thử lại." }
@@ -719,12 +720,13 @@ namespace QLXDK.Controllers
             }
             catch (Exception ex)
             {
+                Log("Internal Error", "INFO", ex);
                 return new JsonResult
                 {
                     Data = new { success = false, message = errorMsg }
                 };
             }
-        } // ./ GenQrCode
+        } // ./ CheckTransaction
 
         private static string CreateSignatureSHA256(string secretKey, string msgPart)
         {
@@ -743,6 +745,41 @@ namespace QLXDK.Controllers
                 }
 
                 return sb.ToString();
+            }
+        }
+
+        public static void Log(string message, string level = "INFO", Exception ex = null)
+        {
+            try
+            {
+                string logDirectory = System.Web.HttpContext.Current.Server.MapPath("~/App_Data/Logs");
+
+                if (!Directory.Exists(logDirectory))
+                {
+                    Directory.CreateDirectory(logDirectory);
+                }
+
+                string fileName = $"Log_{DateTime.Now:yyyyMMdd}.txt";
+                string filePath = Path.Combine(logDirectory, fileName);
+
+                string logLine = $"[{DateTime.Now:yyyy-MM-dd HH:mm:ss}] [{level}] {message}";
+                if (ex != null)
+                {
+                    logLine += $"{Environment.NewLine}[Exception] {ex.Message}{Environment.NewLine}[StackTrace] {ex.StackTrace}";
+                }
+
+                // Khóa thread để tránh xung đột khi nhiều request ghi file cùng lúc
+                lock (_lock)
+                {
+                    using (StreamWriter writer = new StreamWriter(filePath, true))
+                    {
+                        writer.WriteLine(logLine);
+                    }
+                }
+            }
+            catch
+            {
+                // Ignore
             }
         }
 
