@@ -1,0 +1,40 @@
+﻿@{
+    Layout = null;
+    ViewBag.Title = "404 Not found";
+}
+<html>
+<!-- [Head] start -->
+<head>
+    <title>404</title>
+    <!-- [Meta] -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0, minimal-ui">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+</head>
+<!-- [Head] end -->
+<!-- [Body] Start -->
+<body>
+    <div class="maintenance-block">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-12">
+                    <div class="card error-card">
+                        <div class="card-body">
+                            <div  style="text-align:center">
+                                <h1 class="mt-5"><b>Trang không tìm thấy</b></h1>
+                                @*<p class="mt-2 mb-4 text-muted">The page you are looking was moved, removed,<br>  renamed, or might never exist!</p>*@
+                                <button type="button" class="btn btn-primary mb-3"
+                                        onclick="location.href='@Url.Action("Index","Home")'">
+                                    Về trang chủ
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+
+</body><!-- [Body] end -->
+</html>
