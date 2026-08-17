@@ -23,7 +23,6 @@ namespace QLXDK.Models.Entities
         public string Token { get; set; }
         public string QrCode { get; set; }
         public string CustomerCode { get; set; }
-        public string CustomerName { get; set; }
         public string TransactionRefNo { get; set; }
 
         //public Nullable<System.DateTime> UpdatedAt { get; set; }

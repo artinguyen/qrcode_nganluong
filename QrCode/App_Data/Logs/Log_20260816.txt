@@ -1,0 +1,12 @@
+[2026-08-16 14:00:34] [INFO] Internal Error
+[Exception] An error occurred while sending the request.
+[StackTrace]    at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter`1.GetResult()
+   at QLXDK.Controllers.PaymentController.<CheckTransaction>d__20.MoveNext() in D:\Projects\CLGN 9.9\QrCode\QLXDK\Controllers\PaymentController.cs:line 679
+[2026-08-16 14:04:09] [INFO] Internal Error
+[Exception] An error occurred while sending the request.
+[StackTrace]    at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter`1.GetResult()
+   at QLXDK.Controllers.PaymentController.<CheckTransaction>d__20.MoveNext() in D:\Projects\CLGN 9.9\QrCode\QLXDK\Controllers\PaymentController.cs:line 679

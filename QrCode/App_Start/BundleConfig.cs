@@ -47,6 +47,7 @@ namespace QLXDK
                       "~/Content/fontawesome.css"
                       ));
             bundles.Add(new ScriptBundle("~/bundles/qrcode").Include(
+                        "~/Scripts/common.js",
                         "~/Scripts/home.js",
                         "~/Scripts/qrcode.min.js"
                         ));
