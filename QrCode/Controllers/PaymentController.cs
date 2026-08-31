@@ -66,6 +66,8 @@ namespace QLXDK.Controllers
                     Data = orders
                 };
                 hubContext.Clients.Group(orderCode).onPaymentSuccess(successResult);
+                //
+                hubContext.Clients.Group(userId.ToString()).onInvoiceUpdated(successResult);
 
             } else {
                 var failResult = new
@@ -87,10 +89,9 @@ namespace QLXDK.Controllers
 
         public List<QLXDK.Models.Views.OrderVM> GetRecentOrdersByUserId(int userId)
         {
-            DateTime aDayAgo = DateTime.Now.AddDays(-1);
 
             return _db.Orders
-                .Where(p => p.UserID == userId && p.CreatedDate >= aDayAgo)
+                .Where(p => p.UserID == userId)
                 .Select(p => new OrderVM
                 {
                     ID = p.ID,
@@ -102,6 +103,7 @@ namespace QLXDK.Controllers
                     QrCode = p.QrCode
                 })
                 .OrderByDescending(p => p.CreatedDate)
+                .Take(20)
                 .ToList();
         }
 
