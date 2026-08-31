@@ -14,10 +14,10 @@ namespace QLXDK.Controllers
         public ActionResult Index()
         {
             int userId = Convert.ToInt32(Session["UserId"]);
-            DateTime twoDaysAgo = DateTime.Now.AddDays(-1);
             var orders = _db.Orders
-                            .Where(p => p.UserID == userId && p.CreatedDate >= twoDaysAgo)    
+                            .Where(p => p.UserID == userId)    
                             .OrderByDescending(p => p.CreatedDate)
+                            .Take(20)
                             .ToList();
             return View(orders);
         }

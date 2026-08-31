@@ -5,6 +5,7 @@ using System.Web;
 using System.Web.Mvc;
 using System.Web.Optimization;
 using System.Web.Routing;
+using QLXDK.Models;
 
 namespace QLXDK
 {
@@ -17,6 +18,10 @@ namespace QLXDK
             FilterConfig.RegisterGlobalFilters(GlobalFilters.Filters);
             RouteConfig.RegisterRoutes(RouteTable.Routes);
             BundleConfig.RegisterBundles(BundleTable.Bundles);
+            using (var context = new qlslContext())
+            {
+                var user = context.Users.FirstOrDefault(u => false);
+            }
         }
 
         protected void Application_AcquireRequestState(object sender, EventArgs e)
