@@ -145,8 +145,9 @@
     </div>
 
         <script>
+            let userId = '@Session["UserId"]';
             let checkMarkImageUrl = '@Html.Raw(HttpUtility.JavaScriptStringEncode(Url.Content("~/Content/Images/check-mark.png")))';
-            
+
             function inMaQR(orderCode, amount, qrCode) {
                 var chuoiBase64 = "";
                 $("#qrBuffer").empty();
@@ -169,10 +170,10 @@
                     amount = currentAmount;
                     orderCode = currentOrderCode;
                 }
-                
+
                 // If don't exist QrCode or invalid, can't print
                 let qrcodeImg = $(".qr-code-box img");
-                
+
                 //if (!chuoiBase64.includes("base64") || qrcodeImg[0].naturalWidth === 0) return;
                 var iframe = document.getElementById("printIframe");
                 if (!iframe) {

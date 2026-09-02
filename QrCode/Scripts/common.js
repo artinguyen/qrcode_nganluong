@@ -188,8 +188,10 @@ function resetQrImage() {
 /**
 Set height of table
 **/
-$(window).resize(function () {
-    /** Set max height of table **/
+function setTableMaxHeight() {
     let bodyHeight = document.body.scrollHeight;
-    $('.table-container').css('max-height', bodyHeight - 100 + 'px');
-});
+    $('.table-container').css('max-height', (bodyHeight - 100) + 'px');
+}
+
+$(window).resize(setTableMaxHeight);
+$(document).ready(setTableMaxHeight);

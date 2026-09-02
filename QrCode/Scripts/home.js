@@ -118,6 +118,8 @@ $("#generate-btn").click(function (e) {
 init();
 
 function init() {
+    $.connection.hub.qs = { "userId": userId };
+
     paymentHub.client.onPaymentSuccess = function (res) {
         if (res.IsSuccess) {
             // QrCode is existing
@@ -138,6 +140,13 @@ function init() {
             $('#success-msg').text('Giao dịch thất bại!');
         }
     };
+
+    paymentHub.client.onInvoiceUpdated = function (res) {
+        if (!currentOrderCode && res && res.IsSuccess) {
+            renderOrders(res.Data, 2);
+        }
+    };
+
     
     $.connection.hub.start().done(function () {
         //paymentHub.server.joinOrderGroup(currentOrderCode);
