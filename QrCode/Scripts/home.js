@@ -70,6 +70,7 @@ $("#generate-btn").click(function (e) {
         },
         success: function (res) {
             if (res.success && res.qrdata) {
+                document.getElementById("qrBuffer").innerHTML = "";
                 var qrcode = new QRCode(document.getElementById("qrBuffer"), {
                     text: res.qrdata,
                     width: 160,
