@@ -3,8 +3,9 @@
 <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>@ViewBag.Title - My ASP.NET Application</title>
+    <title>@ViewBag.Title</title>
     @Styles.Render("~/Content/css")
+    @RenderSection("Styles", required: false)
     @*@Scripts.Render("~/bundles/modernizr")*@
     <link rel="icon" href="../Content/Images/favicon.png" type="image/x-icon">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Public+Sans:wght@300;400;500;600;700&display=swap" id="main-font-link">
@@ -35,8 +36,15 @@
                             <span class="pc-mtext">Trang chủ</span>
                         </a>
                     </li>
+
+                    <li class="pc-item">
+                        <a href="/Report" class="pc-link">
+                            <span class="pc-micon"><i class="ti ti-file-analytics"></i></span>
+                            <span class="pc-mtext">Báo cáo</span>
+                        </a>
+                    </li>
                    
-                    <li class="pc-item pc-hasmenu">
+                    @*<li class="pc-item pc-hasmenu">
                         <a href="#!" class="pc-link">
                             <span class="pc-micon"><i class="ti ti-menu"></i></span><span class="pc-mtext">
                                 Danh mục
@@ -45,7 +53,7 @@
                         <ul class="pc-submenu">
                             <li class="pc-item"><a class="pc-link" href="@Url.Action("Index", "User")">Người dùng</a></li>
                         </ul>
-                    </li>
+                    </li>*@
                 </ul>
 
             </div>
@@ -195,11 +203,11 @@
                                         <h6 class="mb-1">@Session["FullName"]</h6>
                                         @if (Session["Type"] != null && (int)Session["Type"] == 1)
                                         {
-                                            <span>Tài xế</span>
+                                            <span>Người Dùng</span>
                                         }
                                         else
                                         {
-                                            <span>Người Dùng</span>
+                                            <span>Anonymous</span>
                                         }
                                     </div>
                                     @*<a href="#!" class="pc-head-link bg-transparent"><i class="ti ti-power text-danger"></i></a>*@
@@ -333,9 +341,9 @@
     <script>
 
         $(document).ready(function () {
-            $.validator.setDefaults({
-                ignore: [] // Validates all hidden elements, including Select2
-            });
+            //$.validator.setDefaults({
+            //    ignore: [] // Validates all hidden elements, including Select2
+            //});
             //$('select').on('select2:select', function (e) {
             //    $(this).valid(); // Re-validates the field immediately after selection
             //});
@@ -345,7 +353,7 @@
                 //console.log('1111')
                 $(this).valid();
             });
-            var validator = $('#form-booking').validate({ ignore: null });
+            //var validator = $('#form-booking').validate({ ignore: null });
 
         });
 
@@ -372,14 +380,39 @@
             dateFormat: "H:i",
             time_24hr: true
         });
-        //flatpickr(".closing-date", {
-        //    onChange: function (selectedDates, dateStr, instance) {
-        //        // Your code here
-        //        //console.log("Selected dates:", selectedDates); // Array of Date objects
-        //        //console.log("Date string:", dateStr);          // Formatted date string
-        //        $(this).valid();
-        //    }
-        //});
+        // Report date
+        const defaultFromDate = new Date(2026, 8, 5);
+
+        const fromDateInstance = $(".rpt-from-date").flatpickr({
+            enableTime: true,
+            dateFormat: "d/m/Y H:i",
+            defaultDate: new Date(),
+            minDate: defaultFromDate,
+            onChange: function (selectedDates, dateStr, instance) {
+                if (toDateInstance && selectedDates.length > 0) {
+                    toDateInstance.set("minDate", selectedDates[0]);
+                }
+            }
+        });
+
+        const toDateInstance = $(".rpt-to-date").flatpickr({
+            enableTime: true,
+            dateFormat: "d/m/Y H:i",
+            minDate: defaultFromDate,
+            defaultDate: new Date(),
+            onChange: function (selectedDates, dateStr, instance) {
+                if (fromDateInstance && fromDateInstance.selectedDates.length > 0) {
+                    const fromDate = new Date(fromDateInstance.selectedDates[0]).setHours(0, 0, 0, 0);
+                    const toDate = new Date(selectedDates[0]).setHours(0, 0, 0, 0);
+                    if (fromDate > toDate) {
+                        instance.clear();
+                    }
+                }
+            }
+        });
+
+
+
     </script>
     @RenderSection("scripts", required: false)
 

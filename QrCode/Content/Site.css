@@ -559,3 +559,6 @@ input, button, h2 {
   75%  { content: '...'; }
   100% { content: ''; }
 }
+.rpt-from-date, .rpt-to-date {
+    color: #000;
+}

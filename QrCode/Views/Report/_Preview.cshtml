@@ -1,0 +1,43 @@
+﻿@model IEnumerable<QLXDK.Models.Views.OrderVM>
+<div class="table-responsive">
+    <table class="table table-bordered table-striped table-hover">
+        <thead class="bg-light">
+            <tr>
+                <th class="text-center" style="width: 5%">STT</th>
+                <th>Đơn hàng</th>
+                <th>Ngày tạo</th>
+                <th>Ngày thanh toán</th>
+                <th>Số tiền</th>
+                <th>Trạng thái</th>
+                <th>Transaction No</th>
+            </tr>
+        </thead>
+        <tbody>
+            @if (Model != null && Model.Any())
+            {
+                int index = 1;
+                foreach (var item in Model)
+                {
+                    <tr>
+                        <td class="text-center">@index</td>
+                        <td>@item.OrderCode</td>
+                        <td>@(item.CreatedDate != null ? ((DateTime)item.CreatedDate).ToString("dd/MM/yyyy H:m:s") : "")</td>
+                        <td>@(item.PaymentDate != null ? ((DateTime)item.PaymentDate).ToString("dd/MM/yyyy H:m:s") : "")</td>
+                        <td>@item.Amount.ToString("N0")</td>
+                        <td>@(item.Status == "1" ? "Chờ thanh toán" : "Đã thanh toán")</td>
+                        <td>@item.TransactionRefNo</td>
+                    </tr>
+                    index++;
+                }
+            }
+            else
+            {
+                <tr>
+                    <td colspan="12" class="text-center text-danger font-weight-bold">
+                        Không tìm thấy dữ liệu!
+                    </td>
+                </tr>
+            }
+        </tbody>
+    </table>
+</div>

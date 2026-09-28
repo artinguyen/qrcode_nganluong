@@ -1,0 +1,156 @@
+﻿@*@model QLXDK.Models.Entities.Report*@
+@{
+    ViewBag.Title = "Báo cáo thống kê";
+    ViewBag.Action = "Giao dịch";
+}
+@section Styles {
+    <link href="~/Content/Report.css" rel="stylesheet" type="text/css" />
+}
+@using (Html.BeginForm("ExportExcel", "Report", FormMethod.Post, new { id = "form-booking" }))
+{
+    @Html.AntiForgeryToken()
+    <div class="row">
+        <div class="col-md-12">
+            <div class="card">
+
+                <div class="card-body">
+                    <div class="row">
+                        <div class="col-md-6">
+                            @if (TempData["Message"] != null)
+                            {
+                                <div class="alert alert-danger alert-dismissible fade show" role="alert">
+                                    @TempData["Message"]
+                                    <button type="button" class="btn-close" aria-label="Close"></button>
+                                </div>
+                            } else { 
+                            <div class="alert alert-danger alert-dismissible fade show d-none" role="alert">
+                                <span class="alert-text"></span>
+                                <button type="button" class="btn-close" aria-label="Close"></button>
+                            </div>
+                            }
+                        </div>
+                    </div>
+                    <div class="row">
+
+                        <div class="col-md-6">
+                            <div class="form-group">
+                                <label class="form-label" for="exampleInputEmail1">Người dùng</label>
+                                @Html.DropDownList("User", (SelectList)ViewBag.UserList, "Tất cả", new { @class = "form-control", @style = "width:100%" })
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="form-group">
+                                    <label class="form-label" for="Type">Loại giao dịch</label>
+                                    <select class="form-select" id="Type" name="Type">
+                                        <option value="">Tất cả</option>
+                                        <option value="1">Chờ thanh toán</option>
+                                        <option value="3">Đã thanh toán</option>
+                                    </select>
+                            </div>
+                        </div>
+
+                        <div class="col-md-6">
+                            <div class="form-group">
+                                <label class="form-label" for="exampleInputEmail1">Từ ngày</label>
+                                @Html.TextBox("FromDate", ViewBag.FromDateValue as string, new { @class = "form-control rpt-from-date", type = "date" })
+                                @Html.ValidationMessage("FromDate", "", new { @class = "text-danger" })
+                            </div>
+                        </div>
+
+                        <div class="col-md-6">
+                            <div class="form-group">
+                                <label class="form-label" for="exampleInputEmail1">Đến ngày</label>
+                                @Html.TextBox("ToDate", ViewBag.FromDateValue as string, new { @class = "form-control rpt-to-date", type = "date"})
+                                @Html.ValidationMessage("ToDate", "", new { @class = "text-danger" })
+                            </div>
+                        </div>
+
+                        <div class="col-12 text-center m-t-20">
+                            <a href="#"
+                               class="btn btn-warning" title="Sửa" onclick="preview(); return false;">Truy vấn</a>
+                            <button class="btn btn-primary" type="submit">Export</button>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+}
+
+@section scripts {
+    <script>
+        function preview() {
+            let valid = true;
+            var fromDateVal = $(".rpt-from-date").val();
+            var toDateVal = $(".rpt-to-date").val();
+            $("[data-valmsg-for='FromDate'], [data-valmsg-for='ToDate']").text('');
+            // Valid date
+            if (!fromDateVal || fromDateVal.trim() === "") {
+                valid = false;
+                $("[data-valmsg-for='FromDate']").text("Vui lòng chọn ngày bắt đầu");
+            }
+
+            if (!toDateVal || toDateVal.trim() === "") {
+                valid = false;
+                $("[data-valmsg-for='ToDate']").text("Vui lòng chọn ngày kết thúc");
+            }
+            if (!valid) return;
+
+            let FromDate = $("#FromDate").val();
+            let ToDate = $("#ToDate").val();
+            let UserId = $("#User").val();
+            let Type = $("#Type").val();
+
+            let data = {
+                UserId,
+                Type,
+                FromDate,
+                ToDate
+            }
+
+            $('.alert').addClass('d-none');
+
+            $.ajax({
+                url: '@Url.Action("Preview", "Report")',
+                type: 'GET',
+                data: data,
+                success: function (data) {
+                    if (data.success === false) {
+                        $('.alert-text').text(data.message);
+                        $('.alert').removeClass('d-none');
+                        return;
+                    }
+                    $('#previewModalLive').modal('show');
+                    $("#previewBooking").html(data);
+                }
+            });
+        }
+
+        function formatDateToISO(dateStr) {
+            if (!dateStr) return "";
+            var parts = dateStr.split('/');
+            if (parts.length === 3) {
+                return parts[2] + '-' + parts[1] + '-' + parts[0];
+            }
+            return dateStr;
+        }
+
+        $('.btn-close').click(function () {
+            $(this).closest('.alert').addClass('d-none');
+        });
+    </script>
+}
+
+<div id="previewModalLive" class="modal fade" tabindex="-1" role="dialog">
+    <div class="modal-dialog modal-xl" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title">Danh sách đơn hàng</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+            </div>
+            <div id="previewBooking"></div>
+        </div>
+    </div>
+</div>

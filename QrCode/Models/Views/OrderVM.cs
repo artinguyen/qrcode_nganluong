@@ -22,5 +22,7 @@ namespace QLXDK.Models.Views
 
         public string Status { get; set; }
         public string QrCode { get; set; }
+
+        public string TransactionRefNo { get; set; }
     }
 }

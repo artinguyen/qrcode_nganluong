@@ -249,6 +249,7 @@
     <Compile Include="Controllers\ErrorController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\PaymentController.cs" />
+    <Compile Include="Controllers\ReportController.cs" />
     <Compile Include="Controllers\UserController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
@@ -534,6 +535,7 @@
     <Content Include="Content\Images\check-mark.png" />
     <Content Include="Content\Images\favicon.png" />
     <Content Include="Content\Login.css" />
+    <Content Include="Content\Report.css" />
     <Content Include="favicon.ico" />
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
     <Content Include="Global.asax" />
@@ -606,12 +608,15 @@
     <Content Include="Views\Shared\_Search.cshtml" />
     <Content Include="Views\User\login.cshtml" />
     <Content Include="Views\Error\NotFound.cshtml" />
+    <Content Include="Views\Report\Index.cshtml" />
+    <Content Include="Views\Report\_Preview.cshtml" />
     <None Include="Web.Staging.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\Logs\" />
+    <Folder Include="Content\tabler\" />
     <Folder Include="Views\Payment\" />
     <Folder Include="Views\QrCodeApi\" />
   </ItemGroup>

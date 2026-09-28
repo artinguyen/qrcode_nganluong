@@ -39,8 +39,8 @@ namespace QLXDK
                       "~/Content/asset/fonts/fontawesome.css",
                       "~/Content/asset/fonts/material.css",
                       "~/Content/asset/css/style.css",
-                      "~/Content/asset/css/style-preset.css",
-                      "~/Content/Site.css"
+                      "~/Content/asset/css/style-preset.css"
+                      //"~/Content/Site.css"
                       ));
             bundles.Add(new StyleBundle("~/QrCode/css").Include(
                       "~/Content/Site.css",

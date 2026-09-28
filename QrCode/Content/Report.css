@@ -1,0 +1,17 @@
+﻿.processing {
+    text-align: center;
+    padding: 10px;
+}
+
+#previewBooking {
+    overflow-y: auto; 
+    max-height: calc(100vh - 200px); 
+}
+
+/*.alert-danger {
+    display: none;
+}*/
+
+.pc-container .page-header + .row {
+    padding-top: 0 !important;
+}
